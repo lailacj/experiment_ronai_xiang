@@ -53,6 +53,13 @@ And four generated prompt tables:
 - [experiment_3_scoring_stimuli.csv](./stimuli_prompts/experiment_3_scoring_stimuli.csv): 60 rows
 - [experiment_4_scoring_stimuli.csv](./stimuli_prompts/experiment_4_scoring_stimuli.csv): 60 rows
 
+We also added a separate derived-output folder, [model_scores](./model_scores), for Qwen scoring work:
+
+- [score_qwen_alternatives.py](./model_scores/score_qwen_alternatives.py)
+- [qwen2_7b_scored_alternatives.csv](./model_scores/qwen2_7b_scored_alternatives.csv)
+
+The score table has 600 records: one row for each reconstructed prompt by alternative type, with both the weaker and stronger alternative scored for every prompt.
+
 ### Experiment Coverage
 
 Experiment 1:
@@ -107,6 +114,61 @@ or
 - `Sue: Is the movie excellent?`
 - `Mary: The movie is only ___`
 
+## Qwen Scoring
+
+The current Qwen scoring script is:
+
+```bash
+python3 model_scores/score_qwen_alternatives.py
+```
+
+By default, it loads the local cached model:
+
+```text
+../hf-cache/models--Qwen--Qwen2-7B/snapshots/453ed1575b739b5b03ce3758b23befdb0967f40e
+```
+
+and writes:
+
+```text
+model_scores/qwen2_7b_scored_alternatives.csv
+```
+
+The scoring script applies no normalization. It records raw continuation log probabilities.
+
+For word-only scoring, it computes:
+
+```text
+log P(" excellent" | "The movie is")
+```
+
+For multi-token alternatives, it sums the continuation-token log probabilities:
+
+```text
+log P(" life-threatening" | prompt)
+= log P(token_1 | prompt) + log P(token_2 | prompt + token_1) + ...
+```
+
+It also computes a candidate-plus-suffix score, for example:
+
+```text
+log P(" excellent." | "The movie is")
+```
+
+or:
+
+```text
+log P(" completed the race." | "John")
+```
+
+The output keeps both `word_logprob` and `candidate_plus_suffix_logprob`, along with token IDs, tokenizer strings, token-level log probabilities, token counts, and the exact context/continuation strings used for scoring.
+
+Important implementation detail:
+
+- Prompt-final whitespace is moved into the continuation before scoring.
+- For example, the CSV prompt `The movie is ` plus target `excellent` is scored as context `The movie is` and continuation ` excellent`.
+- This matches Qwen tokenization, where word-initial whitespace is part of the continuation tokenization.
+
 ## Important Caveats
 
 1. The Experiment 2 to 4 materials are reconstructed.
@@ -142,31 +204,30 @@ These scripts:
 
 ## Project Goal for the Next Agent
 
-The next major step is to move from prompt reconstruction to actual Qwen scoring.
+The project has now moved past prompt reconstruction and first-pass Qwen scoring.
+
+The next major step is to aggregate human responses and compare them to the raw Qwen log probabilities.
 
 That agent should:
 
-1. Decide the exact scoring rule.
-
-- Minimum baseline:
-  score the stronger alternative from the prompt prefix
-- Most likely useful normalization:
-  compare the stronger alternative to the weaker one, for example with a normalized score like
-  `p(stronger) / (p(stronger) + p(weaker))`
-- For multi-token continuations, use full continuation probability rather than a naive single-token shortcut
-
-2. Build a scoring script.
-
-- likely one script that reads the four reconstructed CSVs
-- runs Qwen on each row
-- stores scores in new output files, probably also under `stimuli_prompts/` or a separate `model_scores/` folder
-
-3. Aggregate human data by item and condition.
+1. Aggregate human data by item and condition.
 
 - Experiment 1: `ESI`
 - Experiment 2: `Eweak`, `Estrong`
 - Experiment 3: `Eonly`
 - Experiment 4: `Eonlystrong`
+- The original R script excludes two Experiment 1 participants and one Experiment 3 participant; any Python aggregation should either preserve those exclusions or explicitly document a different choice.
+
+2. Join human summaries to model scores.
+
+- Use `item_id` and `condition`.
+- The model table is long by `target_type`, so stronger-only analyses should filter to `target_type == "stronger"`.
+- Keep both `word_logprob` and `candidate_plus_suffix_logprob` available during comparison.
+
+3. Decide the comparison-layer normalization or transformation.
+
+- The Qwen table intentionally stores raw log probabilities.
+- Any normalization, centering, ranking, condition-wise scaling, or weak-vs-strong contrast should happen in the human/model comparison script, not in the Qwen scoring script.
 
 4. Compare model scores to human responses.
 
@@ -183,23 +244,21 @@ That agent should:
 
 The next agent on the compute cluster should probably produce:
 
-- a Qwen scoring script
-- a table of model scores for all reconstructed prompts
 - a script that aggregates human response rates by item and condition
 - a first analysis notebook or script comparing Qwen scores to human rates
+- optional diagnostic plots for item-level human rates against Qwen log probabilities
 
 ## Open Questions
 
 These are still unresolved and should be decided explicitly:
 
-- Which Qwen model variant should be used on the cluster?
-- What exact probability object should be used:
-  raw next-token probability, full continuation probability, or a normalized alternative score?
-- How should multi-token stronger alternatives be handled consistently?
+- For the first comparison, should the primary model predictor be `word_logprob` or `candidate_plus_suffix_logprob`?
+- Should analyses use raw log probabilities, ranks, item-wise contrasts, condition-wise centering, or another comparison-layer transformation?
+- Should the first pass compare only stronger-alternative probabilities to human inference rates, or also include weak-vs-strong differences?
 - Should the first pass use the reconstructed prompts exactly as they are, or do a final manual audit of odd cases before scoring?
 
 ## Bottom Line
 
-This repo is now at the “stimuli reconstruction complete, model scoring not yet started” stage.
+This repo is now at the “stimuli reconstruction complete, first-pass Qwen scoring complete” stage.
 
-The original Ronai & Xiang materials are preserved in `ronai_xiang_data/`. The working prompt tables and generators live in `stimuli_prompts/`. The next step is to run Qwen on those prompt tables and evaluate whether the simple alternative-probability baseline predicts the Ronai & Xiang human results across all experiments.
+The original Ronai & Xiang materials are preserved in `ronai_xiang_data/`. The working prompt tables and generators live in `stimuli_prompts/`. The Qwen scoring script and derived score table live in `model_scores/`. The next step is to aggregate the human response data and evaluate whether Qwen's raw alternative log probabilities predict the Ronai & Xiang human results across experiments.
