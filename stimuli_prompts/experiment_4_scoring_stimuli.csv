@@ -1,0 +1,301 @@
+item_id,condition,sub_experiment,weaker_lemma,weaker_surface,stronger_lemma,stronger_surface_guess,question_sentence_guess,question_auxiliary,question_generation_method,answer_sentence_guess,answer_only_insertion_method,prompt_prefix_for_qwen,target_word_seen_by_participants,answer_suffix_after_target,prompt_with_blank,dialogue_with_answer_guess,dialogue_with_stronger_answer_guess,reconstruction_note,needs_manual_review
+1,Eonlystrong,QUD+only,allowed,allowed,obligatory,obligatory,Is drinking obligatory?,is,aux_inversion,Drinking is only allowed.,insert_only_before_target,"Sue: Is drinking obligatory?
+Mary: Drinking is only ",allowed,.,"Sue: Is drinking obligatory?
+Mary: Drinking is only ___.","Sue: Is drinking obligatory?
+Mary: Drinking is only allowed.","Sue: Is drinking obligatory?
+Mary: Drinking is only obligatory.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+2,Eonlystrong,QUD+only,attractive,attractive,stunning,stunning,Is this model stunning?,is,aux_inversion,This model is only attractive.,insert_only_before_target,"Sue: Is this model stunning?
+Mary: This model is only ",attractive,.,"Sue: Is this model stunning?
+Mary: This model is only ___.","Sue: Is this model stunning?
+Mary: This model is only attractive.","Sue: Is this model stunning?
+Mary: This model is only stunning.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+3,Eonlystrong,QUD+only,begin,began,complete,completed,Did John complete the race?,did,do_support,John only began the race.,insert_only_before_target,"Sue: Did John complete the race?
+Mary: John only ",began, the race.,"Sue: Did John complete the race?
+Mary: John only ___ the race.","Sue: Did John complete the race?
+Mary: John only began the race.","Sue: Did John complete the race?
+Mary: John only completed the race.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+4,Eonlystrong,QUD+only,believe,believes,know,knows,Does the teacher know it is true?,does,do_support,The teacher only believes it is true.,insert_only_before_target,"Sue: Does the teacher know it is true?
+Mary: The teacher only ",believes, it is true.,"Sue: Does the teacher know it is true?
+Mary: The teacher only ___ it is true.","Sue: Does the teacher know it is true?
+Mary: The teacher only believes it is true.","Sue: Does the teacher know it is true?
+Mary: The teacher only knows it is true.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+5,Eonlystrong,QUD+only,big,big,enormous,enormous,Is the elephant enormous?,is,aux_inversion,The elephant is only big.,insert_only_before_target,"Sue: Is the elephant enormous?
+Mary: The elephant is only ",big,.,"Sue: Is the elephant enormous?
+Mary: The elephant is only ___.","Sue: Is the elephant enormous?
+Mary: The elephant is only big.","Sue: Is the elephant enormous?
+Mary: The elephant is only enormous.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+6,Eonlystrong,QUD+only,cool,cool,cold,cold,Is the weather cold?,is,aux_inversion,The weather is only cool.,insert_only_before_target,"Sue: Is the weather cold?
+Mary: The weather is only ",cool,.,"Sue: Is the weather cold?
+Mary: The weather is only ___.","Sue: Is the weather cold?
+Mary: The weather is only cool.","Sue: Is the weather cold?
+Mary: The weather is only cold.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+7,Eonlystrong,QUD+only,damage,damage,destroy,destroy,Might the machine destroy itself?,might,aux_inversion,The machine might only damage itself.,insert_only_before_target,"Sue: Might the machine destroy itself?
+Mary: The machine might only ",damage, itself.,"Sue: Might the machine destroy itself?
+Mary: The machine might only ___ itself.","Sue: Might the machine destroy itself?
+Mary: The machine might only damage itself.","Sue: Might the machine destroy itself?
+Mary: The machine might only destroy itself.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+8,Eonlystrong,QUD+only,dark,dark,black,black,Is the sky black?,is,aux_inversion,The sky is only dark.,insert_only_before_target,"Sue: Is the sky black?
+Mary: The sky is only ",dark,.,"Sue: Is the sky black?
+Mary: The sky is only ___.","Sue: Is the sky black?
+Mary: The sky is only dark.","Sue: Is the sky black?
+Mary: The sky is only black.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+9,Eonlystrong,QUD+only,difficult,difficult,impossible,impossible,Is the task impossible?,is,aux_inversion,The task is only difficult.,insert_only_before_target,"Sue: Is the task impossible?
+Mary: The task is only ",difficult,.,"Sue: Is the task impossible?
+Mary: The task is only ___.","Sue: Is the task impossible?
+Mary: The task is only difficult.","Sue: Is the task impossible?
+Mary: The task is only impossible.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+10,Eonlystrong,QUD+only,dirty,dirty,filthy,filthy,Was Zack's carpet filthy?,was,aux_inversion,Zack's carpet was only dirty.,insert_only_before_target,"Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was only ",dirty,.,"Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was only ___.","Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was only dirty.","Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was only filthy.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+11,Eonlystrong,QUD+only,dislike,dislikes,loathe,loathes,Does the doctor loathe coffee?,does,do_support,The doctor only dislikes coffee.,insert_only_before_target,"Sue: Does the doctor loathe coffee?
+Mary: The doctor only ",dislikes, coffee.,"Sue: Does the doctor loathe coffee?
+Mary: The doctor only ___ coffee.","Sue: Does the doctor loathe coffee?
+Mary: The doctor only dislikes coffee.","Sue: Does the doctor loathe coffee?
+Mary: The doctor only loathes coffee.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+12,Eonlystrong,QUD+only,double,double,triple,triple,Will the sales triple?,will,aux_inversion,The sales will only double.,insert_only_before_target,"Sue: Will the sales triple?
+Mary: The sales will only ",double,.,"Sue: Will the sales triple?
+Mary: The sales will only ___.","Sue: Will the sales triple?
+Mary: The sales will only double.","Sue: Will the sales triple?
+Mary: The sales will only triple.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+13,Eonlystrong,QUD+only,equally,equally,more,more,Is that candidate more skilled?,is,aux_inversion,That candidate is only equally skilled.,insert_only_before_target,"Sue: Is that candidate more skilled?
+Mary: That candidate is only ",equally, skilled.,"Sue: Is that candidate more skilled?
+Mary: That candidate is only ___ skilled.","Sue: Is that candidate more skilled?
+Mary: That candidate is only equally skilled.","Sue: Is that candidate more skilled?
+Mary: That candidate is only more skilled.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+14,Eonlystrong,QUD+only,funny,funny,hilarious,hilarious,Is the movie hilarious?,is,aux_inversion,The movie is only funny.,insert_only_before_target,"Sue: Is the movie hilarious?
+Mary: The movie is only ",funny,.,"Sue: Is the movie hilarious?
+Mary: The movie is only ___.","Sue: Is the movie hilarious?
+Mary: The movie is only funny.","Sue: Is the movie hilarious?
+Mary: The movie is only hilarious.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+15,Eonlystrong,QUD+only,good,good,excellent,excellent,Is the movie excellent?,is,aux_inversion,The movie is only good.,insert_only_before_target,"Sue: Is the movie excellent?
+Mary: The movie is only ",good,.,"Sue: Is the movie excellent?
+Mary: The movie is only ___.","Sue: Is the movie excellent?
+Mary: The movie is only good.","Sue: Is the movie excellent?
+Mary: The movie is only excellent.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+16,Eonlystrong,QUD+only,happy,happy,ecstatic,ecstatic,Was the winner ecstatic?,was,aux_inversion,The winner was only happy.,insert_only_before_target,"Sue: Was the winner ecstatic?
+Mary: The winner was only ",happy,.,"Sue: Was the winner ecstatic?
+Mary: The winner was only ___.","Sue: Was the winner ecstatic?
+Mary: The winner was only happy.","Sue: Was the winner ecstatic?
+Mary: The winner was only ecstatic.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+17,Eonlystrong,QUD+only,hard,hard,unsolvable,unsolvable,Is the problem unsolvable?,is,aux_inversion,The problem is only hard.,insert_only_before_target,"Sue: Is the problem unsolvable?
+Mary: The problem is only ",hard,.,"Sue: Is the problem unsolvable?
+Mary: The problem is only ___.","Sue: Is the problem unsolvable?
+Mary: The problem is only hard.","Sue: Is the problem unsolvable?
+Mary: The problem is only unsolvable.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+18,Eonlystrong,QUD+only,harmful,harmful,deadly,deadly,Is the toxin deadly?,is,aux_inversion,The toxin is only harmful.,insert_only_before_target,"Sue: Is the toxin deadly?
+Mary: The toxin is only ",harmful,.,"Sue: Is the toxin deadly?
+Mary: The toxin is only ___.","Sue: Is the toxin deadly?
+Mary: The toxin is only harmful.","Sue: Is the toxin deadly?
+Mary: The toxin is only deadly.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+19,Eonlystrong,QUD+only,here,here,everywhere,everywhere,Is there water everywhere?,is,aux_inversion,There is only water here.,prefix_override,"Sue: Is there water everywhere?
+Mary: There is only water ",here,.,"Sue: Is there water everywhere?
+Mary: There is only water ___.","Sue: Is there water everywhere?
+Mary: There is only water here.","Sue: Is there water everywhere?
+Mary: There is only water everywhere.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+20,Eonlystrong,QUD+only,hungry,hungry,starving,starving,Is the boy starving?,is,aux_inversion,The boy is only hungry.,insert_only_before_target,"Sue: Is the boy starving?
+Mary: The boy is only ",hungry,.,"Sue: Is the boy starving?
+Mary: The boy is only ___.","Sue: Is the boy starving?
+Mary: The boy is only hungry.","Sue: Is the boy starving?
+Mary: The boy is only starving.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+21,Eonlystrong,QUD+only,intelligent,intelligent,brilliant,brilliant,Is the student brilliant?,is,aux_inversion,The student is only intelligent.,insert_only_before_target,"Sue: Is the student brilliant?
+Mary: The student is only ",intelligent,.,"Sue: Is the student brilliant?
+Mary: The student is only ___.","Sue: Is the student brilliant?
+Mary: The student is only intelligent.","Sue: Is the student brilliant?
+Mary: The student is only brilliant.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+22,Eonlystrong,QUD+only,intimidating,intimidating,terrifying,terrifying,Was Chris's opponent terrifying?,was,aux_inversion,Chris's opponent was only intimidating.,insert_only_before_target,"Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was only ",intimidating,.,"Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was only ___.","Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was only intimidating.","Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was only terrifying.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+23,Eonlystrong,QUD+only,largely,largely,totally,totally,Was the coast totally flooded?,was,aux_inversion,The coast was only largely flooded.,insert_only_before_target,"Sue: Was the coast totally flooded?
+Mary: The coast was only ",largely, flooded.,"Sue: Was the coast totally flooded?
+Mary: The coast was only ___ flooded.","Sue: Was the coast totally flooded?
+Mary: The coast was only largely flooded.","Sue: Was the coast totally flooded?
+Mary: The coast was only totally flooded.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+24,Eonlystrong,QUD+only,like,likes,love,loves,Does the princess love dancing?,does,do_support,The princess only likes dancing.,insert_only_before_target,"Sue: Does the princess love dancing?
+Mary: The princess only ",likes, dancing.,"Sue: Does the princess love dancing?
+Mary: The princess only ___ dancing.","Sue: Does the princess love dancing?
+Mary: The princess only likes dancing.","Sue: Does the princess love dancing?
+Mary: The princess only loves dancing.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+25,Eonlystrong,QUD+only,match,matches,exceed,exceeds,Does Bill's score exceed Al's?,does,do_support,Bill's score only matches Al's.,insert_only_before_target,"Sue: Does Bill's score exceed Al's?
+Mary: Bill's score only ",matches, Al's.,"Sue: Does Bill's score exceed Al's?
+Mary: Bill's score only ___ Al's.","Sue: Does Bill's score exceed Al's?
+Mary: Bill's score only matches Al's.","Sue: Does Bill's score exceed Al's?
+Mary: Bill's score only exceeds Al's.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+26,Eonlystrong,QUD+only,mostly,mostly,entirely,entirely,Were Peter's answers entirely wrong?,were,aux_inversion,Peter's answers were only mostly wrong.,insert_only_before_target,"Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were only ",mostly, wrong.,"Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were only ___ wrong.","Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were only mostly wrong.","Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were only entirely wrong.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+27,Eonlystrong,QUD+only,old,old,ancient,ancient,Is the house ancient?,is,aux_inversion,The house is only old.,insert_only_before_target,"Sue: Is the house ancient?
+Mary: The house is only ",old,.,"Sue: Is the house ancient?
+Mary: The house is only ___.","Sue: Is the house ancient?
+Mary: The house is only old.","Sue: Is the house ancient?
+Mary: The house is only ancient.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+28,Eonlystrong,QUD+only,once,once,twice,twice,Did mistakes happen twice?,did,do_support,Mistakes happened only once.,insert_only_before_target,"Sue: Did mistakes happen twice?
+Mary: Mistakes happened only ",once,.,"Sue: Did mistakes happen twice?
+Mary: Mistakes happened only ___.","Sue: Did mistakes happen twice?
+Mary: Mistakes happened only once.","Sue: Did mistakes happen twice?
+Mary: Mistakes happened only twice.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+29,Eonlystrong,QUD+only,or,or,and,and,Does Jimmy write books and plays?,does,do_support,Jimmy writes only books or plays.,prefix_override,"Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes only books ",or, plays.,"Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes only books ___ plays.","Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes only books or plays.","Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes only books and plays.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+30,Eonlystrong,QUD+only,overweight,overweight,obese,obese,Is the teenager obese?,is,aux_inversion,The teenager is only overweight.,insert_only_before_target,"Sue: Is the teenager obese?
+Mary: The teenager is only ",overweight,.,"Sue: Is the teenager obese?
+Mary: The teenager is only ___.","Sue: Is the teenager obese?
+Mary: The teenager is only overweight.","Sue: Is the teenager obese?
+Mary: The teenager is only obese.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+31,Eonlystrong,QUD+only,overwhelmingly,overwhelmingly,unanimously,unanimously,Was the measure supported unanimously?,was,aux_inversion,The measure was supported only overwhelmingly.,insert_only_before_target,"Sue: Was the measure supported unanimously?
+Mary: The measure was supported only ",overwhelmingly,.,"Sue: Was the measure supported unanimously?
+Mary: The measure was supported only ___.","Sue: Was the measure supported unanimously?
+Mary: The measure was supported only overwhelmingly.","Sue: Was the measure supported unanimously?
+Mary: The measure was supported only unanimously.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+32,Eonlystrong,QUD+only,palatable,palatable,delicious,delicious,Is the wine delicious?,is,aux_inversion,The wine is only palatable.,insert_only_before_target,"Sue: Is the wine delicious?
+Mary: The wine is only ",palatable,.,"Sue: Is the wine delicious?
+Mary: The wine is only ___.","Sue: Is the wine delicious?
+Mary: The wine is only palatable.","Sue: Is the wine delicious?
+Mary: The wine is only delicious.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+33,Eonlystrong,QUD+only,partially,partially,completely,completely,Is the tank completely full?,is,aux_inversion,The tank is only partially full.,insert_only_before_target,"Sue: Is the tank completely full?
+Mary: The tank is only ",partially, full.,"Sue: Is the tank completely full?
+Mary: The tank is only ___ full.","Sue: Is the tank completely full?
+Mary: The tank is only partially full.","Sue: Is the tank completely full?
+Mary: The tank is only completely full.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+34,Eonlystrong,QUD+only,permit,permits,require,requires,Does the club require dancing?,does,do_support,The club only permits dancing.,insert_only_before_target,"Sue: Does the club require dancing?
+Mary: The club only ",permits, dancing.,"Sue: Does the club require dancing?
+Mary: The club only ___ dancing.","Sue: Does the club require dancing?
+Mary: The club only permits dancing.","Sue: Does the club require dancing?
+Mary: The club only requires dancing.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+35,Eonlystrong,QUD+only,polished,polished,impeccable,impeccable,Was Ann's speech impeccable?,was,aux_inversion,Ann's speech was only polished.,insert_only_before_target,"Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was only ",polished,.,"Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was only ___.","Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was only polished.","Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was only impeccable.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+36,Eonlystrong,QUD+only,possible,possible,certain,certain,Is success certain?,is,aux_inversion,Success is only possible.,insert_only_before_target,"Sue: Is success certain?
+Mary: Success is only ",possible,.,"Sue: Is success certain?
+Mary: Success is only ___.","Sue: Is success certain?
+Mary: Success is only possible.","Sue: Is success certain?
+Mary: Success is only certain.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+37,Eonlystrong,QUD+only,pretty,pretty,beautiful,beautiful,Is the girl beautiful?,is,aux_inversion,The girl is only pretty.,insert_only_before_target,"Sue: Is the girl beautiful?
+Mary: The girl is only ",pretty,.,"Sue: Is the girl beautiful?
+Mary: The girl is only ___.","Sue: Is the girl beautiful?
+Mary: The girl is only pretty.","Sue: Is the girl beautiful?
+Mary: The girl is only beautiful.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+38,Eonlystrong,QUD+only,primarily,primarily,exclusively,exclusively,Are the residents exclusively Greek?,are,aux_inversion,The residents are only primarily Greek.,insert_only_before_target,"Sue: Are the residents exclusively Greek?
+Mary: The residents are only ",primarily, Greek.,"Sue: Are the residents exclusively Greek?
+Mary: The residents are only ___ Greek.","Sue: Are the residents exclusively Greek?
+Mary: The residents are only primarily Greek.","Sue: Are the residents exclusively Greek?
+Mary: The residents are only exclusively Greek.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+39,Eonlystrong,QUD+only,probably,probably,necessarily,necessarily,Will a delay necessarily occur?,will,aux_inversion,A delay will only probably occur.,insert_only_before_target,"Sue: Will a delay necessarily occur?
+Mary: A delay will only ",probably, occur.,"Sue: Will a delay necessarily occur?
+Mary: A delay will only ___ occur.","Sue: Will a delay necessarily occur?
+Mary: A delay will only probably occur.","Sue: Will a delay necessarily occur?
+Mary: A delay will only necessarily occur.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+40,Eonlystrong,QUD+only,reduce,reduced,eliminate,eliminated,Did the city eliminate waste?,did,do_support,The city only reduced waste.,insert_only_before_target,"Sue: Did the city eliminate waste?
+Mary: The city only ",reduced, waste.,"Sue: Did the city eliminate waste?
+Mary: The city only ___ waste.","Sue: Did the city eliminate waste?
+Mary: The city only reduced waste.","Sue: Did the city eliminate waste?
+Mary: The city only eliminated waste.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+41,Eonlystrong,QUD+only,scared,scared,petrified,petrified,Was Stu's daughter petrified?,was,aux_inversion,Stu's daughter was only scared.,insert_only_before_target,"Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was only ",scared,.,"Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was only ___.","Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was only scared.","Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was only petrified.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+42,Eonlystrong,QUD+only,serious,serious,life-threatening,life-threatening,Was Kaye's illness life-threatening?,was,aux_inversion,Kaye's illness was only serious.,insert_only_before_target,"Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was only ",serious,.,"Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was only ___.","Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was only serious.","Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was only life-threatening.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+43,Eonlystrong,QUD+only,similar,similar,identical,identical,Are the two paintings identical?,are,aux_inversion,The two paintings are only similar.,insert_only_before_target,"Sue: Are the two paintings identical?
+Mary: The two paintings are only ",similar,.,"Sue: Are the two paintings identical?
+Mary: The two paintings are only ___.","Sue: Are the two paintings identical?
+Mary: The two paintings are only similar.","Sue: Are the two paintings identical?
+Mary: The two paintings are only identical.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+44,Eonlystrong,QUD+only,slow,slowed,stop,stopped,Did the train stop?,did,do_support,The train only slowed.,insert_only_before_target,"Sue: Did the train stop?
+Mary: The train only ",slowed,.,"Sue: Did the train stop?
+Mary: The train only ___.","Sue: Did the train stop?
+Mary: The train only slowed.","Sue: Did the train stop?
+Mary: The train only stopped.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+45,Eonlystrong,QUD+only,small,small,tiny,tiny,Is the fish tiny?,is,aux_inversion,The fish is only small.,insert_only_before_target,"Sue: Is the fish tiny?
+Mary: The fish is only ",small,.,"Sue: Is the fish tiny?
+Mary: The fish is only ___.","Sue: Is the fish tiny?
+Mary: The fish is only small.","Sue: Is the fish tiny?
+Mary: The fish is only tiny.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+46,Eonlystrong,QUD+only,snug,snug,tight,tight,Is the shirt tight?,is,aux_inversion,The shirt is only snug.,insert_only_before_target,"Sue: Is the shirt tight?
+Mary: The shirt is only ",snug,.,"Sue: Is the shirt tight?
+Mary: The shirt is only ___.","Sue: Is the shirt tight?
+Mary: The shirt is only snug.","Sue: Is the shirt tight?
+Mary: The shirt is only tight.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+47,Eonlystrong,QUD+only,some,some,all,all,Does Cecilia trust all politicians?,does,do_support,Cecilia trusts only some politicians.,insert_only_before_target,"Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts only ",some, politicians.,"Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts only ___ politicians.","Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts only some politicians.","Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts only all politicians.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+48,Eonlystrong,QUD+only,start,started,finish,finished,Did the runner finish?,did,do_support,The runner only started.,insert_only_before_target,"Sue: Did the runner finish?
+Mary: The runner only ",started,.,"Sue: Did the runner finish?
+Mary: The runner only ___.","Sue: Did the runner finish?
+Mary: The runner only started.","Sue: Did the runner finish?
+Mary: The runner only finished.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+49,Eonlystrong,QUD+only,survive,survived,thrive,thrived,Did the plant thrive?,did,do_support,The plant only survived.,insert_only_before_target,"Sue: Did the plant thrive?
+Mary: The plant only ",survived,.,"Sue: Did the plant thrive?
+Mary: The plant only ___.","Sue: Did the plant thrive?
+Mary: The plant only survived.","Sue: Did the plant thrive?
+Mary: The plant only thrived.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+50,Eonlystrong,QUD+only,tired,tired,exhausted,exhausted,Is the worker exhausted?,is,aux_inversion,The worker is only tired.,insert_only_before_target,"Sue: Is the worker exhausted?
+Mary: The worker is only ",tired,.,"Sue: Is the worker exhausted?
+Mary: The worker is only ___.","Sue: Is the worker exhausted?
+Mary: The worker is only tired.","Sue: Is the worker exhausted?
+Mary: The worker is only exhausted.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+51,Eonlystrong,QUD+only,tolerate,tolerate,encourage,encourage,Do Joey's parents encourage dating?,do,do_support,Joey's parents only tolerate dating.,insert_only_before_target,"Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents only ",tolerate, dating.,"Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents only ___ dating.","Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents only tolerate dating.","Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents only encourage dating.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+52,Eonlystrong,QUD+only,try,tried,succeed,succeeded,Did the candidate succeed?,did,do_support,The candidate only tried.,insert_only_before_target,"Sue: Did the candidate succeed?
+Mary: The candidate only ",tried,.,"Sue: Did the candidate succeed?
+Mary: The candidate only ___.","Sue: Did the candidate succeed?
+Mary: The candidate only tried.","Sue: Did the candidate succeed?
+Mary: The candidate only succeeded.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+53,Eonlystrong,QUD+only,ugly,ugly,hideous,hideous,Is the wallpaper hideous?,is,aux_inversion,The wallpaper is only ugly.,insert_only_before_target,"Sue: Is the wallpaper hideous?
+Mary: The wallpaper is only ",ugly,.,"Sue: Is the wallpaper hideous?
+Mary: The wallpaper is only ___.","Sue: Is the wallpaper hideous?
+Mary: The wallpaper is only ugly.","Sue: Is the wallpaper hideous?
+Mary: The wallpaper is only hideous.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+54,Eonlystrong,QUD+only,understandable,understandable,articulate,articulate,Was Tom's interview articulate?,was,aux_inversion,Tom's interview was only understandable.,insert_only_before_target,"Sue: Was Tom's interview articulate?
+Mary: Tom's interview was only ",understandable,.,"Sue: Was Tom's interview articulate?
+Mary: Tom's interview was only ___.","Sue: Was Tom's interview articulate?
+Mary: Tom's interview was only understandable.","Sue: Was Tom's interview articulate?
+Mary: Tom's interview was only articulate.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+55,Eonlystrong,QUD+only,unpleasant,unpleasant,disgusting,disgusting,Was Tim's bathroom disgusting?,was,aux_inversion,Tim's bathroom was only unpleasant.,insert_only_before_target,"Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was only ",unpleasant,.,"Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was only ___.","Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was only unpleasant.","Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was only disgusting.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+56,Eonlystrong,QUD+only,usually,usually,always,always,Is the lawyer always early?,is,aux_inversion,The lawyer is only usually early.,insert_only_before_target,"Sue: Is the lawyer always early?
+Mary: The lawyer is only ",usually, early.,"Sue: Is the lawyer always early?
+Mary: The lawyer is only ___ early.","Sue: Is the lawyer always early?
+Mary: The lawyer is only usually early.","Sue: Is the lawyer always early?
+Mary: The lawyer is only always early.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+57,Eonlystrong,QUD+only,want,wants,need,needs,Does Phoebe need a car?,does,do_support,Phoebe only wants a car.,insert_only_before_target,"Sue: Does Phoebe need a car?
+Mary: Phoebe only ",wants, a car.,"Sue: Does Phoebe need a car?
+Mary: Phoebe only ___ a car.","Sue: Does Phoebe need a car?
+Mary: Phoebe only wants a car.","Sue: Does Phoebe need a car?
+Mary: Phoebe only needs a car.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+58,Eonlystrong,QUD+only,warm,warm,hot,hot,Is the wather hot?,is,aux_inversion,The wather is only warm.,insert_only_before_target,"Sue: Is the wather hot?
+Mary: The wather is only ",warm,.,"Sue: Is the wather hot?
+Mary: The wather is only ___.","Sue: Is the wather hot?
+Mary: The wather is only warm.","Sue: Is the wather hot?
+Mary: The wather is only hot.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no
+59,Eonlystrong,QUD+only,well,well,superbly,superbly,Did the rehearsal go superbly?,did,do_support,The rehearsal only went well.,prefix_override,"Sue: Did the rehearsal go superbly?
+Mary: The rehearsal only went ",well,.,"Sue: Did the rehearsal go superbly?
+Mary: The rehearsal only went ___.","Sue: Did the rehearsal go superbly?
+Mary: The rehearsal only went well.","Sue: Did the rehearsal go superbly?
+Mary: The rehearsal only went superbly.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,yes
+60,Eonlystrong,QUD+only,willing,willing,eager,eager,Is the waiter eager?,is,aux_inversion,The waiter is only willing.,insert_only_before_target,"Sue: Is the waiter eager?
+Mary: The waiter is only ",willing,.,"Sue: Is the waiter eager?
+Mary: The waiter is only ___.","Sue: Is the waiter eager?
+Mary: The waiter is only willing.","Sue: Is the waiter eager?
+Mary: The waiter is only eager.",Experiment 4 reconstructed by combining the strong-QUD question from Experiment 2 with the only-marked answer from Experiment 3.,no

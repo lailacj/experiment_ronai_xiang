@@ -1,0 +1,481 @@
+item_id,condition,sub_experiment,weaker_lemma,weaker_surface,stronger_lemma,stronger_surface_guess,question_target_type,question_target_surface_guess,answer_sentence_guess,answer_prompt_prefix_guess,answer_target_word_seen_by_participants,answer_suffix_after_target,question_source_statement_guess,question_sentence_guess,question_auxiliary,question_generation_method,prompt_prefix_for_qwen,prompt_with_blank,dialogue_with_stronger_answer_guess,reconstruction_note,needs_manual_review
+1,Eweak,Weak QUD,allowed,allowed,obligatory,obligatory,weaker,allowed,Drinking is allowed.,Drinking is ,allowed,.,Drinking is allowed.,Is drinking allowed?,is,aux_inversion,"Sue: Is drinking allowed?
+Mary: Drinking is ","Sue: Is drinking allowed?
+Mary: Drinking is ___.","Sue: Is drinking allowed?
+Mary: Drinking is obligatory.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+1,Estrong,Strong QUD,allowed,allowed,obligatory,obligatory,stronger,obligatory,Drinking is allowed.,Drinking is ,allowed,.,Drinking is obligatory.,Is drinking obligatory?,is,aux_inversion,"Sue: Is drinking obligatory?
+Mary: Drinking is ","Sue: Is drinking obligatory?
+Mary: Drinking is ___.","Sue: Is drinking obligatory?
+Mary: Drinking is obligatory.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+2,Eweak,Weak QUD,attractive,attractive,stunning,stunning,weaker,attractive,This model is attractive.,This model is ,attractive,.,This model is attractive.,Is this model attractive?,is,aux_inversion,"Sue: Is this model attractive?
+Mary: This model is ","Sue: Is this model attractive?
+Mary: This model is ___.","Sue: Is this model attractive?
+Mary: This model is stunning.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+2,Estrong,Strong QUD,attractive,attractive,stunning,stunning,stronger,stunning,This model is attractive.,This model is ,attractive,.,This model is stunning.,Is this model stunning?,is,aux_inversion,"Sue: Is this model stunning?
+Mary: This model is ","Sue: Is this model stunning?
+Mary: This model is ___.","Sue: Is this model stunning?
+Mary: This model is stunning.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+3,Eweak,Weak QUD,begin,began,complete,completed,weaker,began,John began the race.,John ,began, the race.,John began the race.,Did John begin the race?,did,do_support,"Sue: Did John begin the race?
+Mary: John ","Sue: Did John begin the race?
+Mary: John ___ the race.","Sue: Did John begin the race?
+Mary: John completed the race.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+3,Estrong,Strong QUD,begin,began,complete,completed,stronger,completed,John began the race.,John ,began, the race.,John completed the race.,Did John complete the race?,did,do_support,"Sue: Did John complete the race?
+Mary: John ","Sue: Did John complete the race?
+Mary: John ___ the race.","Sue: Did John complete the race?
+Mary: John completed the race.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+4,Eweak,Weak QUD,believe,believes,know,knows,weaker,believes,The teacher believes it is true.,The teacher ,believes, it is true.,The teacher believes it is true.,Does the teacher believe it is true?,does,do_support,"Sue: Does the teacher believe it is true?
+Mary: The teacher ","Sue: Does the teacher believe it is true?
+Mary: The teacher ___ it is true.","Sue: Does the teacher believe it is true?
+Mary: The teacher knows it is true.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+4,Estrong,Strong QUD,believe,believes,know,knows,stronger,knows,The teacher believes it is true.,The teacher ,believes, it is true.,The teacher knows it is true.,Does the teacher know it is true?,does,do_support,"Sue: Does the teacher know it is true?
+Mary: The teacher ","Sue: Does the teacher know it is true?
+Mary: The teacher ___ it is true.","Sue: Does the teacher know it is true?
+Mary: The teacher knows it is true.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+5,Eweak,Weak QUD,big,big,enormous,enormous,weaker,big,The elephant is big.,The elephant is ,big,.,The elephant is big.,Is the elephant big?,is,aux_inversion,"Sue: Is the elephant big?
+Mary: The elephant is ","Sue: Is the elephant big?
+Mary: The elephant is ___.","Sue: Is the elephant big?
+Mary: The elephant is enormous.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+5,Estrong,Strong QUD,big,big,enormous,enormous,stronger,enormous,The elephant is big.,The elephant is ,big,.,The elephant is enormous.,Is the elephant enormous?,is,aux_inversion,"Sue: Is the elephant enormous?
+Mary: The elephant is ","Sue: Is the elephant enormous?
+Mary: The elephant is ___.","Sue: Is the elephant enormous?
+Mary: The elephant is enormous.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+6,Eweak,Weak QUD,cool,cool,cold,cold,weaker,cool,The weather is cool.,The weather is ,cool,.,The weather is cool.,Is the weather cool?,is,aux_inversion,"Sue: Is the weather cool?
+Mary: The weather is ","Sue: Is the weather cool?
+Mary: The weather is ___.","Sue: Is the weather cool?
+Mary: The weather is cold.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+6,Estrong,Strong QUD,cool,cool,cold,cold,stronger,cold,The weather is cool.,The weather is ,cool,.,The weather is cold.,Is the weather cold?,is,aux_inversion,"Sue: Is the weather cold?
+Mary: The weather is ","Sue: Is the weather cold?
+Mary: The weather is ___.","Sue: Is the weather cold?
+Mary: The weather is cold.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+7,Eweak,Weak QUD,damage,damage,destroy,destroy,weaker,damage,The machine might damage itself.,The machine might ,damage, itself.,The machine might damage itself.,Might the machine damage itself?,might,aux_inversion,"Sue: Might the machine damage itself?
+Mary: The machine might ","Sue: Might the machine damage itself?
+Mary: The machine might ___ itself.","Sue: Might the machine damage itself?
+Mary: The machine might destroy itself.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+7,Estrong,Strong QUD,damage,damage,destroy,destroy,stronger,destroy,The machine might damage itself.,The machine might ,damage, itself.,The machine might destroy itself.,Might the machine destroy itself?,might,aux_inversion,"Sue: Might the machine destroy itself?
+Mary: The machine might ","Sue: Might the machine destroy itself?
+Mary: The machine might ___ itself.","Sue: Might the machine destroy itself?
+Mary: The machine might destroy itself.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+8,Eweak,Weak QUD,dark,dark,black,black,weaker,dark,The sky is dark.,The sky is ,dark,.,The sky is dark.,Is the sky dark?,is,aux_inversion,"Sue: Is the sky dark?
+Mary: The sky is ","Sue: Is the sky dark?
+Mary: The sky is ___.","Sue: Is the sky dark?
+Mary: The sky is black.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+8,Estrong,Strong QUD,dark,dark,black,black,stronger,black,The sky is dark.,The sky is ,dark,.,The sky is black.,Is the sky black?,is,aux_inversion,"Sue: Is the sky black?
+Mary: The sky is ","Sue: Is the sky black?
+Mary: The sky is ___.","Sue: Is the sky black?
+Mary: The sky is black.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+9,Eweak,Weak QUD,difficult,difficult,impossible,impossible,weaker,difficult,The task is difficult.,The task is ,difficult,.,The task is difficult.,Is the task difficult?,is,aux_inversion,"Sue: Is the task difficult?
+Mary: The task is ","Sue: Is the task difficult?
+Mary: The task is ___.","Sue: Is the task difficult?
+Mary: The task is impossible.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+9,Estrong,Strong QUD,difficult,difficult,impossible,impossible,stronger,impossible,The task is difficult.,The task is ,difficult,.,The task is impossible.,Is the task impossible?,is,aux_inversion,"Sue: Is the task impossible?
+Mary: The task is ","Sue: Is the task impossible?
+Mary: The task is ___.","Sue: Is the task impossible?
+Mary: The task is impossible.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+10,Eweak,Weak QUD,dirty,dirty,filthy,filthy,weaker,dirty,Zack's carpet was dirty.,Zack's carpet was ,dirty,.,Zack's carpet was dirty.,Was Zack's carpet dirty?,was,aux_inversion,"Sue: Was Zack's carpet dirty?
+Mary: Zack's carpet was ","Sue: Was Zack's carpet dirty?
+Mary: Zack's carpet was ___.","Sue: Was Zack's carpet dirty?
+Mary: Zack's carpet was filthy.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+10,Estrong,Strong QUD,dirty,dirty,filthy,filthy,stronger,filthy,Zack's carpet was dirty.,Zack's carpet was ,dirty,.,Zack's carpet was filthy.,Was Zack's carpet filthy?,was,aux_inversion,"Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was ","Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was ___.","Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was filthy.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+11,Eweak,Weak QUD,dislike,dislikes,loathe,loathes,weaker,dislikes,The doctor dislikes coffee.,The doctor ,dislikes, coffee.,The doctor dislikes coffee.,Does the doctor dislike coffee?,does,do_support,"Sue: Does the doctor dislike coffee?
+Mary: The doctor ","Sue: Does the doctor dislike coffee?
+Mary: The doctor ___ coffee.","Sue: Does the doctor dislike coffee?
+Mary: The doctor loathes coffee.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+11,Estrong,Strong QUD,dislike,dislikes,loathe,loathes,stronger,loathes,The doctor dislikes coffee.,The doctor ,dislikes, coffee.,The doctor loathes coffee.,Does the doctor loathe coffee?,does,do_support,"Sue: Does the doctor loathe coffee?
+Mary: The doctor ","Sue: Does the doctor loathe coffee?
+Mary: The doctor ___ coffee.","Sue: Does the doctor loathe coffee?
+Mary: The doctor loathes coffee.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+12,Eweak,Weak QUD,double,double,triple,triple,weaker,double,The sales will double.,The sales will ,double,.,The sales will double.,Will the sales double?,will,aux_inversion,"Sue: Will the sales double?
+Mary: The sales will ","Sue: Will the sales double?
+Mary: The sales will ___.","Sue: Will the sales double?
+Mary: The sales will triple.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+12,Estrong,Strong QUD,double,double,triple,triple,stronger,triple,The sales will double.,The sales will ,double,.,The sales will triple.,Will the sales triple?,will,aux_inversion,"Sue: Will the sales triple?
+Mary: The sales will ","Sue: Will the sales triple?
+Mary: The sales will ___.","Sue: Will the sales triple?
+Mary: The sales will triple.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+13,Eweak,Weak QUD,equally,equally,more,more,weaker,equally,That candidate is equally skilled.,That candidate is ,equally, skilled.,That candidate is equally skilled.,Is that candidate equally skilled?,is,aux_inversion,"Sue: Is that candidate equally skilled?
+Mary: That candidate is ","Sue: Is that candidate equally skilled?
+Mary: That candidate is ___ skilled.","Sue: Is that candidate equally skilled?
+Mary: That candidate is more skilled.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+13,Estrong,Strong QUD,equally,equally,more,more,stronger,more,That candidate is equally skilled.,That candidate is ,equally, skilled.,That candidate is more skilled.,Is that candidate more skilled?,is,aux_inversion,"Sue: Is that candidate more skilled?
+Mary: That candidate is ","Sue: Is that candidate more skilled?
+Mary: That candidate is ___ skilled.","Sue: Is that candidate more skilled?
+Mary: That candidate is more skilled.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+14,Eweak,Weak QUD,funny,funny,hilarious,hilarious,weaker,funny,The movie is funny.,The movie is ,funny,.,The movie is funny.,Is the movie funny?,is,aux_inversion,"Sue: Is the movie funny?
+Mary: The movie is ","Sue: Is the movie funny?
+Mary: The movie is ___.","Sue: Is the movie funny?
+Mary: The movie is hilarious.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+14,Estrong,Strong QUD,funny,funny,hilarious,hilarious,stronger,hilarious,The movie is funny.,The movie is ,funny,.,The movie is hilarious.,Is the movie hilarious?,is,aux_inversion,"Sue: Is the movie hilarious?
+Mary: The movie is ","Sue: Is the movie hilarious?
+Mary: The movie is ___.","Sue: Is the movie hilarious?
+Mary: The movie is hilarious.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+15,Eweak,Weak QUD,good,good,excellent,excellent,weaker,good,The movie is good.,The movie is ,good,.,The movie is good.,Is the movie good?,is,aux_inversion,"Sue: Is the movie good?
+Mary: The movie is ","Sue: Is the movie good?
+Mary: The movie is ___.","Sue: Is the movie good?
+Mary: The movie is excellent.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+15,Estrong,Strong QUD,good,good,excellent,excellent,stronger,excellent,The movie is good.,The movie is ,good,.,The movie is excellent.,Is the movie excellent?,is,aux_inversion,"Sue: Is the movie excellent?
+Mary: The movie is ","Sue: Is the movie excellent?
+Mary: The movie is ___.","Sue: Is the movie excellent?
+Mary: The movie is excellent.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+16,Eweak,Weak QUD,happy,happy,ecstatic,ecstatic,weaker,happy,The winner was happy.,The winner was ,happy,.,The winner was happy.,Was the winner happy?,was,aux_inversion,"Sue: Was the winner happy?
+Mary: The winner was ","Sue: Was the winner happy?
+Mary: The winner was ___.","Sue: Was the winner happy?
+Mary: The winner was ecstatic.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+16,Estrong,Strong QUD,happy,happy,ecstatic,ecstatic,stronger,ecstatic,The winner was happy.,The winner was ,happy,.,The winner was ecstatic.,Was the winner ecstatic?,was,aux_inversion,"Sue: Was the winner ecstatic?
+Mary: The winner was ","Sue: Was the winner ecstatic?
+Mary: The winner was ___.","Sue: Was the winner ecstatic?
+Mary: The winner was ecstatic.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+17,Eweak,Weak QUD,hard,hard,unsolvable,unsolvable,weaker,hard,The problem is hard.,The problem is ,hard,.,The problem is hard.,Is the problem hard?,is,aux_inversion,"Sue: Is the problem hard?
+Mary: The problem is ","Sue: Is the problem hard?
+Mary: The problem is ___.","Sue: Is the problem hard?
+Mary: The problem is unsolvable.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+17,Estrong,Strong QUD,hard,hard,unsolvable,unsolvable,stronger,unsolvable,The problem is hard.,The problem is ,hard,.,The problem is unsolvable.,Is the problem unsolvable?,is,aux_inversion,"Sue: Is the problem unsolvable?
+Mary: The problem is ","Sue: Is the problem unsolvable?
+Mary: The problem is ___.","Sue: Is the problem unsolvable?
+Mary: The problem is unsolvable.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+18,Eweak,Weak QUD,harmful,harmful,deadly,deadly,weaker,harmful,The toxin is harmful.,The toxin is ,harmful,.,The toxin is harmful.,Is the toxin harmful?,is,aux_inversion,"Sue: Is the toxin harmful?
+Mary: The toxin is ","Sue: Is the toxin harmful?
+Mary: The toxin is ___.","Sue: Is the toxin harmful?
+Mary: The toxin is deadly.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+18,Estrong,Strong QUD,harmful,harmful,deadly,deadly,stronger,deadly,The toxin is harmful.,The toxin is ,harmful,.,The toxin is deadly.,Is the toxin deadly?,is,aux_inversion,"Sue: Is the toxin deadly?
+Mary: The toxin is ","Sue: Is the toxin deadly?
+Mary: The toxin is ___.","Sue: Is the toxin deadly?
+Mary: The toxin is deadly.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+19,Eweak,Weak QUD,here,here,everywhere,everywhere,weaker,here,There is water here.,There is water ,here,.,There is water here.,Is there water here?,is,aux_inversion,"Sue: Is there water here?
+Mary: There is water ","Sue: Is there water here?
+Mary: There is water ___.","Sue: Is there water here?
+Mary: There is water everywhere.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+19,Estrong,Strong QUD,here,here,everywhere,everywhere,stronger,everywhere,There is water here.,There is water ,here,.,There is water everywhere.,Is there water everywhere?,is,aux_inversion,"Sue: Is there water everywhere?
+Mary: There is water ","Sue: Is there water everywhere?
+Mary: There is water ___.","Sue: Is there water everywhere?
+Mary: There is water everywhere.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+20,Eweak,Weak QUD,hungry,hungry,starving,starving,weaker,hungry,The boy is hungry.,The boy is ,hungry,.,The boy is hungry.,Is the boy hungry?,is,aux_inversion,"Sue: Is the boy hungry?
+Mary: The boy is ","Sue: Is the boy hungry?
+Mary: The boy is ___.","Sue: Is the boy hungry?
+Mary: The boy is starving.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+20,Estrong,Strong QUD,hungry,hungry,starving,starving,stronger,starving,The boy is hungry.,The boy is ,hungry,.,The boy is starving.,Is the boy starving?,is,aux_inversion,"Sue: Is the boy starving?
+Mary: The boy is ","Sue: Is the boy starving?
+Mary: The boy is ___.","Sue: Is the boy starving?
+Mary: The boy is starving.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+21,Eweak,Weak QUD,intelligent,intelligent,brilliant,brilliant,weaker,intelligent,The student is intelligent.,The student is ,intelligent,.,The student is intelligent.,Is the student intelligent?,is,aux_inversion,"Sue: Is the student intelligent?
+Mary: The student is ","Sue: Is the student intelligent?
+Mary: The student is ___.","Sue: Is the student intelligent?
+Mary: The student is brilliant.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+21,Estrong,Strong QUD,intelligent,intelligent,brilliant,brilliant,stronger,brilliant,The student is intelligent.,The student is ,intelligent,.,The student is brilliant.,Is the student brilliant?,is,aux_inversion,"Sue: Is the student brilliant?
+Mary: The student is ","Sue: Is the student brilliant?
+Mary: The student is ___.","Sue: Is the student brilliant?
+Mary: The student is brilliant.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+22,Eweak,Weak QUD,intimidating,intimidating,terrifying,terrifying,weaker,intimidating,Chris's opponent was intimidating.,Chris's opponent was ,intimidating,.,Chris's opponent was intimidating.,Was Chris's opponent intimidating?,was,aux_inversion,"Sue: Was Chris's opponent intimidating?
+Mary: Chris's opponent was ","Sue: Was Chris's opponent intimidating?
+Mary: Chris's opponent was ___.","Sue: Was Chris's opponent intimidating?
+Mary: Chris's opponent was terrifying.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+22,Estrong,Strong QUD,intimidating,intimidating,terrifying,terrifying,stronger,terrifying,Chris's opponent was intimidating.,Chris's opponent was ,intimidating,.,Chris's opponent was terrifying.,Was Chris's opponent terrifying?,was,aux_inversion,"Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was ","Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was ___.","Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was terrifying.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+23,Eweak,Weak QUD,largely,largely,totally,totally,weaker,largely,The coast was largely flooded.,The coast was ,largely, flooded.,The coast was largely flooded.,Was the coast largely flooded?,was,aux_inversion,"Sue: Was the coast largely flooded?
+Mary: The coast was ","Sue: Was the coast largely flooded?
+Mary: The coast was ___ flooded.","Sue: Was the coast largely flooded?
+Mary: The coast was totally flooded.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+23,Estrong,Strong QUD,largely,largely,totally,totally,stronger,totally,The coast was largely flooded.,The coast was ,largely, flooded.,The coast was totally flooded.,Was the coast totally flooded?,was,aux_inversion,"Sue: Was the coast totally flooded?
+Mary: The coast was ","Sue: Was the coast totally flooded?
+Mary: The coast was ___ flooded.","Sue: Was the coast totally flooded?
+Mary: The coast was totally flooded.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+24,Eweak,Weak QUD,like,likes,love,loves,weaker,likes,The princess likes dancing.,The princess ,likes, dancing.,The princess likes dancing.,Does the princess like dancing?,does,do_support,"Sue: Does the princess like dancing?
+Mary: The princess ","Sue: Does the princess like dancing?
+Mary: The princess ___ dancing.","Sue: Does the princess like dancing?
+Mary: The princess loves dancing.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+24,Estrong,Strong QUD,like,likes,love,loves,stronger,loves,The princess likes dancing.,The princess ,likes, dancing.,The princess loves dancing.,Does the princess love dancing?,does,do_support,"Sue: Does the princess love dancing?
+Mary: The princess ","Sue: Does the princess love dancing?
+Mary: The princess ___ dancing.","Sue: Does the princess love dancing?
+Mary: The princess loves dancing.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+25,Eweak,Weak QUD,match,matches,exceed,exceeds,weaker,matches,Bill's score matches Al's.,Bill's score ,matches, Al's.,Bill's score matches Al's.,Does Bill's score match Al's?,does,do_support,"Sue: Does Bill's score match Al's?
+Mary: Bill's score ","Sue: Does Bill's score match Al's?
+Mary: Bill's score ___ Al's.","Sue: Does Bill's score match Al's?
+Mary: Bill's score exceeds Al's.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+25,Estrong,Strong QUD,match,matches,exceed,exceeds,stronger,exceeds,Bill's score matches Al's.,Bill's score ,matches, Al's.,Bill's score exceeds Al's.,Does Bill's score exceed Al's?,does,do_support,"Sue: Does Bill's score exceed Al's?
+Mary: Bill's score ","Sue: Does Bill's score exceed Al's?
+Mary: Bill's score ___ Al's.","Sue: Does Bill's score exceed Al's?
+Mary: Bill's score exceeds Al's.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+26,Eweak,Weak QUD,mostly,mostly,entirely,entirely,weaker,mostly,Peter's answers were mostly wrong.,Peter's answers were ,mostly, wrong.,Peter's answers were mostly wrong.,Were Peter's answers mostly wrong?,were,aux_inversion,"Sue: Were Peter's answers mostly wrong?
+Mary: Peter's answers were ","Sue: Were Peter's answers mostly wrong?
+Mary: Peter's answers were ___ wrong.","Sue: Were Peter's answers mostly wrong?
+Mary: Peter's answers were entirely wrong.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+26,Estrong,Strong QUD,mostly,mostly,entirely,entirely,stronger,entirely,Peter's answers were mostly wrong.,Peter's answers were ,mostly, wrong.,Peter's answers were entirely wrong.,Were Peter's answers entirely wrong?,were,aux_inversion,"Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were ","Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were ___ wrong.","Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were entirely wrong.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+27,Eweak,Weak QUD,old,old,ancient,ancient,weaker,old,The house is old.,The house is ,old,.,The house is old.,Is the house old?,is,aux_inversion,"Sue: Is the house old?
+Mary: The house is ","Sue: Is the house old?
+Mary: The house is ___.","Sue: Is the house old?
+Mary: The house is ancient.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+27,Estrong,Strong QUD,old,old,ancient,ancient,stronger,ancient,The house is old.,The house is ,old,.,The house is ancient.,Is the house ancient?,is,aux_inversion,"Sue: Is the house ancient?
+Mary: The house is ","Sue: Is the house ancient?
+Mary: The house is ___.","Sue: Is the house ancient?
+Mary: The house is ancient.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+28,Eweak,Weak QUD,once,once,twice,twice,weaker,once,Mistakes happened once.,Mistakes happened ,once,.,Mistakes happened once.,Did mistakes happen once?,did,do_support,"Sue: Did mistakes happen once?
+Mary: Mistakes happened ","Sue: Did mistakes happen once?
+Mary: Mistakes happened ___.","Sue: Did mistakes happen once?
+Mary: Mistakes happened twice.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+28,Estrong,Strong QUD,once,once,twice,twice,stronger,twice,Mistakes happened once.,Mistakes happened ,once,.,Mistakes happened twice.,Did mistakes happen twice?,did,do_support,"Sue: Did mistakes happen twice?
+Mary: Mistakes happened ","Sue: Did mistakes happen twice?
+Mary: Mistakes happened ___.","Sue: Did mistakes happen twice?
+Mary: Mistakes happened twice.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+29,Eweak,Weak QUD,or,or,and,and,weaker,or,Jimmy writes books or plays.,Jimmy writes books ,or, plays.,Jimmy writes books or plays.,Does Jimmy write books or plays?,does,do_support,"Sue: Does Jimmy write books or plays?
+Mary: Jimmy writes books ","Sue: Does Jimmy write books or plays?
+Mary: Jimmy writes books ___ plays.","Sue: Does Jimmy write books or plays?
+Mary: Jimmy writes books and plays.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+29,Estrong,Strong QUD,or,or,and,and,stronger,and,Jimmy writes books or plays.,Jimmy writes books ,or, plays.,Jimmy writes books and plays.,Does Jimmy write books and plays?,does,do_support,"Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes books ","Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes books ___ plays.","Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes books and plays.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+30,Eweak,Weak QUD,overweight,overweight,obese,obese,weaker,overweight,The teenager is overweight.,The teenager is ,overweight,.,The teenager is overweight.,Is the teenager overweight?,is,aux_inversion,"Sue: Is the teenager overweight?
+Mary: The teenager is ","Sue: Is the teenager overweight?
+Mary: The teenager is ___.","Sue: Is the teenager overweight?
+Mary: The teenager is obese.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+30,Estrong,Strong QUD,overweight,overweight,obese,obese,stronger,obese,The teenager is overweight.,The teenager is ,overweight,.,The teenager is obese.,Is the teenager obese?,is,aux_inversion,"Sue: Is the teenager obese?
+Mary: The teenager is ","Sue: Is the teenager obese?
+Mary: The teenager is ___.","Sue: Is the teenager obese?
+Mary: The teenager is obese.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+31,Eweak,Weak QUD,overwhelmingly,overwhelmingly,unanimously,unanimously,weaker,overwhelmingly,The measure was supported overwhelmingly.,The measure was supported ,overwhelmingly,.,The measure was supported overwhelmingly.,Was the measure supported overwhelmingly?,was,aux_inversion,"Sue: Was the measure supported overwhelmingly?
+Mary: The measure was supported ","Sue: Was the measure supported overwhelmingly?
+Mary: The measure was supported ___.","Sue: Was the measure supported overwhelmingly?
+Mary: The measure was supported unanimously.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+31,Estrong,Strong QUD,overwhelmingly,overwhelmingly,unanimously,unanimously,stronger,unanimously,The measure was supported overwhelmingly.,The measure was supported ,overwhelmingly,.,The measure was supported unanimously.,Was the measure supported unanimously?,was,aux_inversion,"Sue: Was the measure supported unanimously?
+Mary: The measure was supported ","Sue: Was the measure supported unanimously?
+Mary: The measure was supported ___.","Sue: Was the measure supported unanimously?
+Mary: The measure was supported unanimously.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+32,Eweak,Weak QUD,palatable,palatable,delicious,delicious,weaker,palatable,The wine is palatable.,The wine is ,palatable,.,The wine is palatable.,Is the wine palatable?,is,aux_inversion,"Sue: Is the wine palatable?
+Mary: The wine is ","Sue: Is the wine palatable?
+Mary: The wine is ___.","Sue: Is the wine palatable?
+Mary: The wine is delicious.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+32,Estrong,Strong QUD,palatable,palatable,delicious,delicious,stronger,delicious,The wine is palatable.,The wine is ,palatable,.,The wine is delicious.,Is the wine delicious?,is,aux_inversion,"Sue: Is the wine delicious?
+Mary: The wine is ","Sue: Is the wine delicious?
+Mary: The wine is ___.","Sue: Is the wine delicious?
+Mary: The wine is delicious.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+33,Eweak,Weak QUD,partially,partially,completely,completely,weaker,partially,The tank is partially full.,The tank is ,partially, full.,The tank is partially full.,Is the tank partially full?,is,aux_inversion,"Sue: Is the tank partially full?
+Mary: The tank is ","Sue: Is the tank partially full?
+Mary: The tank is ___ full.","Sue: Is the tank partially full?
+Mary: The tank is completely full.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+33,Estrong,Strong QUD,partially,partially,completely,completely,stronger,completely,The tank is partially full.,The tank is ,partially, full.,The tank is completely full.,Is the tank completely full?,is,aux_inversion,"Sue: Is the tank completely full?
+Mary: The tank is ","Sue: Is the tank completely full?
+Mary: The tank is ___ full.","Sue: Is the tank completely full?
+Mary: The tank is completely full.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+34,Eweak,Weak QUD,permit,permits,require,requires,weaker,permits,The club permits dancing.,The club ,permits, dancing.,The club permits dancing.,Does the club permit dancing?,does,do_support,"Sue: Does the club permit dancing?
+Mary: The club ","Sue: Does the club permit dancing?
+Mary: The club ___ dancing.","Sue: Does the club permit dancing?
+Mary: The club requires dancing.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+34,Estrong,Strong QUD,permit,permits,require,requires,stronger,requires,The club permits dancing.,The club ,permits, dancing.,The club requires dancing.,Does the club require dancing?,does,do_support,"Sue: Does the club require dancing?
+Mary: The club ","Sue: Does the club require dancing?
+Mary: The club ___ dancing.","Sue: Does the club require dancing?
+Mary: The club requires dancing.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+35,Eweak,Weak QUD,polished,polished,impeccable,impeccable,weaker,polished,Ann's speech was polished.,Ann's speech was ,polished,.,Ann's speech was polished.,Was Ann's speech polished?,was,aux_inversion,"Sue: Was Ann's speech polished?
+Mary: Ann's speech was ","Sue: Was Ann's speech polished?
+Mary: Ann's speech was ___.","Sue: Was Ann's speech polished?
+Mary: Ann's speech was impeccable.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+35,Estrong,Strong QUD,polished,polished,impeccable,impeccable,stronger,impeccable,Ann's speech was polished.,Ann's speech was ,polished,.,Ann's speech was impeccable.,Was Ann's speech impeccable?,was,aux_inversion,"Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was ","Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was ___.","Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was impeccable.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+36,Eweak,Weak QUD,possible,possible,certain,certain,weaker,possible,Success is possible.,Success is ,possible,.,Success is possible.,Is success possible?,is,aux_inversion,"Sue: Is success possible?
+Mary: Success is ","Sue: Is success possible?
+Mary: Success is ___.","Sue: Is success possible?
+Mary: Success is certain.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+36,Estrong,Strong QUD,possible,possible,certain,certain,stronger,certain,Success is possible.,Success is ,possible,.,Success is certain.,Is success certain?,is,aux_inversion,"Sue: Is success certain?
+Mary: Success is ","Sue: Is success certain?
+Mary: Success is ___.","Sue: Is success certain?
+Mary: Success is certain.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+37,Eweak,Weak QUD,pretty,pretty,beautiful,beautiful,weaker,pretty,The girl is pretty.,The girl is ,pretty,.,The girl is pretty.,Is the girl pretty?,is,aux_inversion,"Sue: Is the girl pretty?
+Mary: The girl is ","Sue: Is the girl pretty?
+Mary: The girl is ___.","Sue: Is the girl pretty?
+Mary: The girl is beautiful.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+37,Estrong,Strong QUD,pretty,pretty,beautiful,beautiful,stronger,beautiful,The girl is pretty.,The girl is ,pretty,.,The girl is beautiful.,Is the girl beautiful?,is,aux_inversion,"Sue: Is the girl beautiful?
+Mary: The girl is ","Sue: Is the girl beautiful?
+Mary: The girl is ___.","Sue: Is the girl beautiful?
+Mary: The girl is beautiful.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+38,Eweak,Weak QUD,primarily,primarily,exclusively,exclusively,weaker,primarily,The residents are primarily Greek.,The residents are ,primarily, Greek.,The residents are primarily Greek.,Are the residents primarily Greek?,are,aux_inversion,"Sue: Are the residents primarily Greek?
+Mary: The residents are ","Sue: Are the residents primarily Greek?
+Mary: The residents are ___ Greek.","Sue: Are the residents primarily Greek?
+Mary: The residents are exclusively Greek.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+38,Estrong,Strong QUD,primarily,primarily,exclusively,exclusively,stronger,exclusively,The residents are primarily Greek.,The residents are ,primarily, Greek.,The residents are exclusively Greek.,Are the residents exclusively Greek?,are,aux_inversion,"Sue: Are the residents exclusively Greek?
+Mary: The residents are ","Sue: Are the residents exclusively Greek?
+Mary: The residents are ___ Greek.","Sue: Are the residents exclusively Greek?
+Mary: The residents are exclusively Greek.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+39,Eweak,Weak QUD,probably,probably,necessarily,necessarily,weaker,probably,A delay will probably occur.,A delay will ,probably, occur.,A delay will probably occur.,Will a delay probably occur?,will,aux_inversion,"Sue: Will a delay probably occur?
+Mary: A delay will ","Sue: Will a delay probably occur?
+Mary: A delay will ___ occur.","Sue: Will a delay probably occur?
+Mary: A delay will necessarily occur.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+39,Estrong,Strong QUD,probably,probably,necessarily,necessarily,stronger,necessarily,A delay will probably occur.,A delay will ,probably, occur.,A delay will necessarily occur.,Will a delay necessarily occur?,will,aux_inversion,"Sue: Will a delay necessarily occur?
+Mary: A delay will ","Sue: Will a delay necessarily occur?
+Mary: A delay will ___ occur.","Sue: Will a delay necessarily occur?
+Mary: A delay will necessarily occur.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+40,Eweak,Weak QUD,reduce,reduced,eliminate,eliminated,weaker,reduced,The city reduced waste.,The city ,reduced, waste.,The city reduced waste.,Did the city reduce waste?,did,do_support,"Sue: Did the city reduce waste?
+Mary: The city ","Sue: Did the city reduce waste?
+Mary: The city ___ waste.","Sue: Did the city reduce waste?
+Mary: The city eliminated waste.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+40,Estrong,Strong QUD,reduce,reduced,eliminate,eliminated,stronger,eliminated,The city reduced waste.,The city ,reduced, waste.,The city eliminated waste.,Did the city eliminate waste?,did,do_support,"Sue: Did the city eliminate waste?
+Mary: The city ","Sue: Did the city eliminate waste?
+Mary: The city ___ waste.","Sue: Did the city eliminate waste?
+Mary: The city eliminated waste.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+41,Eweak,Weak QUD,scared,scared,petrified,petrified,weaker,scared,Stu's daughter was scared.,Stu's daughter was ,scared,.,Stu's daughter was scared.,Was Stu's daughter scared?,was,aux_inversion,"Sue: Was Stu's daughter scared?
+Mary: Stu's daughter was ","Sue: Was Stu's daughter scared?
+Mary: Stu's daughter was ___.","Sue: Was Stu's daughter scared?
+Mary: Stu's daughter was petrified.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+41,Estrong,Strong QUD,scared,scared,petrified,petrified,stronger,petrified,Stu's daughter was scared.,Stu's daughter was ,scared,.,Stu's daughter was petrified.,Was Stu's daughter petrified?,was,aux_inversion,"Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was ","Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was ___.","Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was petrified.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+42,Eweak,Weak QUD,serious,serious,life-threatening,life-threatening,weaker,serious,Kaye's illness was serious.,Kaye's illness was ,serious,.,Kaye's illness was serious.,Was Kaye's illness serious?,was,aux_inversion,"Sue: Was Kaye's illness serious?
+Mary: Kaye's illness was ","Sue: Was Kaye's illness serious?
+Mary: Kaye's illness was ___.","Sue: Was Kaye's illness serious?
+Mary: Kaye's illness was life-threatening.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+42,Estrong,Strong QUD,serious,serious,life-threatening,life-threatening,stronger,life-threatening,Kaye's illness was serious.,Kaye's illness was ,serious,.,Kaye's illness was life-threatening.,Was Kaye's illness life-threatening?,was,aux_inversion,"Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was ","Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was ___.","Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was life-threatening.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+43,Eweak,Weak QUD,similar,similar,identical,identical,weaker,similar,The two paintings are similar.,The two paintings are ,similar,.,The two paintings are similar.,Are the two paintings similar?,are,aux_inversion,"Sue: Are the two paintings similar?
+Mary: The two paintings are ","Sue: Are the two paintings similar?
+Mary: The two paintings are ___.","Sue: Are the two paintings similar?
+Mary: The two paintings are identical.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+43,Estrong,Strong QUD,similar,similar,identical,identical,stronger,identical,The two paintings are similar.,The two paintings are ,similar,.,The two paintings are identical.,Are the two paintings identical?,are,aux_inversion,"Sue: Are the two paintings identical?
+Mary: The two paintings are ","Sue: Are the two paintings identical?
+Mary: The two paintings are ___.","Sue: Are the two paintings identical?
+Mary: The two paintings are identical.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+44,Eweak,Weak QUD,slow,slowed,stop,stopped,weaker,slowed,The train slowed.,The train ,slowed,.,The train slowed.,Did the train slow down?,did,question_override,"Sue: Did the train slow down?
+Mary: The train ","Sue: Did the train slow down?
+Mary: The train ___.","Sue: Did the train slow down?
+Mary: The train stopped.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+44,Estrong,Strong QUD,slow,slowed,stop,stopped,stronger,stopped,The train slowed.,The train ,slowed,.,The train stopped.,Did the train stop?,did,do_support,"Sue: Did the train stop?
+Mary: The train ","Sue: Did the train stop?
+Mary: The train ___.","Sue: Did the train stop?
+Mary: The train stopped.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+45,Eweak,Weak QUD,small,small,tiny,tiny,weaker,small,The fish is small.,The fish is ,small,.,The fish is small.,Is the fish small?,is,aux_inversion,"Sue: Is the fish small?
+Mary: The fish is ","Sue: Is the fish small?
+Mary: The fish is ___.","Sue: Is the fish small?
+Mary: The fish is tiny.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+45,Estrong,Strong QUD,small,small,tiny,tiny,stronger,tiny,The fish is small.,The fish is ,small,.,The fish is tiny.,Is the fish tiny?,is,aux_inversion,"Sue: Is the fish tiny?
+Mary: The fish is ","Sue: Is the fish tiny?
+Mary: The fish is ___.","Sue: Is the fish tiny?
+Mary: The fish is tiny.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+46,Eweak,Weak QUD,snug,snug,tight,tight,weaker,snug,The shirt is snug.,The shirt is ,snug,.,The shirt is snug.,Is the shirt snug?,is,aux_inversion,"Sue: Is the shirt snug?
+Mary: The shirt is ","Sue: Is the shirt snug?
+Mary: The shirt is ___.","Sue: Is the shirt snug?
+Mary: The shirt is tight.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+46,Estrong,Strong QUD,snug,snug,tight,tight,stronger,tight,The shirt is snug.,The shirt is ,snug,.,The shirt is tight.,Is the shirt tight?,is,aux_inversion,"Sue: Is the shirt tight?
+Mary: The shirt is ","Sue: Is the shirt tight?
+Mary: The shirt is ___.","Sue: Is the shirt tight?
+Mary: The shirt is tight.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+47,Eweak,Weak QUD,some,some,all,all,weaker,some,Cecilia trusts some politicians.,Cecilia trusts ,some, politicians.,Cecilia trusts some politicians.,Does Cecilia trust some politicians?,does,do_support,"Sue: Does Cecilia trust some politicians?
+Mary: Cecilia trusts ","Sue: Does Cecilia trust some politicians?
+Mary: Cecilia trusts ___ politicians.","Sue: Does Cecilia trust some politicians?
+Mary: Cecilia trusts all politicians.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+47,Estrong,Strong QUD,some,some,all,all,stronger,all,Cecilia trusts some politicians.,Cecilia trusts ,some, politicians.,Cecilia trusts all politicians.,Does Cecilia trust all politicians?,does,do_support,"Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts ","Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts ___ politicians.","Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts all politicians.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+48,Eweak,Weak QUD,start,started,finish,finished,weaker,started,The runner started.,The runner ,started,.,The runner started.,Did the runner start?,did,do_support,"Sue: Did the runner start?
+Mary: The runner ","Sue: Did the runner start?
+Mary: The runner ___.","Sue: Did the runner start?
+Mary: The runner finished.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+48,Estrong,Strong QUD,start,started,finish,finished,stronger,finished,The runner started.,The runner ,started,.,The runner finished.,Did the runner finish?,did,do_support,"Sue: Did the runner finish?
+Mary: The runner ","Sue: Did the runner finish?
+Mary: The runner ___.","Sue: Did the runner finish?
+Mary: The runner finished.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+49,Eweak,Weak QUD,survive,survived,thrive,thrived,weaker,survived,The plant survived.,The plant ,survived,.,The plant survived.,Did the plant survive?,did,do_support,"Sue: Did the plant survive?
+Mary: The plant ","Sue: Did the plant survive?
+Mary: The plant ___.","Sue: Did the plant survive?
+Mary: The plant thrived.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+49,Estrong,Strong QUD,survive,survived,thrive,thrived,stronger,thrived,The plant survived.,The plant ,survived,.,The plant thrived.,Did the plant thrive?,did,do_support,"Sue: Did the plant thrive?
+Mary: The plant ","Sue: Did the plant thrive?
+Mary: The plant ___.","Sue: Did the plant thrive?
+Mary: The plant thrived.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+50,Eweak,Weak QUD,tired,tired,exhausted,exhausted,weaker,tired,The worker is tired.,The worker is ,tired,.,The worker is tired.,Is the worker tired?,is,aux_inversion,"Sue: Is the worker tired?
+Mary: The worker is ","Sue: Is the worker tired?
+Mary: The worker is ___.","Sue: Is the worker tired?
+Mary: The worker is exhausted.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+50,Estrong,Strong QUD,tired,tired,exhausted,exhausted,stronger,exhausted,The worker is tired.,The worker is ,tired,.,The worker is exhausted.,Is the worker exhausted?,is,aux_inversion,"Sue: Is the worker exhausted?
+Mary: The worker is ","Sue: Is the worker exhausted?
+Mary: The worker is ___.","Sue: Is the worker exhausted?
+Mary: The worker is exhausted.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+51,Eweak,Weak QUD,tolerate,tolerate,encourage,encourage,weaker,tolerate,Joey's parents tolerate dating.,Joey's parents ,tolerate, dating.,Joey's parents tolerate dating.,Do Joey's parents tolerate dating?,do,do_support,"Sue: Do Joey's parents tolerate dating?
+Mary: Joey's parents ","Sue: Do Joey's parents tolerate dating?
+Mary: Joey's parents ___ dating.","Sue: Do Joey's parents tolerate dating?
+Mary: Joey's parents encourage dating.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+51,Estrong,Strong QUD,tolerate,tolerate,encourage,encourage,stronger,encourage,Joey's parents tolerate dating.,Joey's parents ,tolerate, dating.,Joey's parents encourage dating.,Do Joey's parents encourage dating?,do,do_support,"Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents ","Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents ___ dating.","Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents encourage dating.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+52,Eweak,Weak QUD,try,tried,succeed,succeeded,weaker,tried,The candidate tried.,The candidate ,tried,.,The candidate tried.,Did the candidate try?,did,do_support,"Sue: Did the candidate try?
+Mary: The candidate ","Sue: Did the candidate try?
+Mary: The candidate ___.","Sue: Did the candidate try?
+Mary: The candidate succeeded.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+52,Estrong,Strong QUD,try,tried,succeed,succeeded,stronger,succeeded,The candidate tried.,The candidate ,tried,.,The candidate succeeded.,Did the candidate succeed?,did,do_support,"Sue: Did the candidate succeed?
+Mary: The candidate ","Sue: Did the candidate succeed?
+Mary: The candidate ___.","Sue: Did the candidate succeed?
+Mary: The candidate succeeded.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+53,Eweak,Weak QUD,ugly,ugly,hideous,hideous,weaker,ugly,The wallpaper is ugly.,The wallpaper is ,ugly,.,The wallpaper is ugly.,Is the wallpaper ugly?,is,aux_inversion,"Sue: Is the wallpaper ugly?
+Mary: The wallpaper is ","Sue: Is the wallpaper ugly?
+Mary: The wallpaper is ___.","Sue: Is the wallpaper ugly?
+Mary: The wallpaper is hideous.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+53,Estrong,Strong QUD,ugly,ugly,hideous,hideous,stronger,hideous,The wallpaper is ugly.,The wallpaper is ,ugly,.,The wallpaper is hideous.,Is the wallpaper hideous?,is,aux_inversion,"Sue: Is the wallpaper hideous?
+Mary: The wallpaper is ","Sue: Is the wallpaper hideous?
+Mary: The wallpaper is ___.","Sue: Is the wallpaper hideous?
+Mary: The wallpaper is hideous.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+54,Eweak,Weak QUD,understandable,understandable,articulate,articulate,weaker,understandable,Tom's interview was understandable.,Tom's interview was ,understandable,.,Tom's interview was understandable.,Was Tom's interview understandable?,was,aux_inversion,"Sue: Was Tom's interview understandable?
+Mary: Tom's interview was ","Sue: Was Tom's interview understandable?
+Mary: Tom's interview was ___.","Sue: Was Tom's interview understandable?
+Mary: Tom's interview was articulate.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+54,Estrong,Strong QUD,understandable,understandable,articulate,articulate,stronger,articulate,Tom's interview was understandable.,Tom's interview was ,understandable,.,Tom's interview was articulate.,Was Tom's interview articulate?,was,aux_inversion,"Sue: Was Tom's interview articulate?
+Mary: Tom's interview was ","Sue: Was Tom's interview articulate?
+Mary: Tom's interview was ___.","Sue: Was Tom's interview articulate?
+Mary: Tom's interview was articulate.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+55,Eweak,Weak QUD,unpleasant,unpleasant,disgusting,disgusting,weaker,unpleasant,Tim's bathroom was unpleasant.,Tim's bathroom was ,unpleasant,.,Tim's bathroom was unpleasant.,Was Tim's bathroom unpleasant?,was,aux_inversion,"Sue: Was Tim's bathroom unpleasant?
+Mary: Tim's bathroom was ","Sue: Was Tim's bathroom unpleasant?
+Mary: Tim's bathroom was ___.","Sue: Was Tim's bathroom unpleasant?
+Mary: Tim's bathroom was disgusting.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+55,Estrong,Strong QUD,unpleasant,unpleasant,disgusting,disgusting,stronger,disgusting,Tim's bathroom was unpleasant.,Tim's bathroom was ,unpleasant,.,Tim's bathroom was disgusting.,Was Tim's bathroom disgusting?,was,aux_inversion,"Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was ","Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was ___.","Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was disgusting.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+56,Eweak,Weak QUD,usually,usually,always,always,weaker,usually,The lawyer is usually early.,The lawyer is ,usually, early.,The lawyer is usually early.,Is the lawyer usually early?,is,aux_inversion,"Sue: Is the lawyer usually early?
+Mary: The lawyer is ","Sue: Is the lawyer usually early?
+Mary: The lawyer is ___ early.","Sue: Is the lawyer usually early?
+Mary: The lawyer is always early.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+56,Estrong,Strong QUD,usually,usually,always,always,stronger,always,The lawyer is usually early.,The lawyer is ,usually, early.,The lawyer is always early.,Is the lawyer always early?,is,aux_inversion,"Sue: Is the lawyer always early?
+Mary: The lawyer is ","Sue: Is the lawyer always early?
+Mary: The lawyer is ___ early.","Sue: Is the lawyer always early?
+Mary: The lawyer is always early.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+57,Eweak,Weak QUD,want,wants,need,needs,weaker,wants,Phoebe wants a car.,Phoebe ,wants, a car.,Phoebe wants a car.,Does Phoebe want a car?,does,do_support,"Sue: Does Phoebe want a car?
+Mary: Phoebe ","Sue: Does Phoebe want a car?
+Mary: Phoebe ___ a car.","Sue: Does Phoebe want a car?
+Mary: Phoebe needs a car.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+57,Estrong,Strong QUD,want,wants,need,needs,stronger,needs,Phoebe wants a car.,Phoebe ,wants, a car.,Phoebe needs a car.,Does Phoebe need a car?,does,do_support,"Sue: Does Phoebe need a car?
+Mary: Phoebe ","Sue: Does Phoebe need a car?
+Mary: Phoebe ___ a car.","Sue: Does Phoebe need a car?
+Mary: Phoebe needs a car.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+58,Eweak,Weak QUD,warm,warm,hot,hot,weaker,warm,The wather is warm.,The wather is ,warm,.,The wather is warm.,Is the wather warm?,is,aux_inversion,"Sue: Is the wather warm?
+Mary: The wather is ","Sue: Is the wather warm?
+Mary: The wather is ___.","Sue: Is the wather warm?
+Mary: The wather is hot.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+58,Estrong,Strong QUD,warm,warm,hot,hot,stronger,hot,The wather is warm.,The wather is ,warm,.,The wather is hot.,Is the wather hot?,is,aux_inversion,"Sue: Is the wather hot?
+Mary: The wather is ","Sue: Is the wather hot?
+Mary: The wather is ___.","Sue: Is the wather hot?
+Mary: The wather is hot.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+59,Eweak,Weak QUD,well,well,superbly,superbly,weaker,well,The rehearsal went well.,The rehearsal went ,well,.,The rehearsal went well.,Did the rehearsal go well?,did,do_support,"Sue: Did the rehearsal go well?
+Mary: The rehearsal went ","Sue: Did the rehearsal go well?
+Mary: The rehearsal went ___.","Sue: Did the rehearsal go well?
+Mary: The rehearsal went superbly.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+59,Estrong,Strong QUD,well,well,superbly,superbly,stronger,superbly,The rehearsal went well.,The rehearsal went ,well,.,The rehearsal went superbly.,Did the rehearsal go superbly?,did,do_support,"Sue: Did the rehearsal go superbly?
+Mary: The rehearsal went ","Sue: Did the rehearsal go superbly?
+Mary: The rehearsal went ___.","Sue: Did the rehearsal go superbly?
+Mary: The rehearsal went superbly.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+60,Eweak,Weak QUD,willing,willing,eager,eager,weaker,willing,The waiter is willing.,The waiter is ,willing,.,The waiter is willing.,Is the waiter willing?,is,aux_inversion,"Sue: Is the waiter willing?
+Mary: The waiter is ","Sue: Is the waiter willing?
+Mary: The waiter is ___.","Sue: Is the waiter willing?
+Mary: The waiter is eager.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes
+60,Estrong,Strong QUD,willing,willing,eager,eager,stronger,eager,The waiter is willing.,The waiter is ,willing,.,The waiter is eager.,Is the waiter eager?,is,aux_inversion,"Sue: Is the waiter eager?
+Mary: The waiter is ","Sue: Is the waiter eager?
+Mary: The waiter is ___.","Sue: Is the waiter eager?
+Mary: The waiter is eager.",Question reconstructed from Experiment 1 materials; answer side conservatively reuses the Experiment 1 sentence context.,yes

@@ -1,0 +1,61 @@
+item_id,weaker_lemma,weaker_surface,stronger_lemma,stronger_surface_guess,sentence_frame_experiment_1,prompt_prefix,target_word_seen_by_participants,suffix_after_target,prompt_with_blank,stronger_sentence_guess,surface_morphology,target_extraction_method,stronger_guess_method
+1,allowed,allowed,obligatory,obligatory,Drinking is allowed.,Drinking is ,allowed,.,Drinking is ___.,Drinking is obligatory.,base,automatic,morphology_match
+2,attractive,attractive,stunning,stunning,This model is attractive.,This model is ,attractive,.,This model is ___.,This model is stunning.,base,automatic,morphology_match
+3,begin,began,complete,completed,John began the race.,John ,began, the race.,John ___ the race.,John completed the race.,past_tense,item_override,item_override
+4,believe,believes,know,knows,The teacher believes it is true.,The teacher ,believes, it is true.,The teacher ___ it is true.,The teacher knows it is true.,third_person_singular,automatic,morphology_match
+5,big,big,enormous,enormous,The elephant is big.,The elephant is ,big,.,The elephant is ___.,The elephant is enormous.,base,automatic,morphology_match
+6,cool,cool,cold,cold,The weather is cool.,The weather is ,cool,.,The weather is ___.,The weather is cold.,base,automatic,morphology_match
+7,damage,damage,destroy,destroy,The machine might damage itself.,The machine might ,damage, itself.,The machine might ___ itself.,The machine might destroy itself.,base,automatic,morphology_match
+8,dark,dark,black,black,The sky is dark.,The sky is ,dark,.,The sky is ___.,The sky is black.,base,automatic,morphology_match
+9,difficult,difficult,impossible,impossible,The task is difficult.,The task is ,difficult,.,The task is ___.,The task is impossible.,base,automatic,morphology_match
+10,dirty,dirty,filthy,filthy,Zack's carpet was dirty.,Zack's carpet was ,dirty,.,Zack's carpet was ___.,Zack's carpet was filthy.,base,automatic,morphology_match
+11,dislike,dislikes,loathe,loathes,The doctor dislikes coffee.,The doctor ,dislikes, coffee.,The doctor ___ coffee.,The doctor loathes coffee.,third_person_singular,automatic,morphology_match
+12,double,double,triple,triple,The sales will double.,The sales will ,double,.,The sales will ___.,The sales will triple.,base,automatic,morphology_match
+13,equally,equally,more,more,That candidate is equally skilled.,That candidate is ,equally, skilled.,That candidate is ___ skilled.,That candidate is more skilled.,base,automatic,morphology_match
+14,funny,funny,hilarious,hilarious,The movie is funny.,The movie is ,funny,.,The movie is ___.,The movie is hilarious.,base,automatic,morphology_match
+15,good,good,excellent,excellent,The movie is good.,The movie is ,good,.,The movie is ___.,The movie is excellent.,base,automatic,morphology_match
+16,happy,happy,ecstatic,ecstatic,The winner was happy.,The winner was ,happy,.,The winner was ___.,The winner was ecstatic.,base,automatic,morphology_match
+17,hard,hard,unsolvable,unsolvable,The problem is hard.,The problem is ,hard,.,The problem is ___.,The problem is unsolvable.,base,automatic,morphology_match
+18,harmful,harmful,deadly,deadly,The toxin is harmful.,The toxin is ,harmful,.,The toxin is ___.,The toxin is deadly.,base,automatic,morphology_match
+19,here,here,everywhere,everywhere,There is water here.,There is water ,here,.,There is water ___.,There is water everywhere.,base,automatic,morphology_match
+20,hungry,hungry,starving,starving,The boy is hungry.,The boy is ,hungry,.,The boy is ___.,The boy is starving.,base,automatic,morphology_match
+21,intelligent,intelligent,brilliant,brilliant,The student is intelligent.,The student is ,intelligent,.,The student is ___.,The student is brilliant.,base,automatic,morphology_match
+22,intimidating,intimidating,terrifying,terrifying,Chris's opponent was intimidating.,Chris's opponent was ,intimidating,.,Chris's opponent was ___.,Chris's opponent was terrifying.,base,automatic,morphology_match
+23,largely,largely,totally,totally,The coast was largely flooded.,The coast was ,largely, flooded.,The coast was ___ flooded.,The coast was totally flooded.,base,automatic,morphology_match
+24,like,likes,love,loves,The princess likes dancing.,The princess ,likes, dancing.,The princess ___ dancing.,The princess loves dancing.,third_person_singular,automatic,morphology_match
+25,match,matches,exceed,exceeds,Bill's score matches Al's.,Bill's score ,matches, Al's.,Bill's score ___ Al's.,Bill's score exceeds Al's.,third_person_singular,automatic,morphology_match
+26,mostly,mostly,entirely,entirely,Peter's answers were mostly wrong.,Peter's answers were ,mostly, wrong.,Peter's answers were ___ wrong.,Peter's answers were entirely wrong.,base,automatic,morphology_match
+27,old,old,ancient,ancient,The house is old.,The house is ,old,.,The house is ___.,The house is ancient.,base,automatic,morphology_match
+28,once,once,twice,twice,Mistakes happened once.,Mistakes happened ,once,.,Mistakes happened ___.,Mistakes happened twice.,base,automatic,morphology_match
+29,or,or,and,and,Jimmy writes books or plays.,Jimmy writes books ,or, plays.,Jimmy writes books ___ plays.,Jimmy writes books and plays.,base,automatic,morphology_match
+30,overweight,overweight,obese,obese,The teenager is overweight.,The teenager is ,overweight,.,The teenager is ___.,The teenager is obese.,base,automatic,morphology_match
+31,overwhelmingly,overwhelmingly,unanimously,unanimously,The measure was supported overwhelmingly.,The measure was supported ,overwhelmingly,.,The measure was supported ___.,The measure was supported unanimously.,base,automatic,morphology_match
+32,palatable,palatable,delicious,delicious,The wine is palatable.,The wine is ,palatable,.,The wine is ___.,The wine is delicious.,base,automatic,morphology_match
+33,partially,partially,completely,completely,The tank is partially full.,The tank is ,partially, full.,The tank is ___ full.,The tank is completely full.,base,automatic,morphology_match
+34,permit,permits,require,requires,The club permits dancing.,The club ,permits, dancing.,The club ___ dancing.,The club requires dancing.,third_person_singular,automatic,morphology_match
+35,polished,polished,impeccable,impeccable,Ann's speech was polished.,Ann's speech was ,polished,.,Ann's speech was ___.,Ann's speech was impeccable.,base,automatic,morphology_match
+36,possible,possible,certain,certain,Success is possible.,Success is ,possible,.,Success is ___.,Success is certain.,base,automatic,morphology_match
+37,pretty,pretty,beautiful,beautiful,The girl is pretty.,The girl is ,pretty,.,The girl is ___.,The girl is beautiful.,base,automatic,morphology_match
+38,primarily,primarily,exclusively,exclusively,The residents are primarily Greek.,The residents are ,primarily, Greek.,The residents are ___ Greek.,The residents are exclusively Greek.,base,automatic,morphology_match
+39,probably,probably,necessarily,necessarily,A delay will probably occur.,A delay will ,probably, occur.,A delay will ___ occur.,A delay will necessarily occur.,base,automatic,morphology_match
+40,reduce,reduced,eliminate,eliminated,The city reduced waste.,The city ,reduced, waste.,The city ___ waste.,The city eliminated waste.,past_tense,automatic,morphology_match
+41,scared,scared,petrified,petrified,Stu's daughter was scared.,Stu's daughter was ,scared,.,Stu's daughter was ___.,Stu's daughter was petrified.,base,automatic,morphology_match
+42,serious,serious,life-threatening,life-threatening,Kaye's illness was serious.,Kaye's illness was ,serious,.,Kaye's illness was ___.,Kaye's illness was life-threatening.,base,automatic,morphology_match
+43,similar,similar,identical,identical,The two paintings are similar.,The two paintings are ,similar,.,The two paintings are ___.,The two paintings are identical.,base,automatic,morphology_match
+44,slow,slowed,stop,stopped,The train slowed.,The train ,slowed,.,The train ___.,The train stopped.,past_tense,automatic,morphology_match
+45,small,small,tiny,tiny,The fish is small.,The fish is ,small,.,The fish is ___.,The fish is tiny.,base,automatic,morphology_match
+46,snug,snug,tight,tight,The shirt is snug.,The shirt is ,snug,.,The shirt is ___.,The shirt is tight.,base,automatic,morphology_match
+47,some,some,all,all,Cecilia trusts some politicians.,Cecilia trusts ,some, politicians.,Cecilia trusts ___ politicians.,Cecilia trusts all politicians.,base,automatic,morphology_match
+48,start,started,finish,finished,The runner started.,The runner ,started,.,The runner ___.,The runner finished.,past_tense,automatic,morphology_match
+49,survive,survived,thrive,thrived,The plant survived.,The plant ,survived,.,The plant ___.,The plant thrived.,past_tense,automatic,morphology_match
+50,tired,tired,exhausted,exhausted,The worker is tired.,The worker is ,tired,.,The worker is ___.,The worker is exhausted.,base,automatic,morphology_match
+51,tolerate,tolerate,encourage,encourage,Joey's parents tolerate dating.,Joey's parents ,tolerate, dating.,Joey's parents ___ dating.,Joey's parents encourage dating.,base,automatic,morphology_match
+52,try,tried,succeed,succeeded,The candidate tried.,The candidate ,tried,.,The candidate ___.,The candidate succeeded.,past_tense,automatic,morphology_match
+53,ugly,ugly,hideous,hideous,The wallpaper is ugly.,The wallpaper is ,ugly,.,The wallpaper is ___.,The wallpaper is hideous.,base,automatic,morphology_match
+54,understandable,understandable,articulate,articulate,Tom's interview was understandable.,Tom's interview was ,understandable,.,Tom's interview was ___.,Tom's interview was articulate.,base,automatic,morphology_match
+55,unpleasant,unpleasant,disgusting,disgusting,Tim's bathroom was unpleasant.,Tim's bathroom was ,unpleasant,.,Tim's bathroom was ___.,Tim's bathroom was disgusting.,base,automatic,morphology_match
+56,usually,usually,always,always,The lawyer is usually early.,The lawyer is ,usually, early.,The lawyer is ___ early.,The lawyer is always early.,base,automatic,morphology_match
+57,want,wants,need,needs,Phoebe wants a car.,Phoebe ,wants, a car.,Phoebe ___ a car.,Phoebe needs a car.,third_person_singular,automatic,morphology_match
+58,warm,warm,hot,hot,The wather is warm.,The wather is ,warm,.,The wather is ___.,The wather is hot.,base,automatic,morphology_match
+59,well,well,superbly,superbly,The rehearsal went well.,The rehearsal went ,well,.,The rehearsal went ___.,The rehearsal went superbly.,base,automatic,morphology_match
+60,willing,willing,eager,eager,The waiter is willing.,The waiter is ,willing,.,The waiter is ___.,The waiter is eager.,base,automatic,morphology_match
