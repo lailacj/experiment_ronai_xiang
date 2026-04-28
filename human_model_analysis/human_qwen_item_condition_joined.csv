@@ -1,0 +1,661 @@
+experiment,condition,item_id,N,sum_response,response_rate,human_log_response_rate,weaker_lemma,weaker_surface,stronger_lemma,stronger_surface_guess,prompt_text,context_text,suffix_text,weaker_target_surface,stronger_target_surface,weaker_word_logprob,stronger_word_logprob,weaker_candidate_plus_suffix_logprob,stronger_candidate_plus_suffix_logprob,word_logprob_stronger_minus_weaker,candidate_plus_suffix_logprob_stronger_minus_weaker,weaker_word_n_tokens,stronger_word_n_tokens,weaker_candidate_plus_suffix_n_tokens,stronger_candidate_plus_suffix_n_tokens,model_name
+experiment_1,ESI,1,40,33,0.8250000000,-0.1923718926,allowed,allowed,obligatory,obligatory,Drinking is ,Drinking is,.,allowed,obligatory,-5.5144853592,-10.2097978592,-9.3221974373,-12.6784250736,-4.6953125000,-3.3562276363,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,2,40,2,0.0500000000,-2.9957322736,attractive,attractive,stunning,stunning,This model is ,This model is,.,attractive,stunning,-9.6062021255,-7.8640146255,-13.5785331726,-9.3722161055,1.7421875000,4.2063170671,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,3,40,8,0.2000000000,-1.6094379124,begin,began,complete,completed,John ,John, the race.,began,completed,-7.6056766510,-8.0431766510,-24.2737193108,-19.7879321575,-0.4375000000,4.4857871533,1,1,4,4,Qwen/Qwen2-7B
+experiment_1,ESI,4,40,25,0.6250000000,-0.4700036292,believe,believes,know,knows,The teacher ,The teacher, it is true.,believes,knows,-8.6164674759,-6.8039674759,-23.9123291373,-19.3822146654,1.8125000000,4.5301144719,1,1,5,5,Qwen/Qwen2-7B
+experiment_1,ESI,5,40,2,0.0500000000,-2.9957322736,big,big,enormous,enormous,The elephant is ,The elephant is,.,big,enormous,-4.6215872765,-8.7465877533,-6.8011002541,-10.5810335875,-4.1250004768,-3.7799333334,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,6,40,17,0.4250000000,-0.8556661101,cool,cool,cold,cold,The weather is ,The weather is,.,cool,cold,-5.2573347092,-4.0073347092,-8.0858974457,-6.6298205853,1.2500000000,1.4560768604,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,7,40,15,0.3750000000,-0.9808292530,damage,damage,destroy,destroy,The machine might ,The machine might, itself.,damage,destroy,-7.5887079239,-7.8543329239,-15.1473805904,-13.5433440208,-0.2656250000,1.6040365696,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,8,40,11,0.2750000000,-1.2909841813,dark,dark,black,black,The sky is ,The sky is,.,dark,black,-3.9008283615,-5.1508283615,-6.1959798336,-7.2538244724,-1.2500000000,-1.0578446388,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,9,40,28,0.7000000000,-0.3566749439,difficult,difficult,impossible,impossible,The task is ,The task is,.,difficult,impossible,-10.1617650986,-11.8492650986,-12.9621951580,-14.3073186874,-1.6875000000,-1.3451235294,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,10,40,3,0.0750000000,-2.5902671654,dirty,dirty,filthy,filthy,Zack's carpet was ,Zack's carpet was,.,dirty,filthy,-5.0720615387,-9.7595615387,-5.2046061456,-10.0855756104,-4.6875000000,-4.8809694648,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,11,40,9,0.2250000000,-1.4916548768,dislike,dislikes,loathe,loathes,The doctor ,The doctor, coffee.,dislikes,loathes,-12.7017602921,-16.0800248953,-22.5868043900,-26.6401795717,-3.3782646032,-4.0533751817,1,3,3,5,Qwen/Qwen2-7B
+experiment_1,ESI,12,40,21,0.5250000000,-0.6443570164,double,double,triple,triple,The sales will ,The sales will,.,double,triple,-8.3120994568,-10.6870994568,-12.5051188469,-14.5054430962,-2.3750000000,-2.0003242493,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,13,40,27,0.6750000000,-0.3930425881,equally,equally,more,more,That candidate is ,That candidate is, skilled.,equally,more,-8.4349508286,-5.6068258286,-16.7791094780,-15.8651127815,2.8281250000,0.9139966965,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,14,40,2,0.0500000000,-2.9957322736,funny,funny,hilarious,hilarious,The movie is ,The movie is,.,funny,hilarious,-5.4411926270,-6.5974426270,-7.8701667786,-8.2986145020,-1.1562500000,-0.4284477234,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,15,40,12,0.3000000000,-1.2039728043,good,good,excellent,excellent,The movie is ,The movie is,.,good,excellent,-5.5661926270,-6.4411926270,-7.9378693104,-8.2725582123,-0.8750000000,-0.3346889019,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,16,40,2,0.0500000000,-2.9957322736,happy,happy,ecstatic,ecstatic,The winner was ,The winner was,.,happy,ecstatic,-9.2202911377,-11.3687286377,-12.6285166740,-12.8148181438,-2.1484375000,-0.1863014698,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,17,40,23,0.5750000000,-0.5533852382,hard,hard,unsolvable,unsolvable,The problem is ,The problem is,.,hard,unsolvable,-7.5918712616,-10.1927996874,-9.9160709381,-12.3791748285,-2.6009284258,-2.4631038904,1,2,2,3,Qwen/Qwen2-7B
+experiment_1,ESI,18,40,8,0.2000000000,-1.6094379124,harmful,harmful,deadly,deadly,The toxin is ,The toxin is,.,harmful,deadly,-7.0123028755,-6.7935528755,-11.0664210320,-9.4582586288,0.2187500000,1.6081624032,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,19,40,20,0.5000000000,-0.6931471806,here,here,everywhere,everywhere,There is water ,There is water,.,here,everywhere,-4.5482549667,-2.5482552052,-6.4566292763,-4.3326035738,1.9999997615,2.1240257025,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,20,40,8,0.2000000000,-1.6094379124,hungry,hungry,starving,starving,The boy is ,The boy is,.,hungry,starving,-6.4657382965,-11.0594882965,-8.5378403664,-13.5138061047,-4.5937500000,-4.9759657383,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,21,40,2,0.0500000000,-2.9957322736,intelligent,intelligent,brilliant,brilliant,The student is ,The student is,.,intelligent,brilliant,-8.3973369598,-9.0692119598,-11.1817924976,-10.8901827335,-0.6718750000,0.2916097641,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,22,40,7,0.1750000000,-1.7429693051,intimidating,intimidating,terrifying,terrifying,Chris's opponent was ,Chris's opponent was,.,intimidating,terrifying,-11.5358753204,-11.9108753204,-12.7322672606,-12.9791877270,-0.3750000000,-0.2469204664,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,23,40,28,0.7000000000,-0.3566749439,largely,largely,totally,totally,The coast was ,The coast was, flooded.,largely,totally,-6.7921271324,-7.7921271324,-18.6386809349,-15.4185862541,-1.0000000000,3.2200946808,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,24,40,4,0.1000000000,-2.3025850930,like,likes,love,loves,The princess ,The princess, dancing.,likes,loves,-7.0505914688,-5.9880914688,-13.2510175705,-12.3794269562,1.0625000000,0.8715906143,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,25,40,35,0.8750000000,-0.1335313926,match,matches,exceed,exceeds,Bill's score ,Bill's score, Al's.,matches,exceeds,-11.9032888412,-11.8407888412,-24.3195984960,-28.0037867483,0.0625000000,-3.6841882523,1,1,4,4,Qwen/Qwen2-7B
+experiment_1,ESI,26,40,35,0.8750000000,-0.1335313926,mostly,mostly,entirely,entirely,Peter's answers were ,Peter's answers were, wrong.,mostly,entirely,-5.5961837769,-7.0649337769,-11.4009178877,-12.1887553930,-1.4687500000,-0.7878375053,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,27,40,13,0.3250000000,-1.1239300967,old,old,ancient,ancient,The house is ,The house is,.,old,ancient,-6.2383913994,-9.8008918762,-9.3093800545,-11.8201239109,-3.5625004768,-2.5107438564,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,28,40,28,0.7000000000,-0.3566749439,once,once,twice,twice,Mistakes happened ,Mistakes happened,.,once,twice,-6.0955276489,-8.0955276489,-8.8611240387,-10.8502671719,-2.0000000000,-1.9891431332,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,29,40,10,0.2500000000,-1.3862943611,or,or,and,and,Jimmy writes books ,Jimmy writes books, plays.,or,and,-8.4172887802,-2.4797887802,-12.6317851543,-9.2997349501,5.9375000000,3.3320502042,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,30,40,4,0.1000000000,-2.3025850930,overweight,overweight,obese,obese,The teenager is ,The teenager is,.,overweight,obese,-9.1419086456,-10.9856586456,-11.0723866224,-13.0561532974,-1.8437500000,-1.9837666750,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,31,40,24,0.6000000000,-0.5108256238,overwhelmingly,overwhelmingly,unanimously,unanimously,The measure was supported ,The measure was supported,.,overwhelmingly,unanimously,-6.0567927361,-5.5567927361,-11.2018122673,-10.7092156410,0.5000000000,0.4925966263,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,32,40,19,0.4750000000,-0.7444404749,palatable,palatable,delicious,delicious,The wine is ,The wine is,.,palatable,delicious,-12.6617441177,-6.5626158714,-17.0119028091,-8.3994166851,6.0991282463,8.6124861240,2,1,3,2,Qwen/Qwen2-7B
+experiment_1,ESI,33,40,38,0.9500000000,-0.0512932944,partially,partially,completely,completely,The tank is ,The tank is, full.,partially,completely,-6.5965075493,-6.0340075493,-11.4266414642,-9.0017364025,0.5625000000,2.4249050617,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,34,40,26,0.6500000000,-0.4307829161,permit,permits,require,requires,The club ,The club, dancing.,permits,requires,-11.1412763596,-7.0445961952,-24.9265909195,-25.4547696114,4.0966801644,-0.5281786919,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,35,40,2,0.0500000000,-2.9957322736,polished,polished,impeccable,impeccable,Ann's speech was ,Ann's speech was,.,polished,impeccable,-8.1347894669,-9.9160394669,-12.1486806870,-11.2832039595,-1.7812500000,0.8654767275,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,36,40,33,0.8250000000,-0.1923718926,possible,possible,certain,certain,Success is ,Success is,.,possible,certain,-4.6669397354,-8.0731897354,-7.1068940163,-10.9977703094,-3.4062500000,-3.8908762931,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,37,40,3,0.0750000000,-2.5902671654,pretty,pretty,beautiful,beautiful,The girl is ,The girl is,.,pretty,beautiful,-5.9630784988,-5.7755784988,-8.0406165123,-7.6953266859,0.1875000000,0.3452898264,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,38,40,31,0.7750000000,-0.2548922496,primarily,primarily,exclusively,exclusively,The residents are ,The residents are, Greek.,primarily,exclusively,-6.7911243439,-9.3536243439,-17.6517429352,-19.6412799358,-2.5625000000,-1.9895370006,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,39,40,22,0.5500000000,-0.5978370008,probably,probably,necessarily,necessarily,A delay will ,A delay will, occur.,probably,necessarily,-5.1209588051,-9.0897083282,-11.5631146431,-14.5847544670,-3.9687495231,-3.0216398239,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,40,40,32,0.8000000000,-0.2231435513,reduce,reduced,eliminate,eliminated,The city ,The city, waste.,reduced,eliminated,-11.4769792557,-11.6371355057,-23.5998802185,-25.1784796715,-0.1601562500,-1.5785994530,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,41,40,1,0.0250000000,-3.6888794541,scared,scared,petrified,petrified,Stu's daughter was ,Stu's daughter was,.,scared,petrified,-8.8703565598,-11.5788509166,-12.4572076797,-14.2060159957,-2.7084943568,-1.7488083160,1,3,2,4,Qwen/Qwen2-7B
+experiment_1,ESI,42,40,3,0.0750000000,-2.5902671654,serious,serious,life-threatening,life-threatening,Kaye's illness was ,Kaye's illness was,.,serious,life-threatening,-5.4368143082,-6.5810588598,-7.3482073545,-7.8429955244,-1.1442445516,-0.4947881699,1,2,2,3,Qwen/Qwen2-7B
+experiment_1,ESI,43,40,29,0.7250000000,-0.3215836241,similar,similar,identical,identical,The two paintings are ,The two paintings are,.,similar,identical,-2.9571323395,-4.3946323395,-6.6907305717,-6.8546166420,-1.4375000000,-0.1638860703,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,44,40,33,0.8250000000,-0.1923718926,slow,slowed,stop,stopped,The train ,The train,.,slowed,stopped,-7.1545386314,-5.5920386314,-12.6630578041,-9.9382743835,1.5625000000,2.7247834206,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,45,40,7,0.1750000000,-1.7429693051,small,small,tiny,tiny,The fish is ,The fish is,.,small,tiny,-5.9683256149,-8.8120756149,-8.6224446297,-10.8662996292,-2.8437500000,-2.2438549995,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,46,40,4,0.1000000000,-2.3025850930,snug,snug,tight,tight,The shirt is ,The shirt is,.,snug,tight,-9.7020921707,-7.1864671707,-12.9291336536,-9.7139954567,2.5156250000,3.2151381969,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,47,40,37,0.9250000000,-0.0779615415,some,some,all,all,Cecilia trusts ,Cecilia trusts, politicians.,some,all,-6.7936716080,-5.8561716080,-15.1333466768,-15.4722971916,0.9375000000,-0.3389505148,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,48,40,11,0.2750000000,-1.2909841813,start,started,finish,finished,The runner ,The runner,.,started,finished,-6.5379810333,-5.1004810333,-14.6757059097,-11.0587558746,1.4375000000,3.6169500351,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,49,40,10,0.2500000000,-1.3862943611,survive,survived,thrive,thrived,The plant ,The plant,.,survived,thrived,-9.5288896561,-12.4046356678,-14.6228737831,-16.3092026711,-2.8757460117,-1.6863288880,1,2,2,3,Qwen/Qwen2-7B
+experiment_1,ESI,50,40,1,0.0250000000,-3.6888794541,tired,tired,exhausted,exhausted,The worker is ,The worker is,.,tired,exhausted,-6.8849096298,-9.1661596298,-8.7037608624,-11.4412701130,-2.2812500000,-2.7375092506,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,51,40,26,0.6500000000,-0.4307829161,tolerate,tolerate,encourage,encourage,Joey's parents ,Joey's parents, dating.,tolerate,encourage,-13.6033859253,-8.9002609253,-27.1723566055,-24.0386657715,4.7031250000,3.1336908340,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,52,40,31,0.7750000000,-0.2548922496,try,tried,succeed,succeeded,The candidate ,The candidate,.,tried,succeeded,-10.7293357849,-11.1824607849,-19.8586378098,-16.3980803490,-0.4531250000,3.4605574608,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,53,40,2,0.0500000000,-2.9957322736,ugly,ugly,hideous,hideous,The wallpaper is ,The wallpaper is,.,ugly,hideous,-9.6691493988,-10.4094967395,-11.0641291142,-11.7767196447,-0.7403473407,-0.7125905305,1,2,2,3,Qwen/Qwen2-7B
+experiment_1,ESI,54,40,4,0.1000000000,-2.3025850930,understandable,understandable,articulate,articulate,Tom's interview was ,Tom's interview was,.,understandable,articulate,-10.7327013016,-14.6116075516,-13.3872754574,-18.6228742599,-3.8789062500,-5.2355988025,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,55,40,2,0.0500000000,-2.9957322736,unpleasant,unpleasant,disgusting,disgusting,Tim's bathroom was ,Tim's bathroom was,.,unpleasant,disgusting,-11.6032123566,-7.5407123566,-13.9352998734,-8.5589361191,4.0625000000,5.3763637543,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,56,40,26,0.6500000000,-0.4307829161,usually,usually,always,always,The lawyer is ,The lawyer is, early.,usually,always,-6.5660314560,-5.1910314560,-20.1924574375,-17.8772420883,1.3750000000,2.3152153492,1,1,3,3,Qwen/Qwen2-7B
+experiment_1,ESI,57,40,6,0.1500000000,-1.8971199849,want,wants,need,needs,Phoebe ,Phoebe, a car.,wants,needs,-6.4766955376,-7.0704455376,-21.1660339832,-20.2265813351,-0.5937500000,0.9394526481,1,1,4,4,Qwen/Qwen2-7B
+experiment_1,ESI,58,40,16,0.4000000000,-0.9162907319,warm,warm,hot,hot,The wather is ,The wather is,.,warm,hot,-3.4019770622,-2.9644770622,-6.1482644081,-5.3572878838,0.4375000000,0.7909765243,1,1,2,2,Qwen/Qwen2-7B
+experiment_1,ESI,59,40,5,0.1250000000,-2.0794415417,well,well,superbly,superbly,The rehearsal went ,The rehearsal went,.,well,superbly,-1.4789307117,-7.8874767944,-2.7690358162,-9.2737107202,-6.4085460827,-6.5046749040,1,2,2,3,Qwen/Qwen2-7B
+experiment_1,ESI,60,40,3,0.0750000000,-2.5902671654,willing,willing,eager,eager,The waiter is ,The waiter is,.,willing,eager,-7.0121827126,-7.2309327126,-14.9458227158,-14.2124500275,-0.2187500000,0.7333726883,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,1,39,28,0.7179487179,-0.3313571360,allowed,allowed,obligatory,obligatory,"Sue: Is drinking allowed?
+Mary: Drinking is ","Sue: Is drinking allowed?
+Mary: Drinking is",.,allowed,obligatory,-0.5882170200,-9.8069667816,-3.4207460880,-12.6612663269,-9.2187497616,-9.2405202389,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,2,42,5,0.1190476190,-2.1282317062,attractive,attractive,stunning,stunning,"Sue: Is this model attractive?
+Mary: This model is ","Sue: Is this model attractive?
+Mary: This model is",.,attractive,stunning,-2.3796408176,-6.2546405792,-4.5819971561,-8.3227903843,-3.8749997616,-3.7407932282,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,3,39,6,0.1538461538,-1.8718021772,begin,began,complete,completed,"Sue: Did John begin the race?
+Mary: John ","Sue: Did John begin the race?
+Mary: John", the race.,began,completed,-3.1397678852,-6.9522676468,-6.2898008376,-10.3415136337,-3.8124997616,-4.0517127961,1,1,4,4,Qwen/Qwen2-7B
+experiment_2,Eweak,4,42,14,0.3333333333,-1.0986122888,believe,believes,know,knows,"Sue: Does the teacher believe it is true?
+Mary: The teacher ","Sue: Does the teacher believe it is true?
+Mary: The teacher", it is true.,believes,knows,-1.7513043880,-5.1888046265,-5.5723243654,-8.8386837840,-3.4375002385,-3.2663594186,1,1,5,5,Qwen/Qwen2-7B
+experiment_2,Eweak,5,39,5,0.1282051282,-2.0541237337,big,big,enormous,enormous,"Sue: Is the elephant big?
+Mary: The elephant is ","Sue: Is the elephant big?
+Mary: The elephant is",.,big,enormous,-1.1321278811,-5.8196277618,-3.4778090715,-8.0714223385,-4.6874998807,-4.5936132670,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,6,42,18,0.4285714286,-0.8472978603,cool,cool,cold,cold,"Sue: Is the weather cool?
+Mary: The weather is ","Sue: Is the weather cool?
+Mary: The weather is",.,cool,cold,-1.5063167810,-3.5063166618,-3.8335243464,-5.7596065998,-1.9999998808,-1.9260822534,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,7,39,10,0.2564102564,-1.3609765532,damage,damage,destroy,destroy,"Sue: Might the machine damage itself?
+Mary: The machine might ","Sue: Might the machine damage itself?
+Mary: The machine might", itself.,damage,destroy,-0.7884139419,-5.2259140015,-3.6476414502,-8.2670731246,-4.4375000596,-4.6194316744,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,8,42,7,0.1666666667,-1.7917594690,dark,dark,black,black,"Sue: Is the sky dark?
+Mary: The sky is ","Sue: Is the sky dark?
+Mary: The sky is",.,dark,black,-0.9506633282,-3.5131633282,-3.2343471050,-6.2251555920,-2.5625000000,-2.9908084870,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,9,39,27,0.6923076923,-0.3677247801,difficult,difficult,impossible,impossible,"Sue: Is the task difficult?
+Mary: The task is ","Sue: Is the task difficult?
+Mary: The task is",.,difficult,impossible,-2.3117032051,-4.6242032051,-4.6268563271,-7.1416635513,-2.3125000000,-2.5148072242,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,10,42,2,0.0476190476,-3.0445224381,dirty,dirty,filthy,filthy,"Sue: Was Zack's carpet dirty?
+Mary: Zack's carpet was ","Sue: Was Zack's carpet dirty?
+Mary: Zack's carpet was",.,dirty,filthy,-1.4794590473,-3.3544590473,-4.0274460316,-5.7631499767,-1.8750000000,-1.7357039451,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,11,39,10,0.2564102564,-1.3609765532,dislike,dislikes,loathe,loathes,"Sue: Does the doctor dislike coffee?
+Mary: The doctor ","Sue: Does the doctor dislike coffee?
+Mary: The doctor", coffee.,dislikes,loathes,-5.1933078766,-8.7672241963,-8.4715078473,-10.8707199339,-3.5739163197,-2.3992120866,1,3,3,5,Qwen/Qwen2-7B
+experiment_2,Eweak,12,42,17,0.4047619048,-0.9044562741,double,double,triple,triple,"Sue: Will the sales double?
+Mary: The sales will ","Sue: Will the sales double?
+Mary: The sales will",.,double,triple,-1.4435017109,-2.5060017109,-5.2333500385,-5.9696104527,-1.0625000000,-0.7362604142,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,13,39,24,0.6153846154,-0.4855078158,equally,equally,more,more,"Sue: Is that candidate equally skilled?
+Mary: That candidate is ","Sue: Is that candidate equally skilled?
+Mary: That candidate is", skilled.,equally,more,-3.7467167377,-2.5592167377,-6.3514468968,-6.4725406170,1.1875000000,-0.1210937202,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,14,42,5,0.1190476190,-2.1282317062,funny,funny,hilarious,hilarious,"Sue: Is the movie funny?
+Mary: The movie is ","Sue: Is the movie funny?
+Mary: The movie is",.,funny,hilarious,-1.6693967581,-1.9818967581,-3.8733953238,-4.4904173613,-0.3125000000,-0.6170220375,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,15,39,10,0.2564102564,-1.3609765532,good,good,excellent,excellent,"Sue: Is the movie good?
+Mary: The movie is ","Sue: Is the movie good?
+Mary: The movie is",.,good,excellent,-1.9826850891,-3.8576850891,-4.0437746048,-5.8999176025,-1.8750000000,-1.8561429977,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,16,42,4,0.0952380952,-2.3513752576,happy,happy,ecstatic,ecstatic,"Sue: Was the winner happy?
+Mary: The winner was ","Sue: Was the winner happy?
+Mary: The winner was",.,happy,ecstatic,-2.0776572227,-4.2651572227,-4.4832699299,-6.6965136528,-2.1875000000,-2.2132437229,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,17,39,24,0.6153846154,-0.4855078158,hard,hard,unsolvable,unsolvable,"Sue: Is the problem hard?
+Mary: The problem is ","Sue: Is the problem hard?
+Mary: The problem is",.,hard,unsolvable,-1.6080650091,-7.8240392804,-4.0418976545,-10.6026356816,-6.2159742713,-6.5607380271,1,2,2,3,Qwen/Qwen2-7B
+experiment_2,Eweak,18,42,7,0.1666666667,-1.7917594690,harmful,harmful,deadly,deadly,"Sue: Is the toxin harmful?
+Mary: The toxin is ","Sue: Is the toxin harmful?
+Mary: The toxin is",.,harmful,deadly,-2.4007914066,-5.2132911682,-4.7511222363,-7.6115939617,-2.8124997616,-2.8604717254,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,19,39,12,0.3076923077,-1.1786549963,here,here,everywhere,everywhere,"Sue: Is there water here?
+Mary: There is water ","Sue: Is there water here?
+Mary: There is water",.,here,everywhere,-1.9120366573,-2.8495366573,-3.7180716991,-4.8005396128,-0.9375000000,-1.0824679137,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,20,42,11,0.2619047619,-1.3397743455,hungry,hungry,starving,starving,"Sue: Is the boy hungry?
+Mary: The boy is ","Sue: Is the boy hungry?
+Mary: The boy is",.,hungry,starving,-1.0881741047,-3.4631741047,-3.3098428249,-5.8376264572,-2.3750000000,-2.5277836323,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,21,39,4,0.1025641026,-2.2772672847,intelligent,intelligent,brilliant,brilliant,"Sue: Is the student intelligent?
+Mary: The student is ","Sue: Is the student intelligent?
+Mary: The student is",.,intelligent,brilliant,-1.7162408829,-4.4037408829,-4.0493497849,-6.3986034393,-2.6875000000,-2.3492536544,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,22,42,5,0.1190476190,-2.1282317062,intimidating,intimidating,terrifying,terrifying,"Sue: Was Chris's opponent intimidating?
+Mary: Chris's opponent was ","Sue: Was Chris's opponent intimidating?
+Mary: Chris's opponent was",.,intimidating,terrifying,-3.3374853134,-6.3999853134,-5.6292171478,-8.6149239540,-3.0625000000,-2.9857068062,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,23,39,24,0.6153846154,-0.4855078158,largely,largely,totally,totally,"Sue: Was the coast largely flooded?
+Mary: The coast was ","Sue: Was the coast largely flooded?
+Mary: The coast was", flooded.,largely,totally,-3.1294894218,-4.4419894218,-5.5286834538,-7.1305156350,-1.3125000000,-1.6018321812,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,24,42,6,0.1428571429,-1.9459101488,like,likes,love,loves,"Sue: Does the princess like dancing?
+Mary: The princess ","Sue: Does the princess like dancing?
+Mary: The princess", dancing.,likes,loves,-1.5998651981,-1.9748651981,-5.1753094196,-4.4904798269,-0.3750000000,0.6848295927,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,25,39,27,0.6923076923,-0.3677247801,match,matches,exceed,exceeds,"Sue: Does Bill's score match Al's?
+Mary: Bill's score ","Sue: Does Bill's score match Al's?
+Mary: Bill's score", Al's.,matches,exceeds,-3.2870931625,-5.9120931625,-7.0366550498,-9.6179296598,-2.6250000000,-2.5812746100,1,1,4,4,Qwen/Qwen2-7B
+experiment_2,Eweak,26,42,33,0.7857142857,-0.2411620568,mostly,mostly,entirely,entirely,"Sue: Were Peter's answers mostly wrong?
+Mary: Peter's answers were ","Sue: Were Peter's answers mostly wrong?
+Mary: Peter's answers were", wrong.,mostly,entirely,-1.0275266171,-7.4025268555,-3.6674898565,-10.1080490500,-6.3750002384,-6.4405591935,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,27,39,5,0.1282051282,-2.0541237337,old,old,ancient,ancient,"Sue: Is the house old?
+Mary: The house is ","Sue: Is the house old?
+Mary: The house is",.,old,ancient,-1.5493142605,-5.2368144989,-3.7569353580,-7.3060860634,-3.6875002384,-3.5491507054,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,28,42,30,0.7142857143,-0.3364722366,once,once,twice,twice,"Sue: Did mistakes happen once?
+Mary: Mistakes happened ","Sue: Did mistakes happen once?
+Mary: Mistakes happened",.,once,twice,-2.3703947067,-1.8078945875,-4.9866888523,-3.8614059687,0.5625001192,1.1252828836,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,29,39,8,0.2051282051,-1.5841201046,or,or,and,and,"Sue: Does Jimmy write books or plays?
+Mary: Jimmy writes books ","Sue: Does Jimmy write books or plays?
+Mary: Jimmy writes books", plays.,or,and,-6.5557451248,-2.4307453632,-9.0670055300,-4.7981503308,4.1249997616,4.2688551992,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,30,42,8,0.1904761905,-1.6582280765,overweight,overweight,obese,obese,"Sue: Is the teenager overweight?
+Mary: The teenager is ","Sue: Is the teenager overweight?
+Mary: The teenager is",.,overweight,obese,-1.8781155348,-3.5031156540,-4.1497384310,-5.9272818565,-1.6250001192,-1.7775434255,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,31,39,15,0.3846153846,-0.9555114451,overwhelmingly,overwhelmingly,unanimously,unanimously,"Sue: Was the measure supported overwhelmingly?
+Mary: The measure was supported ","Sue: Was the measure supported overwhelmingly?
+Mary: The measure was supported",.,overwhelmingly,unanimously,-0.7273929715,-5.0398931503,-2.3089374304,-7.1899142265,-4.3125001788,-4.8809767961,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,32,42,22,0.5238095238,-0.6466271649,palatable,palatable,delicious,delicious,"Sue: Is the wine palatable?
+Mary: The wine is ","Sue: Is the wine palatable?
+Mary: The wine is",.,palatable,delicious,-2.2625776930,-2.6265101433,-4.4818310170,-4.9404380322,-0.3639324503,-0.4586070152,2,1,3,2,Qwen/Qwen2-7B
+experiment_2,Eweak,33,39,35,0.8974358974,-0.1082135847,partially,partially,completely,completely,"Sue: Is the tank partially full?
+Mary: The tank is ","Sue: Is the tank partially full?
+Mary: The tank is", full.,partially,completely,-4.7321748734,-2.8571751118,-6.9873461127,-6.9851891994,1.8749997616,0.0021569133,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,34,42,26,0.6190476190,-0.4795730803,permit,permits,require,requires,"Sue: Does the club permit dancing?
+Mary: The club ","Sue: Does the club permit dancing?
+Mary: The club", dancing.,permits,requires,-2.8985629082,-6.6173129082,-5.8405198455,-11.6081535816,-3.7187500000,-5.7676337361,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,35,39,3,0.0769230769,-2.5649493578,polished,polished,impeccable,impeccable,"Sue: Was Ann's speech polished?
+Mary: Ann's speech was ","Sue: Was Ann's speech polished?
+Mary: Ann's speech was",.,polished,impeccable,-2.6470613480,-6.0845613480,-5.2256948948,-8.4472823143,-3.4375000000,-3.2215874195,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,36,42,23,0.5476190476,-0.6021754024,possible,possible,certain,certain,"Sue: Is success possible?
+Mary: Success is ","Sue: Is success possible?
+Mary: Success is",.,possible,certain,-1.5174503326,-6.8299503326,-4.0419926643,-9.4695963860,-5.3125000000,-5.4276037217,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,37,39,4,0.1025641026,-2.2772672847,pretty,pretty,beautiful,beautiful,"Sue: Is the girl pretty?
+Mary: The girl is ","Sue: Is the girl pretty?
+Mary: The girl is",.,pretty,beautiful,-1.6703366041,-2.1703367233,-4.2127436399,-4.6463921070,-0.5000001192,-0.4336484671,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,38,42,31,0.7380952381,-0.3036824138,primarily,primarily,exclusively,exclusively,"Sue: Are the residents primarily Greek?
+Mary: The residents are ","Sue: Are the residents primarily Greek?
+Mary: The residents are", Greek.,primarily,exclusively,-2.2147989273,-7.3397989273,-4.8389755487,-9.1727629602,-5.1250000000,-4.3337874115,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,39,39,18,0.4615384615,-0.7731898883,probably,probably,necessarily,necessarily,"Sue: Will a delay probably occur?
+Mary: A delay will ","Sue: Will a delay probably occur?
+Mary: A delay will", occur.,probably,necessarily,-1.4484943151,-9.6359939575,-4.1918655187,-12.2132666036,-8.1874996424,-8.0214010849,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,40,42,23,0.5476190476,-0.6021754024,reduce,reduced,eliminate,eliminated,"Sue: Did the city reduce waste?
+Mary: The city ","Sue: Did the city reduce waste?
+Mary: The city", waste.,reduced,eliminated,-2.4649410248,-8.5899410248,-6.5924586058,-14.2105433941,-6.1250000000,-7.6180847883,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,41,39,5,0.1282051282,-2.0541237337,scared,scared,petrified,petrified,"Sue: Was Stu's daughter scared?
+Mary: Stu's daughter was ","Sue: Was Stu's daughter scared?
+Mary: Stu's daughter was",.,scared,petrified,-1.4443297386,-4.8277711167,-4.7257335186,-7.6205741658,-3.3834413781,-2.8948406472,1,3,2,4,Qwen/Qwen2-7B
+experiment_2,Eweak,42,42,6,0.1428571429,-1.9459101488,serious,serious,life-threatening,life-threatening,"Sue: Was Kaye's illness serious?
+Mary: Kaye's illness was ","Sue: Was Kaye's illness serious?
+Mary: Kaye's illness was",.,serious,life-threatening,-1.2774751186,-4.3184332848,-3.0416790247,-6.3032275438,-3.0409581662,-3.2615485191,1,2,2,3,Qwen/Qwen2-7B
+experiment_2,Eweak,43,39,29,0.7435897436,-0.2962658161,similar,similar,identical,identical,"Sue: Are the two paintings similar?
+Mary: The two paintings are ","Sue: Are the two paintings similar?
+Mary: The two paintings are",.,similar,identical,-1.3826026917,-4.5076026917,-4.0590391159,-6.6608107090,-3.1250000000,-2.6017715931,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,44,42,27,0.6428571429,-0.4418327522,slow,slowed,stop,stopped,"Sue: Did the train slow down?
+Mary: The train ","Sue: Did the train slow down?
+Mary: The train",.,slowed,stopped,-3.0528373718,-2.4278373718,-9.4658932686,-5.6175136566,0.6250000000,3.8483796120,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,45,39,5,0.1282051282,-2.0541237337,small,small,tiny,tiny,"Sue: Is the fish small?
+Mary: The fish is ","Sue: Is the fish small?
+Mary: The fish is",.,small,tiny,-1.4975444078,-4.9662942886,-3.5584243536,-6.9744367599,-3.4687498808,-3.4160124063,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,46,42,4,0.0952380952,-2.3513752576,snug,snug,tight,tight,"Sue: Is the shirt snug?
+Mary: The shirt is ","Sue: Is the shirt snug?
+Mary: The shirt is",.,snug,tight,-2.6426253319,-2.8926253319,-4.7556233406,-5.2291212082,-0.2500000000,-0.4734978676,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,47,39,31,0.7948717949,-0.2295744416,some,some,all,all,"Sue: Does Cecilia trust some politicians?
+Mary: Cecilia trusts ","Sue: Does Cecilia trust some politicians?
+Mary: Cecilia trusts", politicians.,some,all,-2.7219891548,-3.0344891548,-5.8318535089,-5.7894456387,-0.3125000000,0.0424078702,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,48,42,9,0.2142857143,-1.5404450409,start,started,finish,finished,"Sue: Did the runner start?
+Mary: The runner ","Sue: Did the runner start?
+Mary: The runner",.,started,finished,-1.4216321707,-5.2966322899,-4.7825931311,-8.6840145588,-3.8750001192,-3.9014214277,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,49,39,11,0.2820512821,-1.2656663732,survive,survived,thrive,thrived,"Sue: Did the plant survive?
+Mary: The plant ","Sue: Did the plant survive?
+Mary: The plant",.,survived,thrived,-2.5156006813,-6.5539189577,-5.5196731091,-9.4222623110,-4.0383182764,-3.9025892019,1,2,2,3,Qwen/Qwen2-7B
+experiment_2,Eweak,50,42,3,0.0714285714,-2.6390573300,tired,tired,exhausted,exhausted,"Sue: Is the worker tired?
+Mary: The worker is ","Sue: Is the worker tired?
+Mary: The worker is",.,tired,exhausted,-1.2621139288,-3.4496140480,-3.7475942373,-5.7143955231,-2.1875001192,-1.9668012858,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,51,39,27,0.6923076923,-0.3677247801,tolerate,tolerate,encourage,encourage,"Sue: Do Joey's parents tolerate dating?
+Mary: Joey's parents ","Sue: Do Joey's parents tolerate dating?
+Mary: Joey's parents", dating.,tolerate,encourage,-3.6969516277,-7.2594518661,-7.3991520405,-10.8610143661,-3.5625002384,-3.4618623256,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,52,42,12,0.2857142857,-1.2527629685,try,tried,succeed,succeeded,"Sue: Did the candidate try?
+Mary: The candidate ","Sue: Did the candidate try?
+Mary: The candidate",.,tried,succeeded,-1.7602103949,-8.3539600372,-4.5942124128,-11.1698136330,-6.5937496423,-6.5756012202,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,53,39,1,0.0256410256,-3.6635616477,ugly,ugly,hideous,hideous,"Sue: Is the wallpaper ugly?
+Mary: The wallpaper is ","Sue: Is the wallpaper ugly?
+Mary: The wallpaper is",.,ugly,hideous,-2.6252059937,-4.3223885894,-5.1067686081,-6.6479238868,-1.6971825957,-1.5411552787,1,2,2,3,Qwen/Qwen2-7B
+experiment_2,Eweak,54,42,10,0.2380952381,-1.4350845253,understandable,understandable,articulate,articulate,"Sue: Was Tom's interview understandable?
+Mary: Tom's interview was ","Sue: Was Tom's interview understandable?
+Mary: Tom's interview was",.,understandable,articulate,-3.1198019981,-9.6823024750,-5.5558600426,-12.7015132904,-6.5625004769,-7.1456532478,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,55,39,1,0.0256410256,-3.6635616477,unpleasant,unpleasant,disgusting,disgusting,"Sue: Was Tim's bathroom unpleasant?
+Mary: Tim's bathroom was ","Sue: Was Tim's bathroom unpleasant?
+Mary: Tim's bathroom was",.,unpleasant,disgusting,-3.7205524445,-3.0330524445,-5.9100980759,-5.1808571815,0.6875000000,0.7292408944,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,56,42,25,0.5952380952,-0.5187937935,usually,usually,always,always,"Sue: Is the lawyer usually early?
+Mary: The lawyer is ","Sue: Is the lawyer usually early?
+Mary: The lawyer is", early.,usually,always,-1.3190617561,-1.3190617561,-4.6471306086,-4.4096798301,0.0000000000,0.2374507785,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Eweak,57,39,3,0.0769230769,-2.5649493578,want,wants,need,needs,"Sue: Does Phoebe want a car?
+Mary: Phoebe ","Sue: Does Phoebe want a car?
+Mary: Phoebe", a car.,wants,needs,-2.4665465355,-3.9040465355,-6.6526080966,-6.7549322546,-1.4375000000,-0.1023241580,1,1,4,4,Qwen/Qwen2-7B
+experiment_2,Eweak,58,42,19,0.4523809524,-0.7932306391,warm,warm,hot,hot,"Sue: Is the wather warm?
+Mary: The wather is ","Sue: Is the wather warm?
+Mary: The wather is",.,warm,hot,-1.2152690887,-2.9652690887,-3.8130199909,-5.5393555164,-1.7500000000,-1.7263355255,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Eweak,59,39,5,0.1282051282,-2.0541237337,well,well,superbly,superbly,"Sue: Did the rehearsal go well?
+Mary: The rehearsal went ","Sue: Did the rehearsal go well?
+Mary: The rehearsal went",.,well,superbly,-1.0456362963,-7.3947630823,-2.6854547262,-9.5150691271,-6.3491267860,-6.8296144009,1,2,2,3,Qwen/Qwen2-7B
+experiment_2,Eweak,60,42,10,0.2380952381,-1.4350845253,willing,willing,eager,eager,"Sue: Is the waiter willing?
+Mary: The waiter is ","Sue: Is the waiter willing?
+Mary: The waiter is",.,willing,eager,-0.8283404112,-5.8595905304,-3.1168316603,-9.7989780903,-5.0312501192,-6.6821464300,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,1,42,33,0.7857142857,-0.2411620568,allowed,allowed,obligatory,obligatory,"Sue: Is drinking obligatory?
+Mary: Drinking is ","Sue: Is drinking obligatory?
+Mary: Drinking is",.,allowed,obligatory,-4.6276202202,-2.5026202202,-7.3520793915,-5.0939242840,2.1250000000,2.2581551075,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,2,39,20,0.5128205128,-0.6678293726,attractive,attractive,stunning,stunning,"Sue: Is this model stunning?
+Mary: This model is ","Sue: Is this model stunning?
+Mary: This model is",.,attractive,stunning,-5.6013278961,-2.0388278961,-8.1602344513,-4.5425882339,3.5625000000,3.6176462174,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,3,42,29,0.6904761905,-0.3703737883,begin,began,complete,completed,"Sue: Did John complete the race?
+Mary: John ","Sue: Did John complete the race?
+Mary: John", the race.,began,completed,-9.2524318695,-3.2993068695,-14.7954539210,-6.4537162334,5.9531250000,8.3417376876,1,1,4,4,Qwen/Qwen2-7B
+experiment_2,Estrong,4,39,24,0.6153846154,-0.4855078158,believe,believes,know,knows,"Sue: Does the teacher know it is true?
+Mary: The teacher ","Sue: Does the teacher know it is true?
+Mary: The teacher", it is true.,believes,knows,-5.0611171722,-1.8736171722,-8.1401851848,-5.6363516450,3.1875000000,2.5038335398,1,1,5,5,Qwen/Qwen2-7B
+experiment_2,Estrong,5,42,13,0.3095238095,-1.1727202609,big,big,enormous,enormous,"Sue: Is the elephant enormous?
+Mary: The elephant is ","Sue: Is the elephant enormous?
+Mary: The elephant is",.,big,enormous,-2.4713125229,-1.5963124037,-5.1483106613,-3.8772786856,0.8750001192,1.2710319757,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,6,39,19,0.4871794872,-0.7191226669,cool,cool,cold,cold,"Sue: Is the weather cold?
+Mary: The weather is ","Sue: Is the weather cold?
+Mary: The weather is",.,cool,cold,-3.5504775047,-1.6129775047,-5.9440903664,-3.9558968544,1.9375000000,1.9881935120,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,7,42,32,0.7619047619,-0.2719337155,damage,damage,destroy,destroy,"Sue: Might the machine destroy itself?
+Mary: The machine might ","Sue: Might the machine destroy itself?
+Mary: The machine might", itself.,damage,destroy,-6.1792740822,-0.6792742014,-9.2165308297,-3.5067606270,5.4999998808,5.7097702027,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,8,39,24,0.6153846154,-0.4855078158,dark,dark,black,black,"Sue: Is the sky black?
+Mary: The sky is ","Sue: Is the sky black?
+Mary: The sky is",.,dark,black,-2.8134245872,-1.1884245872,-5.2752213478,-3.7186229229,1.6250000000,1.5565984249,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,9,42,37,0.8809523810,-0.1267517056,difficult,difficult,impossible,impossible,"Sue: Is the task impossible?
+Mary: The task is ","Sue: Is the task impossible?
+Mary: The task is",.,difficult,impossible,-4.2319030762,-1.6694028378,-7.0567140579,-4.2191841602,2.5625002384,2.8375298977,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,10,39,13,0.3333333333,-1.0986122888,dirty,dirty,filthy,filthy,"Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was ","Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was",.,dirty,filthy,-2.9531755447,-1.0156754255,-5.6329069138,-3.4421646595,1.9375001192,2.1907422543,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,11,42,20,0.4761904762,-0.7419373447,dislike,dislikes,loathe,loathes,"Sue: Does the doctor loathe coffee?
+Mary: The doctor ","Sue: Does the doctor loathe coffee?
+Mary: The doctor", coffee.,dislikes,loathes,-6.5584483147,-3.8089526910,-9.3731050491,-7.4250868056,2.7494956237,1.9480182435,1,3,3,5,Qwen/Qwen2-7B
+experiment_2,Estrong,12,39,37,0.9487179487,-0.0526437335,double,double,triple,triple,"Sue: Will the sales triple?
+Mary: The sales will ","Sue: Will the sales triple?
+Mary: The sales will",.,double,triple,-1.5517245531,-1.8642245531,-4.9464284182,-5.4055925608,-0.3125000000,-0.4591641426,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,13,42,37,0.8809523810,-0.1267517056,equally,equally,more,more,"Sue: Is that candidate more skilled?
+Mary: That candidate is ","Sue: Is that candidate more skilled?
+Mary: That candidate is", skilled.,equally,more,-7.2167224884,-1.4042222500,-9.9563258290,-5.0336080790,5.8125002384,4.9227177500,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,14,39,14,0.3589743590,-1.0245043164,funny,funny,hilarious,hilarious,"Sue: Is the movie hilarious?
+Mary: The movie is ","Sue: Is the movie hilarious?
+Mary: The movie is",.,funny,hilarious,-2.3547866344,-1.2297866344,-5.1027269363,-3.4246549606,1.1250000000,1.6780719757,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,15,42,30,0.7142857143,-0.3364722366,good,good,excellent,excellent,"Sue: Is the movie excellent?
+Mary: The movie is ","Sue: Is the movie excellent?
+Mary: The movie is",.,good,excellent,-2.5148081779,-1.9523082972,-4.8200411797,-3.8666607141,0.5624998807,0.9533804656,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,16,39,19,0.4871794872,-0.7191226669,happy,happy,ecstatic,ecstatic,"Sue: Was the winner ecstatic?
+Mary: The winner was ","Sue: Was the winner ecstatic?
+Mary: The winner was",.,happy,ecstatic,-3.3164803982,-2.3164803982,-6.6173830032,-4.5180799961,1.0000000000,2.0993030071,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,17,42,32,0.7619047619,-0.2719337155,hard,hard,unsolvable,unsolvable,"Sue: Is the problem unsolvable?
+Mary: The problem is ","Sue: Is the problem unsolvable?
+Mary: The problem is",.,hard,unsolvable,-5.3942327499,-1.6100777835,-8.7537927628,-4.4108762667,3.7841549664,4.3429164961,1,2,2,3,Qwen/Qwen2-7B
+experiment_2,Estrong,18,39,24,0.6153846154,-0.4855078158,harmful,harmful,deadly,deadly,"Sue: Is the toxin deadly?
+Mary: The toxin is ","Sue: Is the toxin deadly?
+Mary: The toxin is",.,harmful,deadly,-5.4878101349,-1.7378098965,-8.0396184921,-3.8123528957,3.7500002384,4.2272655964,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,19,42,24,0.5714285714,-0.5596157880,here,here,everywhere,everywhere,"Sue: Is there water everywhere?
+Mary: There is water ","Sue: Is there water everywhere?
+Mary: There is water",.,here,everywhere,-3.8078265190,-1.1203263998,-6.9589707851,-3.1292623281,2.6875001192,3.8297084570,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,20,39,17,0.4358974359,-0.8303483021,hungry,hungry,starving,starving,"Sue: Is the boy starving?
+Mary: The boy is ","Sue: Is the boy starving?
+Mary: The boy is",.,hungry,starving,-1.8113194704,-1.8738194704,-4.4093073606,-4.2625557184,-0.0625000000,0.1467516422,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,21,42,14,0.3333333333,-1.0986122888,intelligent,intelligent,brilliant,brilliant,"Sue: Is the student brilliant?
+Mary: The student is ","Sue: Is the student brilliant?
+Mary: The student is",.,intelligent,brilliant,-3.9839806557,-1.6714806557,-6.7149410248,-3.5936549902,2.3125000000,3.1212860346,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,22,39,18,0.4615384615,-0.7731898883,intimidating,intimidating,terrifying,terrifying,"Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was ","Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was",.,intimidating,terrifying,-5.7002382278,-3.4502379894,-8.4062795639,-5.6740639210,2.2500002384,2.7322156429,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,23,42,30,0.7142857143,-0.3364722366,largely,largely,totally,totally,"Sue: Was the coast totally flooded?
+Mary: The coast was ","Sue: Was the coast totally flooded?
+Mary: The coast was", flooded.,largely,totally,-7.0607261658,-1.9357264042,-10.0595912933,-3.9469459951,5.1249997616,6.1126452982,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,24,39,24,0.6153846154,-0.4855078158,like,likes,love,loves,"Sue: Does the princess love dancing?
+Mary: The princess ","Sue: Does the princess love dancing?
+Mary: The princess", dancing.,likes,loves,-3.3539750576,-0.8539749980,-6.7630228996,-4.1608992219,2.5000000596,2.6021236777,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,25,42,35,0.8333333333,-0.1823215568,match,matches,exceed,exceeds,"Sue: Does Bill's score exceed Al's?
+Mary: Bill's score ","Sue: Does Bill's score exceed Al's?
+Mary: Bill's score", Al's.,matches,exceeds,-8.5567846298,-2.4317846298,-11.7551619243,-6.6766965110,6.1250000000,5.0784654133,1,1,4,4,Qwen/Qwen2-7B
+experiment_2,Estrong,26,39,38,0.9743589744,-0.0259754864,mostly,mostly,entirely,entirely,"Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were ","Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were", wrong.,mostly,entirely,-2.7196753025,-3.7196753025,-5.5870649219,-6.3348204494,-1.0000000000,-0.7477555275,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,27,42,15,0.3571428571,-1.0296194173,old,old,ancient,ancient,"Sue: Is the house ancient?
+Mary: The house is ","Sue: Is the house ancient?
+Mary: The house is",.,old,ancient,-1.9160211086,-2.2285211086,-4.4841096401,-4.2766416073,-0.3125000000,0.2074680328,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,28,39,37,0.9487179487,-0.0526437335,once,once,twice,twice,"Sue: Did mistakes happen twice?
+Mary: Mistakes happened ","Sue: Did mistakes happen twice?
+Mary: Mistakes happened",.,once,twice,-3.1180346012,-0.8055345416,-5.2718026638,-3.3840975165,2.3125000596,1.8877051473,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,29,42,20,0.4761904762,-0.7419373447,or,or,and,and,"Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes books ","Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes books", plays.,or,and,-7.3606967926,-0.9856970310,-9.9880645573,-3.2920278609,6.3749997616,6.6960366964,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,30,39,15,0.3846153846,-0.9555114451,overweight,overweight,obese,obese,"Sue: Is the teenager obese?
+Mary: The teenager is ","Sue: Is the teenager obese?
+Mary: The teenager is",.,overweight,obese,-2.0259850025,-1.8384850025,-4.4506390095,-3.9158942699,0.1875000000,0.5347447396,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,31,42,30,0.7142857143,-0.3364722366,overwhelmingly,overwhelmingly,unanimously,unanimously,"Sue: Was the measure supported unanimously?
+Mary: The measure was supported ","Sue: Was the measure supported unanimously?
+Mary: The measure was supported",.,overwhelmingly,unanimously,-4.3227519989,-1.3852519989,-6.3301925659,-3.4726564884,2.9375000000,2.8575360775,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,32,39,31,0.7948717949,-0.2295744416,palatable,palatable,delicious,delicious,"Sue: Is the wine delicious?
+Mary: The wine is ","Sue: Is the wine delicious?
+Mary: The wine is",.,palatable,delicious,-9.8406979349,-1.9388983250,-12.3599802759,-4.1503539085,7.9017996099,8.2096263674,2,1,3,2,Qwen/Qwen2-7B
+experiment_2,Estrong,33,42,41,0.9761904762,-0.0240975516,partially,partially,completely,completely,"Sue: Is the tank completely full?
+Mary: The tank is ","Sue: Is the tank completely full?
+Mary: The tank is", full.,partially,completely,-6.4487919807,-3.2612919807,-8.5226852298,-5.7447846830,3.1875000000,2.7779005468,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,34,39,30,0.7692307692,-0.2623642645,permit,permits,require,requires,"Sue: Does the club require dancing?
+Mary: The club ","Sue: Does the club require dancing?
+Mary: The club", dancing.,permits,requires,-9.4956808090,-2.3394308090,-12.8083617091,-5.8308235407,7.1562500000,6.9775381684,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,35,42,14,0.3333333333,-1.0986122888,polished,polished,impeccable,impeccable,"Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was ","Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was",.,polished,impeccable,-8.2088680267,-1.7401175499,-11.2151389122,-3.8080750704,6.4687504768,7.4070638418,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,36,39,33,0.8461538462,-0.1670540846,possible,possible,certain,certain,"Sue: Is success certain?
+Mary: Success is ","Sue: Is success certain?
+Mary: Success is",.,possible,certain,-4.2298965454,-2.9173965454,-6.8215053082,-5.6996479034,1.3125000000,1.1218574048,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,37,42,13,0.3095238095,-1.1727202609,pretty,pretty,beautiful,beautiful,"Sue: Is the girl beautiful?
+Mary: The girl is ","Sue: Is the girl beautiful?
+Mary: The girl is",.,pretty,beautiful,-2.8035202026,-1.3660203218,-5.3192880154,-3.4715834856,1.4374998808,1.8477045298,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,38,39,33,0.8461538462,-0.1670540846,primarily,primarily,exclusively,exclusively,"Sue: Are the residents exclusively Greek?
+Mary: The residents are ","Sue: Are the residents exclusively Greek?
+Mary: The residents are", Greek.,primarily,exclusively,-3.9071950912,-3.2821950912,-6.8377336860,-5.1849641800,0.6250000000,1.6527695060,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,39,42,27,0.6428571429,-0.4418327522,probably,probably,necessarily,necessarily,"Sue: Will a delay necessarily occur?
+Mary: A delay will ","Sue: Will a delay necessarily occur?
+Mary: A delay will", occur.,probably,necessarily,-3.4700129032,-4.5950126648,-5.7739730179,-7.5180983171,-1.1249997616,-1.7441252992,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,40,39,33,0.8461538462,-0.1670540846,reduce,reduced,eliminate,eliminated,"Sue: Did the city eliminate waste?
+Mary: The city ","Sue: Did the city eliminate waste?
+Mary: The city", waste.,reduced,eliminated,-4.6686773300,-2.7936773300,-8.0905374289,-6.1685499549,1.8750000000,1.9219874740,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,41,42,11,0.2619047619,-1.3397743455,scared,scared,petrified,petrified,"Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was ","Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was",.,scared,petrified,-2.9881186485,-1.4966347048,-6.9272642136,-3.9657223055,1.4914839437,2.9615419081,1,3,2,4,Qwen/Qwen2-7B
+experiment_2,Estrong,42,39,20,0.5128205128,-0.6678293726,serious,serious,life-threatening,life-threatening,"Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was ","Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was",.,serious,life-threatening,-2.6781318188,-1.2392176241,-4.7796690464,-2.7497205585,1.4389141947,2.0299484879,1,2,2,3,Qwen/Qwen2-7B
+experiment_2,Estrong,43,42,38,0.9047619048,-0.1000834585,similar,similar,identical,identical,"Sue: Are the two paintings identical?
+Mary: The two paintings are ","Sue: Are the two paintings identical?
+Mary: The two paintings are",.,similar,identical,-2.6047205925,-2.2297205925,-5.3667616844,-4.5186245441,0.3750000000,0.8481371403,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,44,39,36,0.9230769231,-0.0800427076,slow,slowed,stop,stopped,"Sue: Did the train stop?
+Mary: The train ","Sue: Did the train stop?
+Mary: The train",.,slowed,stopped,-7.2477517128,-1.3102518320,-12.8723273277,-4.7778502703,5.9374998808,8.0944770574,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,45,42,9,0.2142857143,-1.5404450409,small,small,tiny,tiny,"Sue: Is the fish tiny?
+Mary: The fish is ","Sue: Is the fish tiny?
+Mary: The fish is",.,small,tiny,-2.1820981503,-1.4320981503,-4.9218115807,-3.8117425442,0.7500000000,1.1100690365,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,46,39,2,0.0512820513,-2.9704144652,snug,snug,tight,tight,"Sue: Is the shirt tight?
+Mary: The shirt is ","Sue: Is the shirt tight?
+Mary: The shirt is",.,snug,tight,-6.4633431435,-1.9320932627,-8.7116792202,-4.2534090281,4.5312498808,4.4582701921,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,47,42,36,0.8571428571,-0.1541506799,some,some,all,all,"Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts ","Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts", politicians.,some,all,-4.1326074600,-2.1951072216,-7.5702429414,-5.2445188910,1.9375002384,2.3257240504,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,48,39,30,0.7692307692,-0.2623642645,start,started,finish,finished,"Sue: Did the runner finish?
+Mary: The runner ","Sue: Did the runner finish?
+Mary: The runner",.,started,finished,-6.6522641182,-1.0897639990,-11.6477756500,-4.0489789248,5.5625001192,7.5987967252,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,49,42,29,0.6904761905,-0.3703737883,survive,survived,thrive,thrived,"Sue: Did the plant thrive?
+Mary: The plant ","Sue: Did the plant thrive?
+Mary: The plant",.,survived,thrived,-4.0190758705,-2.1371469796,-6.7424635887,-4.6949587166,1.8819288909,2.0475048721,1,2,2,3,Qwen/Qwen2-7B
+experiment_2,Estrong,50,39,11,0.2820512821,-1.2656663732,tired,tired,exhausted,exhausted,"Sue: Is the worker exhausted?
+Mary: The worker is ","Sue: Is the worker exhausted?
+Mary: The worker is",.,tired,exhausted,-2.5671982765,-1.2546983957,-5.3575887680,-3.6017409563,1.3124998808,1.7558478117,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,51,42,34,0.8095238095,-0.2113090937,tolerate,tolerate,encourage,encourage,"Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents ","Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents", dating.,tolerate,encourage,-9.0698471069,-2.7573473454,-12.5237987041,-6.0096322298,6.3124997615,6.5141664743,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,52,39,36,0.9230769231,-0.0800427076,try,tried,succeed,succeeded,"Sue: Did the candidate succeed?
+Mary: The candidate ","Sue: Did the candidate succeed?
+Mary: The candidate",.,tried,succeeded,-5.8481044769,-3.0668542385,-10.1565856934,-5.3385441303,2.7812502384,4.8180415631,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,53,42,6,0.1428571429,-1.9459101488,ugly,ugly,hideous,hideous,"Sue: Is the wallpaper hideous?
+Mary: The wallpaper is ","Sue: Is the wallpaper hideous?
+Mary: The wallpaper is",.,ugly,hideous,-5.3197598457,-0.8304631459,-7.7834160328,-2.9602447888,4.4892966998,4.8231712440,1,2,2,3,Qwen/Qwen2-7B
+experiment_2,Estrong,54,39,23,0.5897435897,-0.5280674303,understandable,understandable,articulate,articulate,"Sue: Was Tom's interview articulate?
+Mary: Tom's interview was ","Sue: Was Tom's interview articulate?
+Mary: Tom's interview was",.,understandable,articulate,-8.8770704269,-2.9395704269,-11.5075485706,-5.3926630020,5.9375000000,6.1148855686,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,55,42,7,0.1666666667,-1.7917594690,unpleasant,unpleasant,disgusting,disgusting,"Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was ","Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was",.,unpleasant,disgusting,-8.5783195496,-1.2033194304,-11.2060251236,-3.5997048616,7.3750001192,7.6063202620,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,56,39,33,0.8461538462,-0.1670540846,usually,usually,always,always,"Sue: Is the lawyer always early?
+Mary: The lawyer is ","Sue: Is the lawyer always early?
+Mary: The lawyer is", early.,usually,always,-2.8122346401,-0.6872346401,-5.9264433384,-3.5426369905,2.1250000000,2.3838063479,1,1,3,3,Qwen/Qwen2-7B
+experiment_2,Estrong,57,42,25,0.5952380952,-0.5187937935,want,wants,need,needs,"Sue: Does Phoebe need a car?
+Mary: Phoebe ","Sue: Does Phoebe need a car?
+Mary: Phoebe", a car.,wants,needs,-4.5637559891,-3.5637557507,-8.9122795612,-6.9980720282,1.0000002384,1.9142075330,1,1,4,4,Qwen/Qwen2-7B
+experiment_2,Estrong,58,39,28,0.7179487179,-0.3313571360,warm,warm,hot,hot,"Sue: Is the wather hot?
+Mary: The wather is ","Sue: Is the wather hot?
+Mary: The wather is",.,warm,hot,-2.8894381523,-1.3269381523,-5.4607839584,-3.8996261358,1.5625000000,1.5611578226,1,1,2,2,Qwen/Qwen2-7B
+experiment_2,Estrong,59,42,23,0.5476190476,-0.6021754024,well,well,superbly,superbly,"Sue: Did the rehearsal go superbly?
+Mary: The rehearsal went ","Sue: Did the rehearsal go superbly?
+Mary: The rehearsal went",.,well,superbly,-2.1208965778,-2.4084523544,-3.8429057598,-4.4600378424,-0.2875557766,-0.6171320826,1,2,2,3,Qwen/Qwen2-7B
+experiment_2,Estrong,60,39,22,0.5641025641,-0.5725191928,willing,willing,eager,eager,"Sue: Is the waiter eager?
+Mary: The waiter is ","Sue: Is the waiter eager?
+Mary: The waiter is",.,willing,eager,-5.3938517570,-1.9563518763,-8.7298560143,-4.7716599703,3.4374998807,3.9581960440,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,1,40,25,0.6250000000,-0.4700036292,allowed,allowed,obligatory,obligatory,Drinking is only ,Drinking is only,.,allowed,obligatory,-1.7008498907,-12.4195995331,-9.9330180883,-18.4928946495,-10.7187496424,-8.5598765612,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,2,40,20,0.5000000000,-0.6931471806,attractive,attractive,stunning,stunning,This model is only ,This model is only,.,attractive,stunning,-11.6190013885,-13.4236888885,-16.4617743492,-16.1988267899,-1.8046875000,0.2629475593,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,3,40,25,0.6250000000,-0.4700036292,begin,began,complete,completed,John only ,John only, the race.,began,completed,-9.6857814789,-8.7170314789,-21.4952971935,-20.4705832005,0.9687500000,1.0247139930,1,1,4,4,Qwen/Qwen2-7B
+experiment_3,Eonly,4,40,29,0.7250000000,-0.3215836241,believe,believes,know,knows,The teacher only ,The teacher only, it is true.,believes,knows,-8.3520383835,-2.9770381451,-23.6033682823,-17.1095378399,5.3750002384,6.4938304424,1,1,5,5,Qwen/Qwen2-7B
+experiment_3,Eonly,5,40,23,0.5750000000,-0.5533852382,big,big,enormous,enormous,The elephant is only ,The elephant is only,.,big,enormous,-7.1369352341,-12.9455289841,-9.6773374081,-15.4660620689,-5.8085937500,-5.7887246608,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,6,40,29,0.7250000000,-0.3215836241,cool,cool,cold,cold,The weather is only ,The weather is only,.,cool,cold,-7.8024597168,-5.5524597168,-11.2837376595,-9.2139258385,2.2500000000,2.0698118210,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,7,40,26,0.6500000000,-0.4307829161,damage,damage,destroy,destroy,The machine might only ,The machine might only, itself.,damage,destroy,-9.2219581604,-9.7219581604,-16.0564241409,-16.9385821819,-0.5000000000,-0.8821580410,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,8,40,20,0.5000000000,-0.6931471806,dark,dark,black,black,The sky is only ,The sky is only,.,dark,black,-5.4739708900,-5.1614708900,-9.8651037216,-8.8326678276,0.3125000000,1.0324358940,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,9,40,38,0.9500000000,-0.0512932944,difficult,difficult,impossible,impossible,The task is only ,The task is only,.,difficult,impossible,-4.7324385643,-7.2324385643,-8.2925124168,-12.1655349731,-2.5000000000,-3.8730225563,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,10,40,17,0.4250000000,-0.8556661101,dirty,dirty,filthy,filthy,Zack's carpet was only ,Zack's carpet was only,.,dirty,filthy,-8.0430774689,-13.9805774689,-11.6469275951,-18.1357069016,-5.9375000000,-6.4887793065,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,11,40,22,0.5500000000,-0.5978370008,dislike,dislikes,loathe,loathes,The doctor only ,The doctor only, coffee.,dislikes,loathes,-11.8626155853,-15.9095673049,-21.8325097561,-25.2979835952,-4.0469517196,-3.4654738391,1,3,3,5,Qwen/Qwen2-7B
+experiment_3,Eonly,12,40,34,0.8500000000,-0.1625189295,double,double,triple,triple,The sales will only ,The sales will only,.,double,triple,-10.1343297958,-12.4780797958,-14.2780079842,-16.3434791565,-2.3437500000,-2.0654711723,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,13,40,35,0.8750000000,-0.1335313926,equally,equally,more,more,That candidate is only ,That candidate is only, skilled.,equally,more,-11.6221361160,-7.2315111160,-21.7502050400,-18.0687689781,4.3906250000,3.6814360619,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,14,40,19,0.4750000000,-0.7444404749,funny,funny,hilarious,hilarious,The movie is only ,The movie is only,.,funny,hilarious,-8.1452226639,-11.3639726639,-12.9197797775,-15.5144548416,-3.2187500000,-2.5946750641,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,15,40,34,0.8500000000,-0.1625189295,good,good,excellent,excellent,The movie is only ,The movie is only,.,good,excellent,-6.1452226639,-9.7702226639,-10.0571715832,-12.0850477219,-3.6250000000,-2.0278761387,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,16,40,25,0.6250000000,-0.4700036292,happy,happy,ecstatic,ecstatic,The winner was only ,The winner was only,.,happy,ecstatic,-7.7170076370,-12.7697420120,-13.0329837799,-15.4434394836,-5.0527343750,-2.4104557037,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,17,40,32,0.8000000000,-0.2231435513,hard,hard,unsolvable,unsolvable,The problem is only ,The problem is only,.,hard,unsolvable,-8.3156490326,-10.4951170087,-13.5867209435,-15.0169818997,-2.1794679761,-1.4302609562,1,2,2,3,Qwen/Qwen2-7B
+experiment_3,Eonly,18,40,30,0.7500000000,-0.2876820725,harmful,harmful,deadly,deadly,The toxin is only ,The toxin is only,.,harmful,deadly,-3.6167695522,-5.3042697906,-11.7161614895,-12.3538241386,-1.6875002384,-0.6376626491,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,19,40,35,0.8750000000,-0.1335313926,here,here,everywhere,everywhere,There is only water ,There is only water,.,here,everywhere,-3.4424302578,-4.4424304962,-5.0408500433,-6.0408385992,-1.0000002384,-0.9999885559,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,20,40,20,0.5000000000,-0.6931471806,hungry,hungry,starving,starving,The boy is only ,The boy is only,.,hungry,starving,-10.3355560303,-15.4918060303,-12.5470111370,-18.3803904057,-5.1562500000,-5.8333792687,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,21,40,17,0.4250000000,-0.8556661101,intelligent,intelligent,brilliant,brilliant,The student is only ,The student is only,.,intelligent,brilliant,-11.8495826721,-13.3984107971,-15.4472701550,-17.2252986431,-1.5488281250,-1.7780284881,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,22,40,24,0.6000000000,-0.5108256238,intimidating,intimidating,terrifying,terrifying,Chris's opponent was only ,Chris's opponent was only,.,intimidating,terrifying,-13.3871335983,-14.6527585983,-16.0578989983,-17.5161352158,-1.2656250000,-1.4582362175,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,23,40,32,0.8000000000,-0.2231435513,largely,largely,totally,totally,The coast was only ,The coast was only, flooded.,largely,totally,-11.9829006195,-12.2016506195,-24.8819670677,-24.1200590134,-0.2187500000,0.7619080543,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,24,40,13,0.3250000000,-1.1239300967,like,likes,love,loves,The princess only ,The princess only, dancing.,likes,loves,-4.1201262474,-4.6201262474,-19.6222853661,-12.4986453056,-0.5000000000,7.1236400605,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,25,40,34,0.8500000000,-0.1625189295,match,matches,exceed,exceeds,Bill's score only ,Bill's score only, Al's.,matches,exceeds,-11.6317710876,-10.4442710876,-33.6006007418,-28.4484590329,1.1875000000,5.1521417089,1,1,4,4,Qwen/Qwen2-7B
+experiment_3,Eonly,26,40,38,0.9500000000,-0.0512932944,mostly,mostly,entirely,entirely,Peter's answers were only ,Peter's answers were only, wrong.,mostly,entirely,-6.8379311562,-10.6035556793,-11.2966457605,-17.1461129189,-3.7656245231,-5.8494671584,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,27,40,19,0.4750000000,-0.7444404749,old,old,ancient,ancient,The house is only ,The house is only,.,old,ancient,-8.8372182846,-13.4934682846,-11.6968274117,-16.6422917843,-4.6562500000,-4.9454643726,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,28,40,35,0.8750000000,-0.1335313926,once,once,twice,twice,Mistakes happened only ,Mistakes happened only,.,once,twice,-1.9895334244,-4.8645334244,-4.3052780628,-7.4977324009,-2.8750000000,-3.1924543381,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,29,40,19,0.4750000000,-0.7444404749,or,or,and,and,Jimmy writes only books ,Jimmy writes only books, plays.,or,and,-8.3737869263,-3.8737871647,-11.0955822617,-7.8240290284,4.4999997616,3.2715532333,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,30,40,24,0.6000000000,-0.5108256238,overweight,overweight,obese,obese,The teenager is only ,The teenager is only,.,overweight,obese,-10.6808433533,-13.0558433533,-13.1161744595,-16.6873614788,-2.3750000000,-3.5711870193,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,31,40,29,0.7250000000,-0.3215836241,overwhelmingly,overwhelmingly,unanimously,unanimously,The measure was supported only ,The measure was supported only,.,overwhelmingly,unanimously,-10.3186721802,-9.2561721802,-14.8648233414,-12.9532446861,1.0625000000,1.9115786553,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,32,40,37,0.9250000000,-0.0779615415,palatable,palatable,delicious,delicious,The wine is only ,The wine is only,.,palatable,delicious,-9.5801974684,-8.7559480667,-15.0576154143,-13.0686287880,0.8242494017,1.9889866263,2,1,3,2,Qwen/Qwen2-7B
+experiment_3,Eonly,33,40,40,1.0000000000,0.0000000000,partially,partially,completely,completely,The tank is only ,The tank is only, full.,partially,completely,-4.4940748215,-8.0565748215,-6.6115049720,-12.2467896938,-3.5625000000,-5.6352847218,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,34,40,23,0.5750000000,-0.5533852382,permit,permits,require,requires,The club only ,The club only, dancing.,permits,requires,-6.6345443726,-4.6657943726,-18.6512196064,-21.8630661964,1.9687500000,-3.2118465900,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,35,40,24,0.6000000000,-0.5108256238,polished,polished,impeccable,impeccable,Ann's speech was only ,Ann's speech was only,.,polished,impeccable,-11.6454229355,-14.3016729355,-16.6748189926,-16.9719486237,-2.6562500000,-0.2971296311,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,36,40,29,0.7250000000,-0.3215836241,possible,possible,certain,certain,Success is only ,Success is only,.,possible,certain,-1.7006725073,-7.8256726265,-10.1021000147,-13.8034291267,-6.1250001192,-3.7013291120,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,37,40,25,0.6250000000,-0.4700036292,pretty,pretty,beautiful,beautiful,The girl is only ,The girl is only,.,pretty,beautiful,-11.6598834991,-11.6598834991,-13.7236685753,-14.3164517879,0.0000000000,-0.5927832126,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,38,40,33,0.8250000000,-0.1923718926,primarily,primarily,exclusively,exclusively,The residents are only ,The residents are only, Greek.,primarily,exclusively,-11.5286502838,-11.8411502838,-22.1675884724,-22.8757979870,-0.3125000000,-0.7082095146,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,39,40,31,0.7750000000,-0.2548922496,probably,probably,necessarily,necessarily,A delay will only ,A delay will only, occur.,probably,necessarily,-10.1775207520,-10.8493957520,-17.7936785221,-19.5352566242,-0.6718750000,-1.7415781021,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,40,40,36,0.9000000000,-0.1053605157,reduce,reduced,eliminate,eliminated,The city only ,The city only, waste.,reduced,eliminated,-7.9586615562,-10.4586620331,-19.4485750198,-22.5337042809,-2.5000004769,-3.0851292611,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,41,40,27,0.6750000000,-0.3930425881,scared,scared,petrified,petrified,Stu's daughter was only ,Stu's daughter was only,.,scared,petrified,-11.3915491104,-12.6596202087,-16.1021642685,-15.7336491775,-1.2680710983,0.3685150910,1,3,2,4,Qwen/Qwen2-7B
+experiment_3,Eonly,42,40,15,0.3750000000,-0.9808292530,serious,serious,life-threatening,life-threatening,Kaye's illness was only ,Kaye's illness was only,.,serious,life-threatening,-5.4547119141,-8.4526827037,-8.9433846474,-11.7904035747,-2.9979707896,-2.8470189273,1,2,2,3,Qwen/Qwen2-7B
+experiment_3,Eonly,43,40,37,0.9250000000,-0.0779615415,similar,similar,identical,identical,The two paintings are only ,The two paintings are only,.,similar,identical,-1.7406382561,-5.5531382561,-4.7873253822,-9.7199316025,-3.8125000000,-4.9326062203,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,44,40,35,0.8750000000,-0.1335313926,slow,slowed,stop,stopped,The train only ,The train only,.,slowed,stopped,-6.2960910797,-2.9523410797,-11.6658592224,-10.0559799671,3.3437500000,1.6098792553,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,45,40,19,0.4750000000,-0.7444404749,small,small,tiny,tiny,The fish is only ,The fish is only,.,small,tiny,-5.5020704269,-8.2989454269,-7.4990130663,-10.0999947786,-2.7968750000,-2.6009817123,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,46,40,19,0.4750000000,-0.7444404749,snug,snug,tight,tight,The shirt is only ,The shirt is only,.,snug,tight,-12.7838439941,-10.9088439941,-16.1893982887,-16.2333869934,1.8750000000,-0.0439887047,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,47,40,36,0.9000000000,-0.1053605157,some,some,all,all,Cecilia trusts only ,Cecilia trusts only, politicians.,some,all,-7.0893902779,-9.6011085510,-12.5365015268,-20.7479593754,-2.5117182731,-8.2114578486,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,48,40,29,0.7250000000,-0.3215836241,start,started,finish,finished,The runner only ,The runner only,.,started,finished,-5.4069948196,-4.0319948196,-13.4105405807,-12.1877794266,1.3750000000,1.2227611541,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,49,40,30,0.7500000000,-0.2876820725,survive,survived,thrive,thrived,The plant only ,The plant only,.,survived,thrived,-5.6468558311,-8.6378450394,-13.2085399628,-15.7279362679,-2.9909892083,-2.5193963051,1,2,2,3,Qwen/Qwen2-7B
+experiment_3,Eonly,50,40,22,0.5500000000,-0.5978370008,tired,tired,exhausted,exhausted,The worker is only ,The worker is only,.,tired,exhausted,-8.8311309814,-11.6983184814,-12.5043716431,-15.6354591846,-2.8671875000,-3.1310875415,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,51,40,32,0.8000000000,-0.2231435513,tolerate,tolerate,encourage,encourage,Joey's parents only ,Joey's parents only, dating.,tolerate,encourage,-11.4790029526,-9.7915029526,-22.1171545982,-24.9387392998,1.6875000000,-2.8215847016,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,52,40,33,0.8250000000,-0.1923718926,try,tried,succeed,succeeded,The candidate only ,The candidate only,.,tried,succeeded,-7.5323266983,-7.2823266983,-14.7477540970,-14.4204959869,0.2500000000,0.3272581101,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,53,40,16,0.4000000000,-0.9162907319,ugly,ugly,hideous,hideous,The wallpaper is only ,The wallpaper is only,.,ugly,hideous,-11.7453536987,-13.7558113337,-14.7744417191,-16.4183248281,-2.0104576350,-1.6438831090,1,2,2,3,Qwen/Qwen2-7B
+experiment_3,Eonly,54,40,27,0.6750000000,-0.3930425881,understandable,understandable,articulate,articulate,Tom's interview was only ,Tom's interview was only,.,understandable,articulate,-13.3027954102,-18.7402954102,-17.7820434570,-21.9591121674,-5.4375000000,-4.1770687104,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,55,40,24,0.6000000000,-0.5108256238,unpleasant,unpleasant,disgusting,disgusting,Tim's bathroom was only ,Tim's bathroom was only,.,unpleasant,disgusting,-19.4795570374,-16.9483070374,-22.5768399239,-18.2245001793,2.5312500000,4.3523397446,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,56,40,29,0.7250000000,-0.3215836241,usually,usually,always,always,The lawyer is only ,The lawyer is only, early.,usually,always,-10.7614812851,-12.6657781601,-23.3263056278,-24.1177668571,-1.9042968750,-0.7914612293,1,1,3,3,Qwen/Qwen2-7B
+experiment_3,Eonly,57,40,19,0.4750000000,-0.7444404749,want,wants,need,needs,Phoebe only ,Phoebe only, a car.,wants,needs,-3.5330963135,-1.9080964327,-15.8679213524,-16.2256296873,1.6249998808,-0.3577083349,1,1,4,4,Qwen/Qwen2-7B
+experiment_3,Eonly,58,40,33,0.8250000000,-0.1923718926,warm,warm,hot,hot,The wather is only ,The wather is only,.,warm,hot,-3.3804583549,-5.1929583549,-6.6651906967,-9.6058564186,-1.8125000000,-2.9406657219,1,1,2,2,Qwen/Qwen2-7B
+experiment_3,Eonly,59,40,33,0.8250000000,-0.1923718926,well,well,superbly,superbly,The rehearsal only went ,The rehearsal only went,.,well,superbly,-3.0267362595,-12.5182298869,-7.0009315014,-14.3602470607,-9.4914936274,-7.3593155593,1,2,2,3,Qwen/Qwen2-7B
+experiment_3,Eonly,60,40,27,0.6750000000,-0.3930425881,willing,willing,eager,eager,The waiter is only ,The waiter is only,.,willing,eager,-5.6338148117,-9.4619398117,-15.7770128250,-17.6149883270,-3.8281250000,-1.8379755020,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,1,40,33,0.8250000000,-0.1923718926,allowed,allowed,obligatory,obligatory,"Sue: Is drinking obligatory?
+Mary: Drinking is only ","Sue: Is drinking obligatory?
+Mary: Drinking is only",.,allowed,obligatory,-4.2341127396,-1.9216129780,-9.8890275955,-8.4221284389,2.3124997616,1.4668991566,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,2,40,34,0.8500000000,-0.1625189295,attractive,attractive,stunning,stunning,"Sue: Is this model stunning?
+Mary: This model is only ","Sue: Is this model stunning?
+Mary: This model is only",.,attractive,stunning,-4.9710960388,-2.3460960388,-7.4679789543,-6.0377368927,2.6250000000,1.4302420616,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,3,40,39,0.9750000000,-0.0253178080,begin,began,complete,completed,"Sue: Did John complete the race?
+Mary: John only ","Sue: Did John complete the race?
+Mary: John only", the race.,began,completed,-7.6189899445,-1.9939901829,-11.6438862681,-9.1195342541,5.6249997616,2.5243520140,1,1,4,4,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,4,40,28,0.7000000000,-0.3566749439,believe,believes,know,knows,"Sue: Does the teacher know it is true?
+Mary: The teacher only ","Sue: Does the teacher know it is true?
+Mary: The teacher only", it is true.,believes,knows,-4.4700007439,-0.6575008035,-10.0945332646,-7.8073145747,3.8124999404,2.2872186899,1,1,5,5,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,5,40,37,0.9250000000,-0.0779615415,big,big,enormous,enormous,"Sue: Is the elephant enormous?
+Mary: The elephant is only ","Sue: Is the elephant enormous?
+Mary: The elephant is only",.,big,enormous,-3.9964661598,-2.9339661598,-6.4439039230,-6.5940408707,1.0625000000,-0.1501369477,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,6,40,37,0.9250000000,-0.0779615415,cool,cool,cold,cold,"Sue: Is the weather cold?
+Mary: The weather is only ","Sue: Is the weather cold?
+Mary: The weather is only",.,cool,cold,-3.0525088310,-1.6775088310,-5.2440619469,-6.4759750366,1.3750000000,-1.2319130897,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,7,40,37,0.9250000000,-0.0779615415,damage,damage,destroy,destroy,"Sue: Might the machine destroy itself?
+Mary: The machine might only ","Sue: Might the machine destroy itself?
+Mary: The machine might only", itself.,damage,destroy,-4.6257753372,-1.0007750988,-7.5557022095,-5.1787208021,3.6250002384,2.3769814074,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,8,40,33,0.8250000000,-0.1923718926,dark,dark,black,black,"Sue: Is the sky black?
+Mary: The sky is only ","Sue: Is the sky black?
+Mary: The sky is only",.,dark,black,-2.4686443806,-0.7811444402,-5.2906463146,-6.9535129666,1.6874999404,-1.6628666520,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,9,40,38,0.9500000000,-0.0512932944,difficult,difficult,impossible,impossible,"Sue: Is the task impossible?
+Mary: The task is only ","Sue: Is the task impossible?
+Mary: The task is only",.,difficult,impossible,-1.7713322639,-1.3338322639,-4.1605534554,-7.2230181694,0.4375000000,-3.0624647140,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,10,40,34,0.8500000000,-0.1625189295,dirty,dirty,filthy,filthy,"Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was only ","Sue: Was Zack's carpet filthy?
+Mary: Zack's carpet was only",.,dirty,filthy,-2.2814717293,-2.7189717293,-5.0029671192,-6.3949735165,-0.4375000000,-1.3920063973,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,11,40,34,0.8500000000,-0.1625189295,dislike,dislikes,loathe,loathes,"Sue: Does the doctor loathe coffee?
+Mary: The doctor only ","Sue: Does the doctor loathe coffee?
+Mary: The doctor only", coffee.,dislikes,loathes,-6.8603281975,-3.2744670538,-9.4340147972,-8.4008349804,3.5858611437,1.0331798168,1,3,3,5,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,12,40,39,0.9750000000,-0.0253178080,double,double,triple,triple,"Sue: Will the sales triple?
+Mary: The sales will only ","Sue: Will the sales triple?
+Mary: The sales will only",.,double,triple,-0.7037323117,-3.5787322521,-3.8867312074,-9.5142347813,-2.8749999404,-5.6275035739,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,13,40,40,1.0000000000,0.0000000000,equally,equally,more,more,"Sue: Is that candidate more skilled?
+Mary: That candidate is only ","Sue: Is that candidate more skilled?
+Mary: That candidate is only", skilled.,equally,more,-8.5243997574,-2.8368997574,-11.2180328965,-6.8935980797,5.6875000000,4.3244348168,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,14,40,35,0.8750000000,-0.1335313926,funny,funny,hilarious,hilarious,"Sue: Is the movie hilarious?
+Mary: The movie is only ","Sue: Is the movie hilarious?
+Mary: The movie is only",.,funny,hilarious,-1.4063258171,-2.4688258171,-4.7085500956,-7.4575567245,-1.0625000000,-2.7490066289,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,15,40,40,1.0000000000,0.0000000000,good,good,excellent,excellent,"Sue: Is the movie excellent?
+Mary: The movie is only ","Sue: Is the movie excellent?
+Mary: The movie is only",.,good,excellent,-2.6027460098,-3.9777460098,-4.8181312084,-6.9872322083,-1.3750000000,-2.1691009999,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,16,40,35,0.8750000000,-0.1335313926,happy,happy,ecstatic,ecstatic,"Sue: Was the winner ecstatic?
+Mary: The winner was only ","Sue: Was the winner ecstatic?
+Mary: The winner was only",.,happy,ecstatic,-2.4144599438,-3.3519599438,-5.9326548576,-7.4842822552,-0.9375000000,-1.5516273976,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,17,40,33,0.8250000000,-0.1923718926,hard,hard,unsolvable,unsolvable,"Sue: Is the problem unsolvable?
+Mary: The problem is only ","Sue: Is the problem unsolvable?
+Mary: The problem is only",.,hard,unsolvable,-4.4570369720,-1.9156271406,-7.9256091118,-7.4791339636,2.5414098314,0.4464751482,1,2,2,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,18,40,35,0.8750000000,-0.1335313926,harmful,harmful,deadly,deadly,"Sue: Is the toxin deadly?
+Mary: The toxin is only ","Sue: Is the toxin deadly?
+Mary: The toxin is only",.,harmful,deadly,-3.4136402607,-0.6011402011,-8.9821412563,-7.7417094111,2.8125000596,1.2404318452,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,19,40,36,0.9000000000,-0.1053605157,here,here,everywhere,everywhere,"Sue: Is there water everywhere?
+Mary: There is only water ","Sue: Is there water everywhere?
+Mary: There is only water",.,here,everywhere,-3.7832586765,-3.0957586765,-5.9611971378,-5.5717570782,0.6875000000,0.3894400596,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,20,40,35,0.8750000000,-0.1335313926,hungry,hungry,starving,starving,"Sue: Is the boy starving?
+Mary: The boy is only ","Sue: Is the boy starving?
+Mary: The boy is only",.,hungry,starving,-2.6161103249,-5.2411103249,-5.2463736534,-8.7439374924,-2.6250000000,-3.4975638390,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,21,40,32,0.8000000000,-0.2231435513,intelligent,intelligent,brilliant,brilliant,"Sue: Is the student brilliant?
+Mary: The student is only ","Sue: Is the student brilliant?
+Mary: The student is only",.,intelligent,brilliant,-5.3501033783,-3.2251033783,-7.7947216034,-7.3058643341,2.1250000000,0.4888572693,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,22,40,37,0.9250000000,-0.0779615415,intimidating,intimidating,terrifying,terrifying,"Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was only ","Sue: Was Chris's opponent terrifying?
+Mary: Chris's opponent was only",.,intimidating,terrifying,-6.0811476707,-3.8623976707,-8.6267271042,-8.3131556511,2.2187500000,0.3135714531,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,23,40,35,0.8750000000,-0.1335313926,largely,largely,totally,totally,"Sue: Was the coast totally flooded?
+Mary: The coast was only ","Sue: Was the coast totally flooded?
+Mary: The coast was only", flooded.,largely,totally,-9.8449659348,-8.1262159348,-11.9862656444,-11.9076512232,1.7187500000,0.0786144212,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,24,40,37,0.9250000000,-0.0779615415,like,likes,love,loves,"Sue: Does the princess love dancing?
+Mary: The princess only ","Sue: Does the princess love dancing?
+Mary: The princess only", dancing.,likes,loves,-1.9866222143,-0.6116222143,-7.9419445992,-5.7691168785,1.3750000000,2.1728277207,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,25,40,38,0.9500000000,-0.0512932944,match,matches,exceed,exceeds,"Sue: Does Bill's score exceed Al's?
+Mary: Bill's score only ","Sue: Does Bill's score exceed Al's?
+Mary: Bill's score only", Al's.,matches,exceeds,-4.8436412811,-1.1561414003,-7.6152559910,-8.3740401454,3.6874998808,-0.7587841544,1,1,4,4,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,26,40,37,0.9250000000,-0.0779615415,mostly,mostly,entirely,entirely,"Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were only ","Sue: Were Peter's answers entirely wrong?
+Mary: Peter's answers were only", wrong.,mostly,entirely,-3.8539135456,-5.8539133072,-6.6017353535,-9.3679636419,-1.9999997616,-2.7662282884,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,27,40,35,0.8750000000,-0.1335313926,old,old,ancient,ancient,"Sue: Is the house ancient?
+Mary: The house is only ","Sue: Is the house ancient?
+Mary: The house is only",.,old,ancient,-4.7377514839,-4.4877514839,-6.8818464279,-8.2274036407,0.2500000000,-1.3455572128,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,28,40,39,0.9750000000,-0.0253178080,once,once,twice,twice,"Sue: Did mistakes happen twice?
+Mary: Mistakes happened only ","Sue: Did mistakes happen twice?
+Mary: Mistakes happened only",.,once,twice,-0.1438936740,-3.0188937187,-2.2925393134,-5.2745461464,-2.8750000447,-2.9820068330,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,29,40,27,0.6750000000,-0.3930425881,or,or,and,and,"Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes only books ","Sue: Does Jimmy write books and plays?
+Mary: Jimmy writes only books", plays.,or,and,-7.5015430450,-3.8765430450,-10.7233734727,-7.2514255047,3.6250000000,3.4719479680,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,30,40,37,0.9250000000,-0.0779615415,overweight,overweight,obese,obese,"Sue: Is the teenager obese?
+Mary: The teenager is only ","Sue: Is the teenager obese?
+Mary: The teenager is only",.,overweight,obese,-2.6270945072,-3.1895945072,-4.7942798138,-7.2113363743,-0.5625000000,-2.4170565605,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,31,40,32,0.8000000000,-0.2231435513,overwhelmingly,overwhelmingly,unanimously,unanimously,"Sue: Was the measure supported unanimously?
+Mary: The measure was supported only ","Sue: Was the measure supported unanimously?
+Mary: The measure was supported only",.,overwhelmingly,unanimously,-9.2316684723,-5.6691679955,-11.3079566956,-8.9491982460,3.5625004768,2.3587584496,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,32,40,36,0.9000000000,-0.1053605157,palatable,palatable,delicious,delicious,"Sue: Is the wine delicious?
+Mary: The wine is only ","Sue: Is the wine delicious?
+Mary: The wine is only",.,palatable,delicious,-7.3240347588,-3.3182334900,-9.4465541826,-6.5469279289,4.0058012688,2.8996262537,2,1,3,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,33,40,40,1.0000000000,0.0000000000,partially,partially,completely,completely,"Sue: Is the tank completely full?
+Mary: The tank is only ","Sue: Is the tank completely full?
+Mary: The tank is only", full.,partially,completely,-4.6624498367,-8.2249498367,-6.4550182819,-13.6226252280,-3.5625000000,-7.1676069461,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,34,40,35,0.8750000000,-0.1335313926,permit,permits,require,requires,"Sue: Does the club require dancing?
+Mary: The club only ","Sue: Does the club require dancing?
+Mary: The club only", dancing.,permits,requires,-7.2922310829,-0.7297311425,-10.9407215118,-6.2866117954,6.5624999404,4.6541097164,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,35,40,33,0.8250000000,-0.1923718926,polished,polished,impeccable,impeccable,"Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was only ","Sue: Was Ann's speech impeccable?
+Mary: Ann's speech was only",.,polished,impeccable,-8.0928449631,-3.3115952015,-10.7919652462,-6.7921361923,4.7812497616,3.9998290539,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,36,40,35,0.8750000000,-0.1335313926,possible,possible,certain,certain,"Sue: Is success certain?
+Mary: Success is only ","Sue: Is success certain?
+Mary: Success is only",.,possible,certain,-2.2673978806,-0.8298978209,-7.0967140198,-8.9339312911,1.4375000597,-1.8372172713,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,37,40,35,0.8750000000,-0.1335313926,pretty,pretty,beautiful,beautiful,"Sue: Is the girl beautiful?
+Mary: The girl is only ","Sue: Is the girl beautiful?
+Mary: The girl is only",.,pretty,beautiful,-3.5449776649,-1.6699777842,-5.6153430939,-4.6768012047,1.8749998807,0.9385418892,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,38,40,39,0.9750000000,-0.0253178080,primarily,primarily,exclusively,exclusively,"Sue: Are the residents exclusively Greek?
+Mary: The residents are only ","Sue: Are the residents exclusively Greek?
+Mary: The residents are only", Greek.,primarily,exclusively,-7.7471604347,-7.3721604347,-9.5500723124,-9.7936227322,0.3750000000,-0.2435504198,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,39,40,32,0.8000000000,-0.2231435513,probably,probably,necessarily,necessarily,"Sue: Will a delay necessarily occur?
+Mary: A delay will only ","Sue: Will a delay necessarily occur?
+Mary: A delay will only", occur.,probably,necessarily,-8.5859394073,-6.8984398842,-11.5533984452,-14.1038580984,1.6874995231,-2.5504596532,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,40,40,39,0.9750000000,-0.0253178080,reduce,reduced,eliminate,eliminated,"Sue: Did the city eliminate waste?
+Mary: The city only ","Sue: Did the city eliminate waste?
+Mary: The city only", waste.,reduced,eliminated,-2.8766295910,-2.0641295910,-5.4140653014,-7.1295772791,0.8125000000,-1.7155119777,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,41,40,33,0.8250000000,-0.1923718926,scared,scared,petrified,petrified,"Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was only ","Sue: Was Stu's daughter petrified?
+Mary: Stu's daughter was only",.,scared,petrified,-2.8774743080,-2.7731931135,-5.6912150383,-6.5856769010,0.1042811945,-0.8944618627,1,3,2,4,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,42,40,32,0.8000000000,-0.2231435513,serious,serious,life-threatening,life-threatening,"Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was only ","Sue: Was Kaye's illness life-threatening?
+Mary: Kaye's illness was only",.,serious,life-threatening,-2.1572492123,-1.1828325540,-4.0028948784,-5.1126113683,0.9744166583,-1.1097164899,1,2,2,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,43,40,40,1.0000000000,0.0000000000,similar,similar,identical,identical,"Sue: Are the two paintings identical?
+Mary: The two paintings are only ","Sue: Are the two paintings identical?
+Mary: The two paintings are only",.,similar,identical,-1.2744189501,-2.4619188309,-3.0830792189,-7.8036432266,-1.1874998808,-4.7205640077,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,44,40,40,1.0000000000,0.0000000000,slow,slowed,stop,stopped,"Sue: Did the train stop?
+Mary: The train only ","Sue: Did the train stop?
+Mary: The train only",.,slowed,stopped,-4.3478603363,-0.7228605747,-9.8002786636,-6.2954723835,3.6249997616,3.5048062801,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,45,40,29,0.7250000000,-0.3215836241,small,small,tiny,tiny,"Sue: Is the fish tiny?
+Mary: The fish is only ","Sue: Is the fish tiny?
+Mary: The fish is only",.,small,tiny,-3.2744615078,-3.1494615078,-5.7036666870,-5.8019983768,0.1250000000,-0.0983316898,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,46,40,29,0.7250000000,-0.3215836241,snug,snug,tight,tight,"Sue: Is the shirt tight?
+Mary: The shirt is only ","Sue: Is the shirt tight?
+Mary: The shirt is only",.,snug,tight,-5.7462897301,-0.9962896109,-8.0165853500,-7.2214692831,4.7500001192,0.7951160669,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,47,40,39,0.9750000000,-0.0253178080,some,some,all,all,"Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts only ","Sue: Does Cecilia trust all politicians?
+Mary: Cecilia trusts only", politicians.,some,all,-4.5546560287,-7.5859060287,-7.9424146414,-12.1062281132,-3.0312500000,-4.1638134718,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,48,40,38,0.9500000000,-0.0512932944,start,started,finish,finished,"Sue: Did the runner finish?
+Mary: The runner only ","Sue: Did the runner finish?
+Mary: The runner only",.,started,finished,-4.5995349884,-1.2245349884,-8.5638194084,-6.6625499725,3.3750000000,1.9012694359,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,49,40,39,0.9750000000,-0.0253178080,survive,survived,thrive,thrived,"Sue: Did the plant thrive?
+Mary: The plant only ","Sue: Did the plant thrive?
+Mary: The plant only",.,survived,thrived,-1.6811552048,-1.7003107369,-5.6665711403,-7.1348080933,-0.0191555321,-1.4682369530,1,2,2,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,50,40,31,0.7750000000,-0.2548922496,tired,tired,exhausted,exhausted,"Sue: Is the worker exhausted?
+Mary: The worker is only ","Sue: Is the worker exhausted?
+Mary: The worker is only",.,tired,exhausted,-1.4647656679,-2.7147655487,-3.8901528120,-5.8033430576,-1.2499998808,-1.9131902456,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,51,40,40,1.0000000000,0.0000000000,tolerate,tolerate,encourage,encourage,"Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents only ","Sue: Do Joey's parents encourage dating?
+Mary: Joey's parents only", dating.,tolerate,encourage,-5.6239223480,-1.4364223480,-8.7850390673,-7.3906241655,4.1875000000,1.3944149018,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,52,40,37,0.9250000000,-0.0779615415,try,tried,succeed,succeeded,"Sue: Did the candidate succeed?
+Mary: The candidate only ","Sue: Did the candidate succeed?
+Mary: The candidate only",.,tried,succeeded,-4.8263673782,-2.6388671398,-8.7572312355,-7.9379208088,2.1875002384,0.8193104267,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,53,40,31,0.7750000000,-0.2548922496,ugly,ugly,hideous,hideous,"Sue: Is the wallpaper hideous?
+Mary: The wallpaper is only ","Sue: Is the wallpaper hideous?
+Mary: The wallpaper is only",.,ugly,hideous,-4.7657065392,-0.8966126556,-7.9191312790,-5.8109118075,3.8690938836,2.1082194715,1,2,2,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,54,40,35,0.8750000000,-0.1335313926,understandable,understandable,articulate,articulate,"Sue: Was Tom's interview articulate?
+Mary: Tom's interview was only ","Sue: Was Tom's interview articulate?
+Mary: Tom's interview was only",.,understandable,articulate,-7.7059421539,-5.0184421539,-11.8230147362,-8.7243061066,2.6875000000,3.0987086296,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,55,40,33,0.8250000000,-0.1923718926,unpleasant,unpleasant,disgusting,disgusting,"Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was only ","Sue: Was Tim's bathroom disgusting?
+Mary: Tim's bathroom was only",.,unpleasant,disgusting,-7.2290115356,-1.6665112972,-9.5213155746,-5.6126270294,5.5625002384,3.9086885452,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,56,40,34,0.8500000000,-0.1625189295,usually,usually,always,always,"Sue: Is the lawyer always early?
+Mary: The lawyer is only ","Sue: Is the lawyer always early?
+Mary: The lawyer is only", early.,usually,always,-5.9380617142,-4.7818117142,-8.5193697214,-9.3881718516,1.1562500000,-0.8688021302,1,1,3,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,57,40,34,0.8500000000,-0.1625189295,want,wants,need,needs,"Sue: Does Phoebe need a car?
+Mary: Phoebe only ","Sue: Does Phoebe need a car?
+Mary: Phoebe only", a car.,wants,needs,-4.2552385330,-1.9427385330,-10.5335917473,-9.2414967120,2.3125000000,1.2920950353,1,1,4,4,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,58,40,40,1.0000000000,0.0000000000,warm,warm,hot,hot,"Sue: Is the wather hot?
+Mary: The wather is only ","Sue: Is the wather hot?
+Mary: The wather is only",.,warm,hot,-1.4104068279,-3.2854068279,-3.8339766264,-8.0601949692,-1.8750000000,-4.2262183428,1,1,2,2,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,59,40,36,0.9000000000,-0.1053605157,well,well,superbly,superbly,"Sue: Did the rehearsal go superbly?
+Mary: The rehearsal only went ","Sue: Did the rehearsal go superbly?
+Mary: The rehearsal only went",.,well,superbly,-2.2027213573,-3.1265567131,-4.3844764233,-6.1573208161,-0.9238353558,-1.7728443928,1,2,2,3,Qwen/Qwen2-7B
+experiment_4,Eonlystrong,60,40,35,0.8750000000,-0.1335313926,willing,willing,eager,eager,"Sue: Is the waiter eager?
+Mary: The waiter is only ","Sue: Is the waiter eager?
+Mary: The waiter is only",.,willing,eager,-4.0255703926,-1.7130703926,-7.7064681053,-7.5111870766,2.3125000000,0.1952810287,1,1,2,2,Qwen/Qwen2-7B
