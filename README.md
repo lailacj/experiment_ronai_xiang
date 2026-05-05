@@ -1,4 +1,4 @@
-# Ronai & Xiang Qwen Models
+# Modeling Ronai & Xiang (2024)
 
 This repository is for a first-pass model-based analysis of the Ronai & Xiang scalar-diversity datasets.
 
