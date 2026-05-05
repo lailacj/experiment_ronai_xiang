@@ -11,16 +11,18 @@ from __future__ import annotations
 import argparse
 import csv
 import os
+import tempfile
 from pathlib import Path
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+MODEL_DIR = Path(__file__).resolve().parent
 DEFAULT_INPUT = (
     PROJECT_ROOT
     / "human_model_analysis"
     / "human_qwen_item_condition_joined.csv"
 )
-DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "human_model_analysis" / "plots"
+DEFAULT_OUTPUT_DIR = MODEL_DIR / "plots"
 
 CONDITIONS = [
     ("ESI", "SI"),
@@ -31,6 +33,7 @@ CONDITIONS = [
 ]
 
 DEFAULT_SCORE_COLUMN = "stronger_word_logprob"
+TEMP_DIRS: list[tempfile.TemporaryDirectory[str]] = []
 BAR_COLOR = "#595959"
 GRID_COLOR = "#e6e6e6"
 STRIP_COLOR = "#d9d9d9"
@@ -63,9 +66,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--formats",
         nargs="+",
-        default=["png", "pdf"],
+        default=["png"],
         choices=["png", "pdf", "svg"],
-        help="Plot file formats to write. Default: png pdf",
+        help="Plot file formats to write. Default: png",
     )
     return parser.parse_args()
 
@@ -77,15 +80,19 @@ def project_path(path: Path) -> Path:
 
 
 def import_pyplot(output_dir: Path):
-    """Import matplotlib after pointing cache/temp directories at output_dir."""
-    cache_dir = output_dir / ".matplotlib"
-    temp_dir = output_dir / ".tmp"
+    """Import matplotlib after pointing cache/temp directories at scratch space."""
+    temp_root = tempfile.TemporaryDirectory(prefix="ronai_xiang_figure9_")
+    TEMP_DIRS.append(temp_root)
+    scratch_dir = Path(temp_root.name)
+    cache_dir = scratch_dir / "cache"
+    temp_dir = scratch_dir / "tmp"
     cache_dir.mkdir(parents=True, exist_ok=True)
     temp_dir.mkdir(parents=True, exist_ok=True)
 
     os.environ.setdefault("MPLBACKEND", "Agg")
     os.environ.setdefault("MPLCONFIGDIR", str(cache_dir))
     os.environ.setdefault("TMPDIR", str(temp_dir))
+    os.environ.setdefault("XDG_CACHE_HOME", str(cache_dir))
 
     import matplotlib
 

@@ -12,27 +12,25 @@ from collections import defaultdict
 from pathlib import Path
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+MODEL_DIR = Path(__file__).resolve().parent
 DEFAULT_INPUT = (
     PROJECT_ROOT
     / "human_model_analysis"
     / "human_qwen_item_condition_joined.csv"
 )
 DEFAULT_HUMAN_PROBABILITY_QWEN_LOGPROB_OUTPUT = (
-    PROJECT_ROOT
-    / "human_model_analysis"
+    MODEL_DIR
     / "plots"
     / "qwen_human_response_scatter_by_experiment.png"
 )
 DEFAULT_HUMAN_PROBABILITY_QWEN_PROBABILITY_OUTPUT = (
-    PROJECT_ROOT
-    / "human_model_analysis"
+    MODEL_DIR
     / "plots"
     / "qwen_probability_human_response_scatter_by_experiment.png"
 )
 DEFAULT_HUMAN_LOGPROB_QWEN_LOGPROB_OUTPUT = (
-    PROJECT_ROOT
-    / "human_model_analysis"
+    MODEL_DIR
     / "plots"
     / "qwen_logprob_human_logprob_scatter_by_experiment.png"
 )
@@ -129,8 +127,7 @@ def default_output_path(x_transform: str, y_transform: str) -> Path:
     if y_transform == "logprob" and x_transform == "logprob":
         return DEFAULT_HUMAN_LOGPROB_QWEN_LOGPROB_OUTPUT
     return (
-        PROJECT_ROOT
-        / "human_model_analysis"
+        MODEL_DIR
         / "plots"
         / f"qwen_{x_transform}_human_{y_transform}_scatter_by_experiment.png"
     )
