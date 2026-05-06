@@ -86,6 +86,11 @@ Ordering-model code and outputs:
 - [ordering_model/ordering_model_binary_summary.csv](./human_model_analysis/ordering_model/ordering_model_binary_summary.csv)
 - [ordering_model/plots](./human_model_analysis/ordering_model/plots)
 
+Experiment 2 QUD-change code and outputs:
+
+- [plot_experiment_2_qud_change.py](./human_model_analysis/plot_experiment_2_qud_change.py)
+- [qud_change_plots](./human_model_analysis/qud_change_plots)
+
 The joined human/model table has one row per experiment/condition/item. It keeps both weaker and stronger model scores, plus differences between stronger and weaker log probabilities.
 
 ### Experiment Coverage
@@ -229,6 +234,32 @@ It joins item-level human response rates to the Qwen score table and writes:
 ```text
 human_model_analysis/human_qwen_item_condition_joined.csv
 ```
+
+### Experiment 2 QUD-Change Plots
+
+The Experiment 2 weak-vs-strong QUD plotting script is:
+
+```bash
+python3 human_model_analysis/plot_experiment_2_qud_change.py
+```
+
+It writes three paired item-level change plots:
+
+- [experiment_2_human_response_rate_qud_change.png](./human_model_analysis/qud_change_plots/experiment_2_human_response_rate_qud_change.png)
+- [experiment_2_baseline_stronger_logprob_qud_change.png](./human_model_analysis/qud_change_plots/experiment_2_baseline_stronger_logprob_qud_change.png)
+- [experiment_2_ordering_score_qud_change.png](./human_model_analysis/qud_change_plots/experiment_2_ordering_score_qud_change.png)
+
+Each plot has `Weak QUD` and `Strong QUD` on the x-axis, one paired line per scalar item, and a black line for the item-level condition mean.
+
+For the human data, the y-axis is `response_rate`: the proportion of participants who interpreted the weaker answer as excluding the stronger alternative. The current Experiment 2 human pattern is:
+
+| Condition | Mean response rate |
+| --- | ---: |
+| Weak QUD | `0.346` |
+| Strong QUD | `0.613` |
+| Strong - Weak | `0.268` |
+
+The completed plot-based answer is that the stronger alternative is more negated in the strong-QUD condition than in the weak-QUD condition. At the item level, 59 of 60 scales increase from Weak QUD to Strong QUD.
 
 ## Baseline Model
 
@@ -406,6 +437,7 @@ python3 human_model_analysis/baseline_model/plot_human_model_scatter.py
 python3 human_model_analysis/baseline_model/plot_human_model_scatter.py --x-transform probability
 python3 human_model_analysis/baseline_model/plot_human_model_scatter.py --y-transform logprob
 python3 human_model_analysis/ordering_model/analyze_ordering_model.py
+python3 human_model_analysis/plot_experiment_2_qud_change.py
 ```
 
 Optional Figure-9-style Qwen-only bar plots can be regenerated with:
@@ -426,8 +458,11 @@ These are still unresolved and should be decided explicitly:
 Recent advisor-meeting ideas to implement next:
 
 - Clarify whether within-sentence comparisons should use log probability from the shared prefix.
-- For Experiment 2, test whether the stronger alternative is more negated in the strong-QUD condition than in the weak-QUD condition.
 - Test whether a weak QUD suppresses implicature compared to the SI condition.
+
+Completed advisor-meeting item:
+
+- For Experiment 2, tested whether the stronger alternative is more negated in the strong-QUD condition than in the weak-QUD condition, and plotted the Weak QUD to Strong QUD change for human responses, the baseline model score, and the ordering model score.
 
 ## Bottom Line
 
