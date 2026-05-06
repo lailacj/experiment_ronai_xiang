@@ -86,9 +86,10 @@ Ordering-model code and outputs:
 - [ordering_model/ordering_model_binary_summary.csv](./human_model_analysis/ordering_model/ordering_model_binary_summary.csv)
 - [ordering_model/plots](./human_model_analysis/ordering_model/plots)
 
-Experiment 2 QUD-change code and outputs:
+QUD-change code and outputs:
 
 - [plot_experiment_2_qud_change.py](./human_model_analysis/plot_experiment_2_qud_change.py)
+- [plot_si_vs_weak_qud_change.py](./human_model_analysis/plot_si_vs_weak_qud_change.py)
 - [qud_change_plots](./human_model_analysis/qud_change_plots)
 
 The joined human/model table has one row per experiment/condition/item. It keeps both weaker and stronger model scores, plus differences between stronger and weaker log probabilities.
@@ -260,6 +261,32 @@ For the human data, the y-axis is `response_rate`: the proportion of participant
 | Strong - Weak | `0.268` |
 
 The completed plot-based answer is that the stronger alternative is more negated in the strong-QUD condition than in the weak-QUD condition. At the item level, 59 of 60 scales increase from Weak QUD to Strong QUD.
+
+### SI vs. Weak QUD Change Plots
+
+The SI-vs-Weak-QUD plotting script is:
+
+```bash
+python3 human_model_analysis/plot_si_vs_weak_qud_change.py
+```
+
+It writes three paired item-level change plots:
+
+- [si_vs_weak_qud_human_response_rate_change.png](./human_model_analysis/qud_change_plots/si_vs_weak_qud_human_response_rate_change.png)
+- [si_vs_weak_qud_baseline_stronger_logprob_change.png](./human_model_analysis/qud_change_plots/si_vs_weak_qud_baseline_stronger_logprob_change.png)
+- [si_vs_weak_qud_ordering_score_change.png](./human_model_analysis/qud_change_plots/si_vs_weak_qud_ordering_score_change.png)
+
+Each plot has `Experiment 1 SI` and `Experiment 2 Weak QUD` on the x-axis, one paired line per scalar item, and a black line for the item-level condition mean.
+
+For the human data, the y-axis is `response_rate`: the proportion of participants who interpreted the weaker answer as excluding the stronger alternative. The current SI-vs-Weak-QUD human pattern is:
+
+| Condition | Mean response rate |
+| --- | ---: |
+| Experiment 1 SI | `0.387` |
+| Experiment 2 Weak QUD | `0.346` |
+| Weak QUD - SI | `-0.041` |
+
+The completed plot-based answer is that Weak QUD shows a small mean suppression of the implicature compared to SI. At the item level, 35 of 60 scales decrease from SI to Weak QUD.
 
 ## Baseline Model
 
@@ -438,6 +465,7 @@ python3 human_model_analysis/baseline_model/plot_human_model_scatter.py --x-tran
 python3 human_model_analysis/baseline_model/plot_human_model_scatter.py --y-transform logprob
 python3 human_model_analysis/ordering_model/analyze_ordering_model.py
 python3 human_model_analysis/plot_experiment_2_qud_change.py
+python3 human_model_analysis/plot_si_vs_weak_qud_change.py
 ```
 
 Optional Figure-9-style Qwen-only bar plots can be regenerated with:
@@ -458,11 +486,11 @@ These are still unresolved and should be decided explicitly:
 Recent advisor-meeting ideas to implement next:
 
 - Clarify whether within-sentence comparisons should use log probability from the shared prefix.
-- Test whether a weak QUD suppresses implicature compared to the SI condition.
 
-Completed advisor-meeting item:
+Completed advisor-meeting items:
 
 - For Experiment 2, tested whether the stronger alternative is more negated in the strong-QUD condition than in the weak-QUD condition, and plotted the Weak QUD to Strong QUD change for human responses, the baseline model score, and the ordering model score.
+- Tested whether a weak QUD suppresses implicature compared to the SI condition, and plotted the Experiment 1 SI to Experiment 2 Weak QUD change for human responses, the baseline model score, and the ordering model score.
 
 ## Bottom Line
 
