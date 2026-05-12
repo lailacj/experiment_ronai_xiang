@@ -16,13 +16,10 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-MODEL_DIR = Path(__file__).resolve().parent
+ANALYSIS_ROOT = PROJECT_ROOT / "human_model_analysis"
 DEFAULT_INPUT = (
-    PROJECT_ROOT
-    / "human_model_analysis"
-    / "human_qwen_item_condition_joined.csv"
+    ANALYSIS_ROOT / "human_qwen_item_condition_joined.csv"
 )
-DEFAULT_OUTPUT_DIR = MODEL_DIR / "plots"
 
 CONDITIONS = [
     ("ESI", "SI"),
@@ -32,11 +29,27 @@ CONDITIONS = [
     ("Eonlystrong", "QUD+only"),
 ]
 
-DEFAULT_SCORE_COLUMN = "stronger_word_logprob"
 TEMP_DIRS: list[tempfile.TemporaryDirectory[str]] = []
 BAR_COLOR = "#595959"
 GRID_COLOR = "#e6e6e6"
 STRIP_COLOR = "#d9d9d9"
+
+SCORE_FAMILIES = {
+    "word": {
+        "folder": "word_logprob",
+        "score_column": "stronger_word_logprob",
+        "raw_y_label": "Qwen log P(stronger alternative as next word)",
+        "scaled_y_label": "Qwen stronger-alternative word score, min-max scaled to 0-100",
+    },
+    "candidate-plus-suffix": {
+        "folder": "candidate_plus_suffix_logprob",
+        "score_column": "stronger_candidate_plus_suffix_logprob",
+        "raw_y_label": "Qwen log P(stronger alternative + suffix)",
+        "scaled_y_label": (
+            "Qwen stronger-alternative + suffix score, min-max scaled to 0-100"
+        ),
+    },
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -52,15 +65,24 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=DEFAULT_OUTPUT_DIR,
-        help=f"Output plot directory. Default: {DEFAULT_OUTPUT_DIR}",
+        default=None,
+        help="Output plot directory. Default comes from --score-family.",
+    )
+    parser.add_argument(
+        "--score-family",
+        choices=sorted(SCORE_FAMILIES),
+        default="word",
+        help=(
+            "Score family for default columns and output directories. "
+            "Default: word."
+        ),
     )
     parser.add_argument(
         "--score-column",
-        default=DEFAULT_SCORE_COLUMN,
+        default=None,
         help=(
-            "Model score column to plot. Default: stronger_word_logprob. "
-            "Use stronger_candidate_plus_suffix_logprob for candidate+suffix scores."
+            "Model score column to plot. Default comes from --score-family. "
+            "This can still be used for custom columns."
         ),
     )
     parser.add_argument(
@@ -71,6 +93,15 @@ def parse_args() -> argparse.Namespace:
         help="Plot file formats to write. Default: png",
     )
     return parser.parse_args()
+
+
+def score_family_output_dir(score_family: str) -> Path:
+    score_folder = str(SCORE_FAMILIES[score_family]["folder"])
+    return ANALYSIS_ROOT / score_folder / "baseline_model" / "plots"
+
+
+def default_score_column(score_family: str) -> str:
+    return str(SCORE_FAMILIES[score_family]["score_column"])
 
 
 def project_path(path: Path) -> Path:
@@ -284,18 +315,21 @@ def make_plot(
 def main() -> None:
     args = parse_args()
     input_path = project_path(args.input)
-    output_dir = project_path(args.output_dir)
+    output_dir = args.output_dir or score_family_output_dir(args.score_family)
+    output_dir = project_path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
+    score_column = args.score_column or default_score_column(args.score_family)
+    score_config = SCORE_FAMILIES[args.score_family]
 
-    rows = read_rows(input_path, args.score_column)
+    rows = read_rows(input_path, score_column)
     item_order, labels_by_item = get_scale_order(rows)
-    score_lookup = build_score_lookup(rows, args.score_column)
+    score_lookup = build_score_lookup(rows, score_column)
     check_complete_scores(score_lookup, item_order)
 
     plt = import_pyplot(output_dir)
 
-    raw_stem = f"qwen_{args.score_column}_figure9_style_raw_logprob"
-    scaled_stem = f"qwen_{args.score_column}_figure9_style_minmax_0_100"
+    raw_stem = f"qwen_{score_column}_figure9_style_raw_logprob"
+    scaled_stem = f"qwen_{score_column}_figure9_style_minmax_0_100"
     written_paths = []
 
     for fmt in args.formats:
@@ -306,7 +340,7 @@ def main() -> None:
             labels_by_item=labels_by_item,
             score_lookup=score_lookup,
             output_path=raw_path,
-            y_label="Qwen log P(stronger alternative as next word)",
+            y_label=str(score_config["raw_y_label"]),
             title="Qwen Stronger-Alternative Scores by Scale",
             raw_logprob=True,
         )
@@ -319,7 +353,7 @@ def main() -> None:
             labels_by_item=labels_by_item,
             score_lookup=score_lookup,
             output_path=scaled_path,
-            y_label="Qwen stronger-alternative score, min-max scaled to 0-100",
+            y_label=str(score_config["scaled_y_label"]),
             title="Qwen Stronger-Alternative Scores by Scale, 0-100 Visual Scale",
             raw_logprob=False,
         )

@@ -13,29 +13,22 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-MODEL_DIR = Path(__file__).resolve().parent
+ANALYSIS_ROOT = PROJECT_ROOT / "human_model_analysis"
 DEFAULT_INPUT = (
-    PROJECT_ROOT
-    / "human_model_analysis"
-    / "human_qwen_item_condition_joined.csv"
+    ANALYSIS_ROOT / "human_qwen_item_condition_joined.csv"
 )
-DEFAULT_HUMAN_PROBABILITY_QWEN_LOGPROB_OUTPUT = (
-    MODEL_DIR
-    / "plots"
-    / "qwen_human_response_scatter_by_experiment.png"
-)
-DEFAULT_HUMAN_PROBABILITY_QWEN_PROBABILITY_OUTPUT = (
-    MODEL_DIR
-    / "plots"
-    / "qwen_probability_human_response_scatter_by_experiment.png"
-)
-DEFAULT_HUMAN_LOGPROB_QWEN_LOGPROB_OUTPUT = (
-    MODEL_DIR
-    / "plots"
-    / "qwen_logprob_human_logprob_scatter_by_experiment.png"
-)
-DEFAULT_SCORE_COLUMN = "stronger_word_logprob"
 TEMP_DIRS: list[tempfile.TemporaryDirectory[str]] = []
+
+SCORE_FAMILIES = {
+    "word": {
+        "folder": "word_logprob",
+        "score_column": "stronger_word_logprob",
+    },
+    "candidate-plus-suffix": {
+        "folder": "candidate_plus_suffix_logprob",
+        "score_column": "stronger_candidate_plus_suffix_logprob",
+    },
+}
 
 EXPERIMENTS = [
     ("experiment_1", "Experiment 1"),
@@ -87,15 +80,25 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=None,
         help=(
-            "Output PNG path. Default is chosen from the x/y transform combination."
+            "Output PNG path. Default is chosen from the score family and "
+            "x/y transform combination."
+        ),
+    )
+    parser.add_argument(
+        "--score-family",
+        choices=sorted(SCORE_FAMILIES),
+        default="word",
+        help=(
+            "Score family for default columns and output directories. "
+            "Default: word."
         ),
     )
     parser.add_argument(
         "--score-column",
-        default=DEFAULT_SCORE_COLUMN,
+        default=None,
         help=(
-            "Model score column for the x-axis. Default: stronger_word_logprob. "
-            "Use stronger_candidate_plus_suffix_logprob for candidate+suffix scores."
+            "Model score column for the x-axis. Default comes from --score-family. "
+            "This can still be used for custom columns."
         ),
     )
     parser.add_argument(
@@ -119,18 +122,31 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def default_output_path(x_transform: str, y_transform: str) -> Path:
+def score_family_output_dir(score_family: str) -> Path:
+    score_folder = str(SCORE_FAMILIES[score_family]["folder"])
+    return ANALYSIS_ROOT / score_folder / "baseline_model" / "plots"
+
+
+def default_output_path(
+    score_family: str,
+    x_transform: str,
+    y_transform: str,
+) -> Path:
+    output_dir = score_family_output_dir(score_family)
     if y_transform == "probability" and x_transform == "logprob":
-        return DEFAULT_HUMAN_PROBABILITY_QWEN_LOGPROB_OUTPUT
+        return output_dir / "qwen_human_response_scatter_by_experiment.png"
     if y_transform == "probability" and x_transform == "probability":
-        return DEFAULT_HUMAN_PROBABILITY_QWEN_PROBABILITY_OUTPUT
+        return output_dir / "qwen_probability_human_response_scatter_by_experiment.png"
     if y_transform == "logprob" and x_transform == "logprob":
-        return DEFAULT_HUMAN_LOGPROB_QWEN_LOGPROB_OUTPUT
+        return output_dir / "qwen_logprob_human_logprob_scatter_by_experiment.png"
     return (
-        MODEL_DIR
-        / "plots"
+        output_dir
         / f"qwen_{x_transform}_human_{y_transform}_scatter_by_experiment.png"
     )
+
+
+def default_score_column(score_family: str) -> str:
+    return str(SCORE_FAMILIES[score_family]["score_column"])
 
 
 def project_path(path: Path) -> Path:
@@ -524,15 +540,20 @@ def make_plot(
 def main() -> None:
     args = parse_args()
     input_path = project_path(args.input)
+    score_column = args.score_column or default_score_column(args.score_family)
     output_path = args.output
     if output_path is None:
-        output_path = default_output_path(args.x_transform, args.y_transform)
+        output_path = default_output_path(
+            args.score_family,
+            args.x_transform,
+            args.y_transform,
+        )
     output_path = project_path(output_path)
 
-    rows = read_rows(input_path, args.score_column)
+    rows = read_rows(input_path, score_column)
     grouped_rows = rows_by_experiment(
         rows,
-        args.score_column,
+        score_column,
         args.x_transform,
         args.y_transform,
     )
@@ -541,7 +562,7 @@ def main() -> None:
         plt,
         grouped_rows,
         output_path,
-        args.score_column,
+        score_column,
         args.x_transform,
         args.y_transform,
     )

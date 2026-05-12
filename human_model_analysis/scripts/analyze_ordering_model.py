@@ -23,15 +23,10 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-MODEL_DIR = Path(__file__).resolve().parent
+ANALYSIS_ROOT = PROJECT_ROOT / "human_model_analysis"
 DEFAULT_INPUT = (
-    PROJECT_ROOT
-    / "human_model_analysis"
-    / "human_qwen_item_condition_joined.csv"
+    ANALYSIS_ROOT / "human_qwen_item_condition_joined.csv"
 )
-DEFAULT_ITEM_OUTPUT = MODEL_DIR / "ordering_model_item_condition.csv"
-DEFAULT_SUMMARY_OUTPUT = MODEL_DIR / "ordering_model_binary_summary.csv"
-DEFAULT_OUTPUT_DIR = MODEL_DIR / "plots"
 
 TEMP_DIRS: list[tempfile.TemporaryDirectory[str]] = []
 
@@ -68,12 +63,14 @@ CONDITION_ORDER = {
 
 SCORE_TYPES = {
     "word": {
+        "folder": "word_logprob",
         "query_col": "stronger_word_logprob",
         "trigger_col": "weaker_word_logprob",
         "label": "word",
         "x_label": "log P(query/stronger) - log P(trigger/weaker)",
     },
     "candidate-plus-suffix": {
+        "folder": "candidate_plus_suffix_logprob",
         "query_col": "stronger_candidate_plus_suffix_logprob",
         "trigger_col": "weaker_candidate_plus_suffix_logprob",
         "label": "candidate_plus_suffix",
@@ -134,8 +131,7 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=None,
         help=(
-            f"Output item-level CSV. Default: {DEFAULT_ITEM_OUTPUT} for word scores; "
-            "score-type-specific path otherwise."
+            "Output item-level CSV. Default comes from --score-family/--score-type."
         ),
     )
     parser.add_argument(
@@ -143,57 +139,62 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=None,
         help=(
-            f"Output binary summary CSV. Default: {DEFAULT_SUMMARY_OUTPUT} for "
-            "word scores; score-type-specific path otherwise."
+            "Output binary summary CSV. Default comes from "
+            "--score-family/--score-type."
         ),
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=DEFAULT_OUTPUT_DIR,
-        help=f"Output plot directory. Default: {DEFAULT_OUTPUT_DIR}",
+        default=None,
+        help="Output plot directory. Default comes from --score-family/--score-type.",
+    )
+    parser.add_argument(
+        "--score-family",
+        choices=sorted(SCORE_TYPES),
+        default=None,
+        help=(
+            "Score family for default columns and output directories. "
+            "Default: word."
+        ),
     )
     parser.add_argument(
         "--score-type",
         choices=sorted(SCORE_TYPES),
-        default="word",
+        default=None,
         help=(
-            "Which Qwen scores to compare. Default: word. "
+            "Backward-compatible alias for --score-family. "
             "Use candidate-plus-suffix to include the suffix in both scores."
         ),
     )
-    return parser.parse_args()
+    args = parser.parse_args()
+    if (
+        args.score_family is not None
+        and args.score_type is not None
+        and args.score_family != args.score_type
+    ):
+        parser.error("--score-family and --score-type must match when both are set.")
+    args.score_type = args.score_family or args.score_type or "word"
+    return args
 
 
 def default_item_output_path(score_type: str) -> Path:
-    if score_type == "word":
-        return DEFAULT_ITEM_OUTPUT
-    score_label = SCORE_TYPES[score_type]["label"]
-    return (
-        MODEL_DIR / f"ordering_model_{score_label}_item_condition.csv"
-    )
+    return score_type_output_dir(score_type) / "ordering_model_item_condition.csv"
 
 
 def default_summary_output_path(score_type: str) -> Path:
-    if score_type == "word":
-        return DEFAULT_SUMMARY_OUTPUT
-    score_label = SCORE_TYPES[score_type]["label"]
-    return (
-        MODEL_DIR / f"ordering_model_{score_label}_binary_summary.csv"
-    )
+    return score_type_output_dir(score_type) / "ordering_model_binary_summary.csv"
+
+
+def score_type_output_dir(score_type: str) -> Path:
+    score_folder = str(SCORE_TYPES[score_type]["folder"])
+    return ANALYSIS_ROOT / score_folder / "ordering_model"
 
 
 def default_plot_paths(score_type: str, output_dir: Path) -> tuple[Path, Path]:
-    if score_type == "word":
-        return (
-            output_dir / "qwen_ordering_model_scatter_by_experiment.png",
-            output_dir / "qwen_ordering_model_binary_split_by_experiment.png",
-        )
-
-    score_label = SCORE_TYPES[score_type]["label"]
     return (
-        output_dir / f"qwen_ordering_model_{score_label}_scatter_by_experiment.png",
-        output_dir / f"qwen_ordering_model_{score_label}_binary_split_by_experiment.png",
+        output_dir / "qwen_ordering_model_scatter_by_experiment.png",
+        output_dir / "qwen_ordering_model_binary_split_by_experiment.png",
     )
 
 
@@ -903,7 +904,8 @@ def main() -> None:
     summary_output = args.summary_output or default_summary_output_path(args.score_type)
     item_output = project_path(item_output)
     summary_output = project_path(summary_output)
-    output_dir = project_path(args.output_dir)
+    output_dir = args.output_dir or (score_type_output_dir(args.score_type) / "plots")
+    output_dir = project_path(output_dir)
 
     item_rows, counts = read_ordering_rows(input_path, args.score_type)
     if not item_rows:

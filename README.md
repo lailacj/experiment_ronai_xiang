@@ -75,24 +75,32 @@ Shared human/model data and preparation scripts:
 
 Baseline-model code and outputs:
 
-- [baseline_model/plot_human_model_scatter.py](./human_model_analysis/baseline_model/plot_human_model_scatter.py)
-- [baseline_model/plot_qwen_figure9_style.py](./human_model_analysis/baseline_model/plot_qwen_figure9_style.py)
-- [baseline_model/plots](./human_model_analysis/baseline_model/plots)
+- [scripts/baseline_model_plot_human_model_scatter.py](./human_model_analysis/scripts/baseline_model_plot_human_model_scatter.py)
+- [scripts/baseline_model_plot_qwen_figure9_style.py](./human_model_analysis/scripts/baseline_model_plot_qwen_figure9_style.py)
+- [word_logprob/baseline_model](./human_model_analysis/word_logprob/baseline_model)
+- [candidate_plus_suffix_logprob/baseline_model](./human_model_analysis/candidate_plus_suffix_logprob/baseline_model)
 
 Ordering-model code and outputs:
 
-- [ordering_model/analyze_ordering_model.py](./human_model_analysis/ordering_model/analyze_ordering_model.py)
-- [ordering_model/ordering_model_item_condition.csv](./human_model_analysis/ordering_model/ordering_model_item_condition.csv)
-- [ordering_model/ordering_model_binary_summary.csv](./human_model_analysis/ordering_model/ordering_model_binary_summary.csv)
-- [ordering_model/plots](./human_model_analysis/ordering_model/plots)
+- [scripts/analyze_ordering_model.py](./human_model_analysis/scripts/analyze_ordering_model.py)
+- [word_logprob/ordering_model](./human_model_analysis/word_logprob/ordering_model)
+- [candidate_plus_suffix_logprob/ordering_model](./human_model_analysis/candidate_plus_suffix_logprob/ordering_model)
 
 QUD-change code and outputs:
 
-- [plot_experiment_2_qud_change.py](./human_model_analysis/plot_experiment_2_qud_change.py)
-- [plot_si_vs_weak_qud_change.py](./human_model_analysis/plot_si_vs_weak_qud_change.py)
-- [qud_change_plots](./human_model_analysis/qud_change_plots)
+- [scripts/plot_experiment_2_qud_change.py](./human_model_analysis/scripts/plot_experiment_2_qud_change.py)
+- [scripts/plot_si_vs_weak_qud_change.py](./human_model_analysis/scripts/plot_si_vs_weak_qud_change.py)
+- [word_logprob/qud_change_plots](./human_model_analysis/word_logprob/qud_change_plots)
+- [candidate_plus_suffix_logprob/qud_change_plots](./human_model_analysis/candidate_plus_suffix_logprob/qud_change_plots)
 
 The joined human/model table has one row per experiment/condition/item. It keeps both weaker and stronger model scores, plus differences between stronger and weaker log probabilities.
+
+Score-family-specific outputs are organized under:
+
+- [word_logprob](./human_model_analysis/word_logprob): analyses using the target-word score, e.g. `log P(" completed" | "John")`
+- [candidate_plus_suffix_logprob](./human_model_analysis/candidate_plus_suffix_logprob): analyses using the target plus suffix score, e.g. `log P(" completed the race." | "John")`
+
+The older model-specific output folders remain in place, but new plotting defaults write to the score-family folders above.
 
 ### Experiment Coverage
 
@@ -241,14 +249,14 @@ human_model_analysis/human_qwen_item_condition_joined.csv
 The Experiment 2 weak-vs-strong QUD plotting script is:
 
 ```bash
-python3 human_model_analysis/plot_experiment_2_qud_change.py
+python3 human_model_analysis/scripts/plot_experiment_2_qud_change.py
 ```
 
 It writes three paired item-level change plots:
 
-- [experiment_2_human_response_rate_qud_change.png](./human_model_analysis/qud_change_plots/experiment_2_human_response_rate_qud_change.png)
-- [experiment_2_baseline_stronger_logprob_qud_change.png](./human_model_analysis/qud_change_plots/experiment_2_baseline_stronger_logprob_qud_change.png)
-- [experiment_2_ordering_score_qud_change.png](./human_model_analysis/qud_change_plots/experiment_2_ordering_score_qud_change.png)
+- [experiment_2_human_response_rate_qud_change.png](./human_model_analysis/word_logprob/qud_change_plots/experiment_2_human_response_rate_qud_change.png)
+- [experiment_2_baseline_stronger_logprob_qud_change.png](./human_model_analysis/word_logprob/qud_change_plots/experiment_2_baseline_stronger_logprob_qud_change.png)
+- [experiment_2_ordering_score_qud_change.png](./human_model_analysis/word_logprob/qud_change_plots/experiment_2_ordering_score_qud_change.png)
 
 Each plot has `Weak QUD` and `Strong QUD` on the x-axis, one paired line per scalar item, and a black line for the item-level condition mean.
 
@@ -267,14 +275,14 @@ The completed plot-based answer is that the stronger alternative is more negated
 The SI-vs-Weak-QUD plotting script is:
 
 ```bash
-python3 human_model_analysis/plot_si_vs_weak_qud_change.py
+python3 human_model_analysis/scripts/plot_si_vs_weak_qud_change.py
 ```
 
 It writes three paired item-level change plots:
 
-- [si_vs_weak_qud_human_response_rate_change.png](./human_model_analysis/qud_change_plots/si_vs_weak_qud_human_response_rate_change.png)
-- [si_vs_weak_qud_baseline_stronger_logprob_change.png](./human_model_analysis/qud_change_plots/si_vs_weak_qud_baseline_stronger_logprob_change.png)
-- [si_vs_weak_qud_ordering_score_change.png](./human_model_analysis/qud_change_plots/si_vs_weak_qud_ordering_score_change.png)
+- [si_vs_weak_qud_human_response_rate_change.png](./human_model_analysis/word_logprob/qud_change_plots/si_vs_weak_qud_human_response_rate_change.png)
+- [si_vs_weak_qud_baseline_stronger_logprob_change.png](./human_model_analysis/word_logprob/qud_change_plots/si_vs_weak_qud_baseline_stronger_logprob_change.png)
+- [si_vs_weak_qud_ordering_score_change.png](./human_model_analysis/word_logprob/qud_change_plots/si_vs_weak_qud_ordering_score_change.png)
 
 Each plot has `Experiment 1 SI` and `Experiment 2 Weak QUD` on the x-axis, one paired line per scalar item, and a black line for the item-level condition mean.
 
@@ -299,42 +307,52 @@ human response probability ~ Qwen P(stronger alternative | context)
 The baseline scatter-plot script is:
 
 ```bash
-python3 human_model_analysis/baseline_model/plot_human_model_scatter.py
+python3 human_model_analysis/scripts/baseline_model_plot_human_model_scatter.py
 ```
 
-By default, it plots human response probability on the y-axis and Qwen raw stronger-alternative word log probability on the x-axis. Each panel shows both Pearson correlation and Spearman rank correlation.
+By default, it plots human response probability on the y-axis and Qwen raw stronger-alternative word log probability on the x-axis. Each panel shows both Pearson correlation and Spearman rank correlation. The default output folder is:
+
+```text
+human_model_analysis/word_logprob/baseline_model/plots
+```
+
+Use `--score-family candidate-plus-suffix` to run the same plots with `stronger_candidate_plus_suffix_logprob`; those outputs go to:
+
+```text
+human_model_analysis/candidate_plus_suffix_logprob/baseline_model/plots
+```
 
 Current PNG outputs:
 
-- [qwen_human_response_scatter_by_experiment.png](./human_model_analysis/baseline_model/plots/qwen_human_response_scatter_by_experiment.png): human probabilities vs. Qwen log probabilities
-- [qwen_probability_human_response_scatter_by_experiment.png](./human_model_analysis/baseline_model/plots/qwen_probability_human_response_scatter_by_experiment.png): human probabilities vs. Qwen probabilities, using `exp(logprob)`
-- [qwen_logprob_human_logprob_scatter_by_experiment.png](./human_model_analysis/baseline_model/plots/qwen_logprob_human_logprob_scatter_by_experiment.png): human log probabilities vs. Qwen log probabilities
+- [qwen_human_response_scatter_by_experiment.png](./human_model_analysis/word_logprob/baseline_model/plots/qwen_human_response_scatter_by_experiment.png): human probabilities vs. Qwen log probabilities
+- [qwen_probability_human_response_scatter_by_experiment.png](./human_model_analysis/word_logprob/baseline_model/plots/qwen_probability_human_response_scatter_by_experiment.png): human probabilities vs. Qwen probabilities, using `exp(logprob)`
+- [qwen_logprob_human_logprob_scatter_by_experiment.png](./human_model_analysis/word_logprob/baseline_model/plots/qwen_logprob_human_logprob_scatter_by_experiment.png): human log probabilities vs. Qwen log probabilities
 
 Regenerate them with:
 
 ```bash
-python3 human_model_analysis/baseline_model/plot_human_model_scatter.py
-python3 human_model_analysis/baseline_model/plot_human_model_scatter.py --x-transform probability
-python3 human_model_analysis/baseline_model/plot_human_model_scatter.py --y-transform logprob
+python3 human_model_analysis/scripts/baseline_model_plot_human_model_scatter.py
+python3 human_model_analysis/scripts/baseline_model_plot_human_model_scatter.py --x-transform probability
+python3 human_model_analysis/scripts/baseline_model_plot_human_model_scatter.py --y-transform logprob
 ```
 
-The default model score column is:
+The default word-family model score column is:
 
 ```text
 stronger_word_logprob
 ```
 
-The script also accepts `--score-column`, so the same plotting code can be reused for `stronger_candidate_plus_suffix_logprob` or stronger-minus-weaker contrast columns.
+The script also accepts `--score-column`, so the same plotting code can be reused for custom columns.
 
 The baseline folder also keeps the optional Figure-9-style Qwen-only diagnostics:
 
-- [qwen_stronger_word_logprob_figure9_style_raw_logprob.png](./human_model_analysis/baseline_model/plots/qwen_stronger_word_logprob_figure9_style_raw_logprob.png)
-- [qwen_stronger_word_logprob_figure9_style_minmax_0_100.png](./human_model_analysis/baseline_model/plots/qwen_stronger_word_logprob_figure9_style_minmax_0_100.png)
+- [qwen_stronger_word_logprob_figure9_style_raw_logprob.png](./human_model_analysis/word_logprob/baseline_model/plots/qwen_stronger_word_logprob_figure9_style_raw_logprob.png)
+- [qwen_stronger_word_logprob_figure9_style_minmax_0_100.png](./human_model_analysis/word_logprob/baseline_model/plots/qwen_stronger_word_logprob_figure9_style_minmax_0_100.png)
 
 Regenerate those with:
 
 ```bash
-python3 human_model_analysis/baseline_model/plot_qwen_figure9_style.py
+python3 human_model_analysis/scripts/baseline_model_plot_qwen_figure9_style.py
 ```
 
 Current correlations for `stronger_word_logprob`:
@@ -352,7 +370,7 @@ Spearman correlations are unchanged when converting Qwen log probabilities to pr
 The simple ordering-model script is:
 
 ```bash
-python3 human_model_analysis/ordering_model/analyze_ordering_model.py
+python3 human_model_analysis/scripts/analyze_ordering_model.py
 ```
 
 It tests the advisor-meeting idea:
@@ -389,10 +407,10 @@ human_model_analysis/human_qwen_item_condition_joined.csv
 
 and writes:
 
-- [ordering_model_item_condition.csv](./human_model_analysis/ordering_model/ordering_model_item_condition.csv)
-- [ordering_model_binary_summary.csv](./human_model_analysis/ordering_model/ordering_model_binary_summary.csv)
-- [qwen_ordering_model_scatter_by_experiment.png](./human_model_analysis/ordering_model/plots/qwen_ordering_model_scatter_by_experiment.png)
-- [qwen_ordering_model_binary_split_by_experiment.png](./human_model_analysis/ordering_model/plots/qwen_ordering_model_binary_split_by_experiment.png)
+- [ordering_model_item_condition.csv](./human_model_analysis/word_logprob/ordering_model/ordering_model_item_condition.csv)
+- [ordering_model_binary_summary.csv](./human_model_analysis/word_logprob/ordering_model/ordering_model_binary_summary.csv)
+- [qwen_ordering_model_scatter_by_experiment.png](./human_model_analysis/word_logprob/ordering_model/plots/qwen_ordering_model_scatter_by_experiment.png)
+- [qwen_ordering_model_binary_split_by_experiment.png](./human_model_analysis/word_logprob/ordering_model/plots/qwen_ordering_model_binary_split_by_experiment.png)
 
 The item-level CSV records the query/trigger labels, their log probabilities, the continuous ordering score, the binary model prediction, and the human response rate.
 
@@ -411,7 +429,7 @@ Positive differences mean human response rates are higher when Qwen assigns high
 The script also supports candidate-plus-suffix scores:
 
 ```bash
-python3 human_model_analysis/ordering_model/analyze_ordering_model.py --score-type candidate-plus-suffix
+python3 human_model_analysis/scripts/analyze_ordering_model.py --score-family candidate-plus-suffix
 ```
 
 That mode uses:
@@ -460,18 +478,24 @@ Run from the project root:
 ```bash
 python3 human_model_analysis/aggregate_human_responses.py
 python3 human_model_analysis/join_human_qwen_scores.py
-python3 human_model_analysis/baseline_model/plot_human_model_scatter.py
-python3 human_model_analysis/baseline_model/plot_human_model_scatter.py --x-transform probability
-python3 human_model_analysis/baseline_model/plot_human_model_scatter.py --y-transform logprob
-python3 human_model_analysis/ordering_model/analyze_ordering_model.py
-python3 human_model_analysis/plot_experiment_2_qud_change.py
-python3 human_model_analysis/plot_si_vs_weak_qud_change.py
+python3 human_model_analysis/scripts/baseline_model_plot_human_model_scatter.py
+python3 human_model_analysis/scripts/baseline_model_plot_human_model_scatter.py --x-transform probability
+python3 human_model_analysis/scripts/baseline_model_plot_human_model_scatter.py --y-transform logprob
+python3 human_model_analysis/scripts/analyze_ordering_model.py
+python3 human_model_analysis/scripts/plot_experiment_2_qud_change.py
+python3 human_model_analysis/scripts/plot_si_vs_weak_qud_change.py
 ```
 
 Optional Figure-9-style Qwen-only bar plots can be regenerated with:
 
 ```bash
-python3 human_model_analysis/baseline_model/plot_qwen_figure9_style.py
+python3 human_model_analysis/scripts/baseline_model_plot_qwen_figure9_style.py
+```
+
+To regenerate the parallel candidate-plus-suffix outputs, rerun the plotting commands with:
+
+```bash
+--score-family candidate-plus-suffix
 ```
 
 ## Open Questions
@@ -496,4 +520,4 @@ Completed advisor-meeting items:
 
 This repo is now at the “stimuli reconstruction complete, first-pass Qwen scoring complete, baseline model complete, first query-trigger ordering model complete” stage.
 
-The original Ronai & Xiang materials are preserved in `ronai_xiang_data/`. The working prompt tables and generators live in `stimuli_prompts/`. The Qwen scoring script and derived score table live in `model_scores/`. Shared human aggregates and joined tables live in `human_model_analysis/`; model-specific code and plots live in `human_model_analysis/baseline_model/` and `human_model_analysis/ordering_model/`.
+The original Ronai & Xiang materials are preserved in `ronai_xiang_data/`. The working prompt tables and generators live in `stimuli_prompts/`. The Qwen scoring script and derived score table live in `model_scores/`. Shared human aggregates and joined tables live in `human_model_analysis/`; human/model plotting and analysis scripts live in `human_model_analysis/scripts/`; score-family-specific outputs live in `human_model_analysis/word_logprob/` and `human_model_analysis/candidate_plus_suffix_logprob/`.
