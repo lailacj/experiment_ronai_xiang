@@ -65,3 +65,25 @@ stimuli/qwen_exact_strong_prompts.csv
 The Qwen prompt table uses `context_text` plus `continuation_text`. The
 continuation includes a leading space, matching the continuation-token scoring
 setup used in the Ronai/Xiang model scoring code.
+
+Score exact strong alternatives with Qwen:
+
+```bash
+python3 scripts/score_qwen_exact_strong.py \
+  --model-path /users/ljohnst7/data/ljohnst7/hf-cache/models--Qwen--Qwen2-7B
+```
+
+This writes:
+
+```text
+model_scores/qwen2_7b_exact_strong_scores.csv
+```
+
+For a quick cluster smoke test, run:
+
+```bash
+python3 scripts/score_qwen_exact_strong.py \
+  --model-path /users/ljohnst7/data/ljohnst7/hf-cache/models--Qwen--Qwen2-7B \
+  --limit 5 \
+  --output model_scores/qwen2_7b_exact_strong_scores_smoke_test.csv
+```
