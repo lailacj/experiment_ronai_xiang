@@ -54,21 +54,28 @@ def float_cell(value: float) -> str:
     return f"{value:.10f}"
 
 
+def latest_snapshot_path(snapshots: Path) -> Path:
+    snapshot_dirs = [p for p in snapshots.iterdir() if p.is_dir()]
+    if not snapshot_dirs:
+        raise FileNotFoundError(f"No snapshot directories found under {snapshots}")
+    if len(snapshot_dirs) == 1:
+        return snapshot_dirs[0]
+    return max(snapshot_dirs, key=lambda p: p.stat().st_mtime)
+
+
 def resolve_model_path(path: Path) -> Path:
     """Resolve Hugging Face cache roots to a concrete snapshot directory."""
 
     path = path.expanduser().resolve()
+    snapshots = path / "snapshots"
+    if (path / "blobs").is_dir() and snapshots.is_dir():
+        return latest_snapshot_path(snapshots)
+
     if (path / "config.json").exists():
         return path
 
-    snapshots = path / "snapshots"
     if snapshots.is_dir():
-        snapshot_dirs = [p for p in snapshots.iterdir() if p.is_dir()]
-        if not snapshot_dirs:
-            raise FileNotFoundError(f"No snapshot directories found under {snapshots}")
-        if len(snapshot_dirs) == 1:
-            return snapshot_dirs[0]
-        return max(snapshot_dirs, key=lambda p: p.stat().st_mtime)
+        return latest_snapshot_path(snapshots)
 
     raise FileNotFoundError(
         f"Could not resolve model path {path}. Pass either a Hugging Face "
