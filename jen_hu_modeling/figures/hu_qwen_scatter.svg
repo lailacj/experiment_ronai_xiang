@@ -1,0 +1,359 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="560" viewBox="0 0 820 560">
+<style>text{font-family:Arial,Helvetica,sans-serif;font-size:12px;} .title{font-size:16px;font-weight:bold;} .axis{stroke:#333;stroke-width:1.2;} .grid{stroke:#ddd;stroke-width:0.8;} .small{font-size:10px;} .label{font-size:13px;}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text class="title" x="75" y="28">Qwen expectedness of stronger alternatives predicts scalar inference rates</text>
+<line class="grid" x1="75" y1="465.0" x2="635" y2="465.0"/>
+<text class="small" x="67" y="469.0" text-anchor="end">0.0</text>
+<line class="grid" x1="75" y1="383.0" x2="635" y2="383.0"/>
+<text class="small" x="67" y="387.0" text-anchor="end">0.2</text>
+<line class="grid" x1="75" y1="301.0" x2="635" y2="301.0"/>
+<text class="small" x="67" y="305.0" text-anchor="end">0.4</text>
+<line class="grid" x1="75" y1="219.0" x2="635" y2="219.0"/>
+<text class="small" x="67" y="223.0" text-anchor="end">0.6</text>
+<line class="grid" x1="75" y1="137.0" x2="635" y2="137.0"/>
+<text class="small" x="67" y="141.0" text-anchor="end">0.8</text>
+<line class="grid" x1="75" y1="55.0" x2="635" y2="55.0"/>
+<text class="small" x="67" y="59.0" text-anchor="end">1.0</text>
+<line class="grid" x1="75.0" y1="55" x2="75.0" y2="465"/>
+<text class="small" x="75.0" y="483" text-anchor="middle">-16</text>
+<line class="grid" x1="145.0" y1="55" x2="145.0" y2="465"/>
+<text class="small" x="145.0" y="483" text-anchor="middle">-14</text>
+<line class="grid" x1="215.0" y1="55" x2="215.0" y2="465"/>
+<text class="small" x="215.0" y="483" text-anchor="middle">-12</text>
+<line class="grid" x1="285.0" y1="55" x2="285.0" y2="465"/>
+<text class="small" x="285.0" y="483" text-anchor="middle">-10</text>
+<line class="grid" x1="355.0" y1="55" x2="355.0" y2="465"/>
+<text class="small" x="355.0" y="483" text-anchor="middle">-8</text>
+<line class="grid" x1="425.0" y1="55" x2="425.0" y2="465"/>
+<text class="small" x="425.0" y="483" text-anchor="middle">-6</text>
+<line class="grid" x1="495.0" y1="55" x2="495.0" y2="465"/>
+<text class="small" x="495.0" y="483" text-anchor="middle">-4</text>
+<line class="grid" x1="565.0" y1="55" x2="565.0" y2="465"/>
+<text class="small" x="565.0" y="483" text-anchor="middle">-2</text>
+<line class="grid" x1="635.0" y1="55" x2="635.0" y2="465"/>
+<text class="small" x="635.0" y="483" text-anchor="middle">0</text>
+<line class="axis" x1="75" y1="55" x2="75" y2="465"/>
+<line class="axis" x1="75" y1="465" x2="635" y2="465"/>
+<circle cx="493.6" cy="284.6" r="3.4" fill="#4C78A8" opacity="0.65"><title>adequate/good: human=0.44, logp=-4.04</title></circle>
+<circle cx="580.4" cy="419.9" r="3.4" fill="#4C78A8" opacity="0.65"><title>ajar/open: human=0.11, logp=-1.56</title></circle>
+<circle cx="428.5" cy="165.7" r="3.4" fill="#4C78A8" opacity="0.65"><title>allowed/obligatory: human=0.73, logp=-5.90</title></circle>
+<circle cx="585.1" cy="255.9" r="3.4" fill="#4C78A8" opacity="0.65"><title>annoyed/angry: human=0.51, logp=-1.43</title></circle>
+<circle cx="409.4" cy="432.2" r="3.4" fill="#4C78A8" opacity="0.65"><title>attractive/stunning: human=0.08, logp=-6.44</title></circle>
+<circle cx="483.9" cy="276.4" r="3.4" fill="#4C78A8" opacity="0.65"><title>bent/twisted: human=0.46, logp=-4.32</title></circle>
+<circle cx="341.3" cy="407.6" r="3.4" fill="#4C78A8" opacity="0.65"><title>big/enormous: human=0.14, logp=-8.39</title></circle>
+<circle cx="355.8" cy="362.5" r="3.4" fill="#4C78A8" opacity="0.65"><title>calm/unflappable: human=0.25, logp=-7.98</title></circle>
+<circle cx="483.7" cy="153.4" r="3.4" fill="#4C78A8" opacity="0.65"><title>cheap/free: human=0.76, logp=-4.32</title></circle>
+<circle cx="606.4" cy="333.8" r="3.4" fill="#4C78A8" opacity="0.65"><title>chubby/fat: human=0.32, logp=-0.82</title></circle>
+<circle cx="453.0" cy="354.3" r="3.4" fill="#4C78A8" opacity="0.65"><title>clean/spotless: human=0.27, logp=-5.20</title></circle>
+<circle cx="527.0" cy="239.5" r="3.4" fill="#4C78A8" opacity="0.65"><title>cleanish/clean: human=0.55, logp=-3.09</title></circle>
+<circle cx="531.2" cy="264.1" r="3.4" fill="#4C78A8" opacity="0.65"><title>cold/freezing: human=0.49, logp=-2.97</title></circle>
+<circle cx="529.8" cy="374.8" r="3.4" fill="#4C78A8" opacity="0.65"><title>content/happy: human=0.22, logp=-3.01</title></circle>
+<circle cx="603.3" cy="288.7" r="3.4" fill="#4C78A8" opacity="0.65"><title>cool/cold: human=0.43, logp=-0.91</title></circle>
+<circle cx="553.1" cy="399.4" r="3.4" fill="#4C78A8" opacity="0.65"><title>damaged/broken: human=0.16, logp=-2.34</title></circle>
+<circle cx="537.0" cy="342.0" r="3.4" fill="#4C78A8" opacity="0.65"><title>damp/wet: human=0.30, logp=-2.80</title></circle>
+<circle cx="531.2" cy="313.3" r="3.4" fill="#4C78A8" opacity="0.65"><title>dark/black: human=0.37, logp=-2.97</title></circle>
+<circle cx="632.0" cy="153.4" r="3.4" fill="#4C78A8" opacity="0.65"><title>difficult/impossible: human=0.76, logp=-0.08</title></circle>
+<circle cx="488.0" cy="407.6" r="3.4" fill="#4C78A8" opacity="0.65"><title>dirty/filthy: human=0.14, logp=-4.20</title></circle>
+<circle cx="269.2" cy="419.9" r="3.4" fill="#4C78A8" opacity="0.65"><title>drunk/plastered: human=0.11, logp=-10.45</title></circle>
+<circle cx="458.0" cy="374.8" r="3.4" fill="#4C78A8" opacity="0.65"><title>dry/parched: human=0.22, logp=-5.06</title></circle>
+<circle cx="468.9" cy="399.4" r="3.4" fill="#4C78A8" opacity="0.65"><title>fat/obese: human=0.16, logp=-4.75</title></circle>
+<circle cx="298.8" cy="305.1" r="3.4" fill="#4C78A8" opacity="0.65"><title>faulty/non-functional: human=0.39, logp=-9.61</title></circle>
+<circle cx="404.7" cy="354.3" r="3.4" fill="#4C78A8" opacity="0.65"><title>funny/hilarious: human=0.27, logp=-6.58</title></circle>
+<circle cx="487.3" cy="198.5" r="3.4" fill="#4C78A8" opacity="0.65"><title>good/excellent: human=0.65, logp=-4.22</title></circle>
+<circle cx="542.0" cy="227.2" r="3.4" fill="#4C78A8" opacity="0.65"><title>good/perfect: human=0.58, logp=-2.66</title></circle>
+<circle cx="356.1" cy="387.1" r="3.4" fill="#4C78A8" opacity="0.65"><title>happy/delighted: human=0.19, logp=-7.97</title></circle>
+<circle cx="294.5" cy="251.8" r="3.4" fill="#4C78A8" opacity="0.65"><title>hard/unsolvable: human=0.52, logp=-9.73</title></circle>
+<circle cx="332.3" cy="321.5" r="3.4" fill="#4C78A8" opacity="0.65"><title>hot/scalding: human=0.35, logp=-8.65</title></circle>
+<circle cx="502.5" cy="309.2" r="3.4" fill="#4C78A8" opacity="0.65"><title>hungry/starving: human=0.38, logp=-3.79</title></circle>
+<circle cx="447.8" cy="387.1" r="3.4" fill="#4C78A8" opacity="0.65"><title>intelligent/brilliant: human=0.19, logp=-5.35</title></circle>
+<circle cx="466.9" cy="374.8" r="3.4" fill="#4C78A8" opacity="0.65"><title>large/gigantic: human=0.22, logp=-4.80</title></circle>
+<circle cx="456.1" cy="354.3" r="3.4" fill="#4C78A8" opacity="0.65"><title>light/white: human=0.27, logp=-5.11</title></circle>
+<circle cx="611.5" cy="141.1" r="3.4" fill="#4C78A8" opacity="0.65"><title>likely/certain: human=0.79, logp=-0.67</title></circle>
+<circle cx="103.0" cy="325.6" r="3.4" fill="#4C78A8" opacity="0.65"><title>loud/defeaning: human=0.34, logp=-15.20</title></circle>
+<circle cx="283.9" cy="132.9" r="3.4" fill="#4C78A8" opacity="0.65"><title>low/depleted: human=0.81, logp=-10.03</title></circle>
+<circle cx="592.0" cy="178.0" r="3.4" fill="#4C78A8" opacity="0.65"><title>mediocre/bad: human=0.70, logp=-1.23</title></circle>
+<circle cx="424.5" cy="313.3" r="3.4" fill="#4C78A8" opacity="0.65"><title>memorable/unforgettable: human=0.37, logp=-6.01</title></circle>
+<circle cx="510.9" cy="333.8" r="3.4" fill="#4C78A8" opacity="0.65"><title>old/ancient: human=0.32, logp=-3.55</title></circle>
+<circle cx="480.9" cy="272.3" r="3.4" fill="#4C78A8" opacity="0.65"><title>palatable/delicious: human=0.47, logp=-4.40</title></circle>
+<circle cx="497.4" cy="337.9" r="3.4" fill="#4C78A8" opacity="0.65"><title>poor/destitute: human=0.31, logp=-3.93</title></circle>
+<circle cx="469.5" cy="227.2" r="3.4" fill="#4C78A8" opacity="0.65"><title>possible/certain: human=0.58, logp=-4.73</title></circle>
+<circle cx="440.5" cy="387.1" r="3.4" fill="#4C78A8" opacity="0.65"><title>pretty/gorgeous: human=0.19, logp=-5.56</title></circle>
+<circle cx="263.8" cy="206.7" r="3.4" fill="#4C78A8" opacity="0.65"><title>quiet/inaudible: human=0.63, logp=-10.60</title></circle>
+<circle cx="449.1" cy="346.1" r="3.4" fill="#4C78A8" opacity="0.65"><title>rainy/pouring: human=0.29, logp=-5.31</title></circle>
+<circle cx="345.2" cy="161.6" r="3.4" fill="#4C78A8" opacity="0.65"><title>rare/extinct: human=0.74, logp=-8.28</title></circle>
+<circle cx="328.2" cy="141.1" r="3.4" fill="#4C78A8" opacity="0.65"><title>satifisfactory/impeccable: human=0.79, logp=-8.77</title></circle>
+<circle cx="371.9" cy="153.4" r="3.4" fill="#4C78A8" opacity="0.65"><title>scarce/unavailable: human=0.76, logp=-7.52</title></circle>
+<circle cx="431.0" cy="333.8" r="3.4" fill="#4C78A8" opacity="0.65"><title>scared/petrified: human=0.32, logp=-5.83</title></circle>
+<circle cx="439.7" cy="280.5" r="3.4" fill="#4C78A8" opacity="0.65"><title>sick/terminally ill: human=0.45, logp=-5.58</title></circle>
+<circle cx="572.9" cy="362.5" r="3.4" fill="#4C78A8" opacity="0.65"><title>sickish/sick: human=0.25, logp=-1.77</title></circle>
+<circle cx="393.4" cy="333.8" r="3.4" fill="#4C78A8" opacity="0.65"><title>silly/idiotic: human=0.32, logp=-6.90</title></circle>
+<circle cx="470.5" cy="305.1" r="3.4" fill="#4C78A8" opacity="0.65"><title>silly/ridiculous: human=0.39, logp=-4.70</title></circle>
+<circle cx="477.9" cy="132.9" r="3.4" fill="#4C78A8" opacity="0.65"><title>sleepy/asleep: human=0.81, logp=-4.49</title></circle>
+<circle cx="555.2" cy="366.6" r="3.4" fill="#4C78A8" opacity="0.65"><title>small/tiny: human=0.24, logp=-2.28</title></circle>
+<circle cx="569.8" cy="391.2" r="3.4" fill="#4C78A8" opacity="0.65"><title>snug/tight: human=0.18, logp=-1.86</title></circle>
+<circle cx="541.7" cy="395.3" r="3.4" fill="#4C78A8" opacity="0.65"><title>special/unique: human=0.17, logp=-2.67</title></circle>
+<circle cx="455.4" cy="399.4" r="3.4" fill="#4C78A8" opacity="0.65"><title>tasty/delicious: human=0.16, logp=-5.13</title></circle>
+<circle cx="461.3" cy="419.9" r="3.4" fill="#4C78A8" opacity="0.65"><title>thin/skinny: human=0.11, logp=-4.96</title></circle>
+<circle cx="616.0" cy="309.2" r="3.4" fill="#4C78A8" opacity="0.65"><title>tipsy/drunk: human=0.38, logp=-0.54</title></circle>
+<circle cx="518.3" cy="342.0" r="3.4" fill="#4C78A8" opacity="0.65"><title>tired/exhausted: human=0.30, logp=-3.33</title></circle>
+<circle cx="454.7" cy="419.9" r="3.4" fill="#4C78A8" opacity="0.65"><title>transparent/crystal clear: human=0.11, logp=-5.15</title></circle>
+<circle cx="486.7" cy="378.9" r="3.4" fill="#4C78A8" opacity="0.65"><title>ugly/hideous: human=0.21, logp=-4.24</title></circle>
+<circle cx="467.9" cy="346.1" r="3.4" fill="#4C78A8" opacity="0.65"><title>unhappy/miserable: human=0.29, logp=-4.77</title></circle>
+<circle cx="404.0" cy="378.9" r="3.4" fill="#4C78A8" opacity="0.65"><title>unkind/nasty: human=0.21, logp=-6.60</title></circle>
+<circle cx="260.8" cy="210.8" r="3.4" fill="#4C78A8" opacity="0.65"><title>unsettling/horrific: human=0.62, logp=-10.69</title></circle>
+<circle cx="597.1" cy="178.0" r="3.4" fill="#4C78A8" opacity="0.65"><title>warm/hot: human=0.70, logp=-1.08</title></circle>
+<circle cx="497.3" cy="280.5" r="3.4" fill="#4C78A8" opacity="0.65"><title>wary/scared: human=0.45, logp=-3.93</title></circle>
+<circle cx="358.9" cy="366.6" r="3.4" fill="#4C78A8" opacity="0.65"><title>wet/soaked: human=0.24, logp=-7.89</title></circle>
+<circle cx="446.1" cy="315.9" r="3.4" fill="#F58518" opacity="0.65"><title>amazing/miraculous: human=0.36, logp=-5.40</title></circle>
+<circle cx="445.9" cy="392.6" r="3.4" fill="#F58518" opacity="0.65"><title>angry/violent: human=0.18, logp=-5.40</title></circle>
+<circle cx="513.0" cy="378.7" r="3.4" fill="#F58518" opacity="0.65"><title>big/huge: human=0.21, logp=-3.48</title></circle>
+<circle cx="363.4" cy="358.0" r="3.4" fill="#F58518" opacity="0.65"><title>bizarre/surreal: human=0.26, logp=-7.76</title></circle>
+<circle cx="425.2" cy="413.8" r="3.4" fill="#F58518" opacity="0.65"><title>bright/brilliant: human=0.12, logp=-6.00</title></circle>
+<circle cx="543.4" cy="383.0" r="3.4" fill="#F58518" opacity="0.65"><title>busy/full: human=0.20, logp=-2.62</title></circle>
+<circle cx="401.8" cy="441.6" r="3.4" fill="#F58518" opacity="0.65"><title>calm/meditative: human=0.06, logp=-6.66</title></circle>
+<circle cx="542.2" cy="252.9" r="3.4" fill="#F58518" opacity="0.65"><title>casual/sloppy: human=0.52, logp=-2.65</title></circle>
+<circle cx="414.2" cy="368.5" r="3.4" fill="#F58518" opacity="0.65"><title>cold/frosty: human=0.24, logp=-6.31</title></circle>
+<circle cx="603.2" cy="260.0" r="3.4" fill="#F58518" opacity="0.65"><title>comfortable/luxurious: human=0.50, logp=-0.91</title></circle>
+<circle cx="608.4" cy="318.6" r="3.4" fill="#F58518" opacity="0.65"><title>cool/cold: human=0.36, logp=-0.76</title></circle>
+<circle cx="496.7" cy="409.6" r="3.4" fill="#F58518" opacity="0.65"><title>cute/beautiful: human=0.14, logp=-3.95</title></circle>
+<circle cx="584.1" cy="419.4" r="3.4" fill="#F58518" opacity="0.65"><title>damp/wet: human=0.11, logp=-1.45</title></circle>
+<circle cx="549.9" cy="371.8" r="3.4" fill="#F58518" opacity="0.65"><title>dark/black: human=0.23, logp=-2.43</title></circle>
+<circle cx="544.3" cy="260.0" r="3.4" fill="#F58518" opacity="0.65"><title>decent/great: human=0.50, logp=-2.59</title></circle>
+<circle cx="545.9" cy="408.7" r="3.4" fill="#F58518" opacity="0.65"><title>dry/arid: human=0.14, logp=-2.54</title></circle>
+<circle cx="528.6" cy="238.4" r="3.4" fill="#F58518" opacity="0.65"><title>elegant/ostentatious: human=0.55, logp=-3.04</title></circle>
+<circle cx="518.6" cy="440.9" r="3.4" fill="#F58518" opacity="0.65"><title>emotional/sentimental: human=0.06, logp=-3.33</title></circle>
+<circle cx="522.0" cy="409.6" r="3.4" fill="#F58518" opacity="0.65"><title>enjoyable/great: human=0.14, logp=-3.23</title></circle>
+<circle cx="454.9" cy="362.5" r="3.4" fill="#F58518" opacity="0.65"><title>evil/satanic: human=0.25, logp=-5.15</title></circle>
+<circle cx="536.2" cy="421.1" r="3.4" fill="#F58518" opacity="0.65"><title>fat/obese: human=0.11, logp=-2.82</title></circle>
+<circle cx="395.2" cy="371.0" r="3.4" fill="#F58518" opacity="0.65"><title>funny/hilarious: human=0.23, logp=-6.85</title></circle>
+<circle cx="494.1" cy="81.7" r="3.4" fill="#F58518" opacity="0.65"><title>grey/black: human=0.93, logp=-4.03</title></circle>
+<circle cx="513.6" cy="365.3" r="3.4" fill="#F58518" opacity="0.65"><title>happy/ecstatic: human=0.24, logp=-3.47</title></circle>
+<circle cx="368.9" cy="386.5" r="3.4" fill="#F58518" opacity="0.65"><title>honest/blunt: human=0.19, logp=-7.60</title></circle>
+<circle cx="526.7" cy="238.2" r="3.4" fill="#F58518" opacity="0.65"><title>hot/boiling: human=0.55, logp=-3.09</title></circle>
+<circle cx="436.9" cy="255.4" r="3.4" fill="#F58518" opacity="0.65"><title>mysterious/magical: human=0.51, logp=-5.66</title></circle>
+<circle cx="526.5" cy="380.9" r="3.4" fill="#F58518" opacity="0.65"><title>nice/great: human=0.21, logp=-3.10</title></circle>
+<circle cx="385.0" cy="383.0" r="3.4" fill="#F58518" opacity="0.65"><title>odd/bizarre: human=0.20, logp=-7.14</title></circle>
+<circle cx="564.2" cy="170.6" r="3.4" fill="#F58518" opacity="0.65"><title>okay/great: human=0.72, logp=-2.02</title></circle>
+<circle cx="526.4" cy="150.3" r="3.4" fill="#F58518" opacity="0.65"><title>painful/deadly: human=0.77, logp=-3.10</title></circle>
+<circle cx="525.4" cy="265.5" r="3.4" fill="#F58518" opacity="0.65"><title>pale/white: human=0.49, logp=-3.13</title></circle>
+<circle cx="543.2" cy="396.7" r="3.4" fill="#F58518" opacity="0.65"><title>polite/friendly: human=0.17, logp=-2.62</title></circle>
+<circle cx="481.9" cy="425.0" r="3.4" fill="#F58518" opacity="0.65"><title>pretty/beautiful: human=0.10, logp=-4.37</title></circle>
+<circle cx="499.3" cy="309.9" r="3.4" fill="#F58518" opacity="0.65"><title>quiet/silent: human=0.38, logp=-3.88</title></circle>
+<circle cx="419.3" cy="369.7" r="3.4" fill="#F58518" opacity="0.65"><title>red/scarlet: human=0.23, logp=-6.16</title></circle>
+<circle cx="398.1" cy="260.0" r="3.4" fill="#F58518" opacity="0.65"><title>rough/unfriendly: human=0.50, logp=-6.77</title></circle>
+<circle cx="500.3" cy="357.6" r="3.4" fill="#F58518" opacity="0.65"><title>sad/tragic: human=0.26, logp=-3.85</title></circle>
+<circle cx="483.9" cy="436.7" r="3.4" fill="#F58518" opacity="0.65"><title>smart/brilliant: human=0.07, logp=-4.32</title></circle>
+<circle cx="439.8" cy="336.9" r="3.4" fill="#F58518" opacity="0.65"><title>soft/mushy: human=0.31, logp=-5.58</title></circle>
+<circle cx="572.6" cy="288.1" r="3.4" fill="#F58518" opacity="0.65"><title>thick/impenetrable: human=0.43, logp=-1.78</title></circle>
+<circle cx="449.2" cy="95.0" r="3.4" fill="#F58518" opacity="0.65"><title>thin/invisible: human=0.90, logp=-5.31</title></circle>
+<circle cx="504.5" cy="235.9" r="3.4" fill="#F58518" opacity="0.65"><title>tiny/imperceptible: human=0.56, logp=-3.73</title></circle>
+<circle cx="553.6" cy="107.9" r="3.4" fill="#F58518" opacity="0.65"><title>tough/impossible: human=0.87, logp=-2.33</title></circle>
+<circle cx="476.9" cy="362.5" r="3.4" fill="#F58518" opacity="0.65"><title>uncomfortable/painful: human=0.25, logp=-4.52</title></circle>
+<circle cx="611.3" cy="308.8" r="3.4" fill="#F58518" opacity="0.65"><title>warm/hot: human=0.38, logp=-0.68</title></circle>
+<circle cx="429.7" cy="411.5" r="3.4" fill="#F58518" opacity="0.65"><title>weird/alien: human=0.13, logp=-5.86</title></circle>
+<circle cx="425.3" cy="331.8" r="3.4" fill="#F58518" opacity="0.65"><title>wet/sopping: human=0.33, logp=-5.99</title></circle>
+<circle cx="513.3" cy="409.6" r="3.4" fill="#F58518" opacity="0.65"><title>wonderful/perfect: human=0.14, logp=-3.48</title></circle>
+<circle cx="520.9" cy="330.7" r="3.4" fill="#F58518" opacity="0.65"><title>wrong/evil: human=0.33, logp=-3.26</title></circle>
+<circle cx="408.3" cy="126.8" r="3.4" fill="#54A24B" opacity="0.65"><title>allowed/obligatory: human=0.82, logp=-6.48</title></circle>
+<circle cx="382.3" cy="444.5" r="3.4" fill="#54A24B" opacity="0.65"><title>attractive/stunning: human=0.05, logp=-7.22</title></circle>
+<circle cx="538.7" cy="383.0" r="3.4" fill="#54A24B" opacity="0.65"><title>begin/complete: human=0.20, logp=-2.75</title></circle>
+<circle cx="593.8" cy="208.8" r="3.4" fill="#54A24B" opacity="0.65"><title>believe/know: human=0.62, logp=-1.18</title></circle>
+<circle cx="295.9" cy="444.5" r="3.4" fill="#54A24B" opacity="0.65"><title>big/enormous: human=0.05, logp=-9.69</title></circle>
+<circle cx="608.3" cy="290.8" r="3.4" fill="#54A24B" opacity="0.65"><title>cool/cold: human=0.42, logp=-0.76</title></circle>
+<circle cx="451.6" cy="311.2" r="3.4" fill="#54A24B" opacity="0.65"><title>damage/destroy: human=0.38, logp=-5.24</title></circle>
+<circle cx="551.9" cy="352.2" r="3.4" fill="#54A24B" opacity="0.65"><title>dark/black: human=0.28, logp=-2.37</title></circle>
+<circle cx="607.3" cy="178.0" r="3.4" fill="#54A24B" opacity="0.65"><title>difficult/impossible: human=0.70, logp=-0.79</title></circle>
+<circle cx="432.1" cy="434.2" r="3.4" fill="#54A24B" opacity="0.65"><title>dirty/filthy: human=0.07, logp=-5.80</title></circle>
+<circle cx="340.2" cy="372.8" r="3.4" fill="#54A24B" opacity="0.65"><title>dislike/loathe: human=0.23, logp=-8.42</title></circle>
+<circle cx="485.4" cy="249.8" r="3.4" fill="#54A24B" opacity="0.65"><title>double/triple: human=0.53, logp=-4.27</title></circle>
+<circle cx="421.9" cy="188.2" r="3.4" fill="#54A24B" opacity="0.65"><title>equally/more: human=0.68, logp=-6.09</title></circle>
+<circle cx="430.2" cy="444.5" r="3.4" fill="#54A24B" opacity="0.65"><title>funny/hilarious: human=0.05, logp=-5.85</title></circle>
+<circle cx="466.2" cy="342.0" r="3.4" fill="#54A24B" opacity="0.65"><title>good/excellent: human=0.30, logp=-4.82</title></circle>
+<circle cx="473.9" cy="444.5" r="3.4" fill="#54A24B" opacity="0.65"><title>happy/ecstatic: human=0.05, logp=-4.60</title></circle>
+<circle cx="501.0" cy="229.3" r="3.4" fill="#54A24B" opacity="0.65"><title>hard/unsolvable: human=0.57, logp=-3.83</title></circle>
+<circle cx="547.7" cy="383.0" r="3.4" fill="#54A24B" opacity="0.65"><title>harmful/deadly: human=0.20, logp=-2.50</title></circle>
+<circle cx="355.0" cy="260.0" r="3.4" fill="#54A24B" opacity="0.65"><title>here/everywhere: human=0.50, logp=-8.00</title></circle>
+<circle cx="438.0" cy="383.0" r="3.4" fill="#54A24B" opacity="0.65"><title>hungry/starving: human=0.20, logp=-5.63</title></circle>
+<circle cx="427.0" cy="444.5" r="3.4" fill="#54A24B" opacity="0.65"><title>intelligent/brilliant: human=0.05, logp=-5.94</title></circle>
+<circle cx="341.9" cy="393.2" r="3.4" fill="#54A24B" opacity="0.65"><title>intimidating/terrifying: human=0.17, logp=-8.37</title></circle>
+<circle cx="496.8" cy="178.0" r="3.4" fill="#54A24B" opacity="0.65"><title>largely/totally: human=0.70, logp=-3.95</title></circle>
+<circle cx="425.9" cy="424.0" r="3.4" fill="#54A24B" opacity="0.65"><title>like/love: human=0.10, logp=-5.97</title></circle>
+<circle cx="476.9" cy="106.2" r="3.4" fill="#54A24B" opacity="0.65"><title>match/exceed: human=0.88, logp=-4.52</title></circle>
+<circle cx="541.8" cy="106.2" r="3.4" fill="#54A24B" opacity="0.65"><title>mostly/entirely: human=0.88, logp=-2.66</title></circle>
+<circle cx="480.3" cy="331.8" r="3.4" fill="#54A24B" opacity="0.65"><title>old/ancient: human=0.33, logp=-4.42</title></circle>
+<circle cx="606.7" cy="178.0" r="3.4" fill="#54A24B" opacity="0.65"><title>once/twice: human=0.70, logp=-0.81</title></circle>
+<circle cx="252.1" cy="362.5" r="3.4" fill="#54A24B" opacity="0.65"><title>or/and: human=0.25, logp=-10.94</title></circle>
+<circle cx="540.4" cy="424.0" r="3.4" fill="#54A24B" opacity="0.65"><title>overweight/obese: human=0.10, logp=-2.70</title></circle>
+<circle cx="569.2" cy="219.0" r="3.4" fill="#54A24B" opacity="0.65"><title>overwhelmingly/unanimously: human=0.60, logp=-1.88</title></circle>
+<circle cx="404.2" cy="270.2" r="3.4" fill="#54A24B" opacity="0.65"><title>palatable/delicious: human=0.47, logp=-6.60</title></circle>
+<circle cx="506.6" cy="75.5" r="3.4" fill="#54A24B" opacity="0.65"><title>partially/completely: human=0.95, logp=-3.67</title></circle>
+<circle cx="470.8" cy="198.5" r="3.4" fill="#54A24B" opacity="0.65"><title>permit/require: human=0.65, logp=-4.69</title></circle>
+<circle cx="323.8" cy="444.5" r="3.4" fill="#54A24B" opacity="0.65"><title>polished/impeccable: human=0.05, logp=-8.89</title></circle>
+<circle cx="445.6" cy="126.8" r="3.4" fill="#54A24B" opacity="0.65"><title>possible/certain: human=0.82, logp=-5.41</title></circle>
+<circle cx="581.9" cy="434.2" r="3.4" fill="#54A24B" opacity="0.65"><title>pretty/beautiful: human=0.07, logp=-1.52</title></circle>
+<circle cx="577.9" cy="147.2" r="3.4" fill="#54A24B" opacity="0.65"><title>primarily/exclusively: human=0.78, logp=-1.63</title></circle>
+<circle cx="557.6" cy="239.5" r="3.4" fill="#54A24B" opacity="0.65"><title>probably/necessarily: human=0.55, logp=-2.21</title></circle>
+<circle cx="470.9" cy="137.0" r="3.4" fill="#54A24B" opacity="0.65"><title>reduce/eliminate: human=0.80, logp=-4.69</title></circle>
+<circle cx="411.6" cy="454.8" r="3.4" fill="#54A24B" opacity="0.65"><title>scared/petrified: human=0.03, logp=-6.38</title></circle>
+<circle cx="549.6" cy="434.2" r="3.4" fill="#54A24B" opacity="0.65"><title>serious/life-threatening: human=0.07, logp=-2.44</title></circle>
+<circle cx="578.8" cy="167.8" r="3.4" fill="#54A24B" opacity="0.65"><title>similar/identical: human=0.72, logp=-1.61</title></circle>
+<circle cx="629.8" cy="126.8" r="3.4" fill="#54A24B" opacity="0.65"><title>slow/stop: human=0.82, logp=-0.15</title></circle>
+<circle cx="532.6" cy="393.2" r="3.4" fill="#54A24B" opacity="0.65"><title>small/tiny: human=0.17, logp=-2.93</title></circle>
+<circle cx="575.4" cy="424.0" r="3.4" fill="#54A24B" opacity="0.65"><title>snug/tight: human=0.10, logp=-1.70</title></circle>
+<circle cx="513.4" cy="85.8" r="3.4" fill="#54A24B" opacity="0.65"><title>some/all: human=0.93, logp=-3.47</title></circle>
+<circle cx="596.1" cy="352.2" r="3.4" fill="#54A24B" opacity="0.65"><title>start/finish: human=0.28, logp=-1.11</title></circle>
+<circle cx="584.5" cy="362.5" r="3.4" fill="#54A24B" opacity="0.65"><title>survive/thrive: human=0.25, logp=-1.44</title></circle>
+<circle cx="501.7" cy="454.8" r="3.4" fill="#54A24B" opacity="0.65"><title>tired/exhausted: human=0.03, logp=-3.81</title></circle>
+<circle cx="576.1" cy="198.5" r="3.4" fill="#54A24B" opacity="0.65"><title>tolerate/encourage: human=0.65, logp=-1.68</title></circle>
+<circle cx="606.9" cy="147.2" r="3.4" fill="#54A24B" opacity="0.65"><title>try/succeed: human=0.78, logp=-0.80</title></circle>
+<circle cx="515.7" cy="444.5" r="3.4" fill="#54A24B" opacity="0.65"><title>ugly/hideous: human=0.05, logp=-3.41</title></circle>
+<circle cx="334.7" cy="424.0" r="3.4" fill="#54A24B" opacity="0.65"><title>understandable/articulate: human=0.10, logp=-8.58</title></circle>
+<circle cx="521.6" cy="444.5" r="3.4" fill="#54A24B" opacity="0.65"><title>unpleasant/disgusting: human=0.05, logp=-3.24</title></circle>
+<circle cx="602.1" cy="198.5" r="3.4" fill="#54A24B" opacity="0.65"><title>usually/always: human=0.65, logp=-0.94</title></circle>
+<circle cx="444.2" cy="403.5" r="3.4" fill="#54A24B" opacity="0.65"><title>want/need: human=0.15, logp=-5.45</title></circle>
+<circle cx="576.3" cy="301.0" r="3.4" fill="#54A24B" opacity="0.65"><title>warm/hot: human=0.40, logp=-1.68</title></circle>
+<circle cx="344.3" cy="413.8" r="3.4" fill="#54A24B" opacity="0.65"><title>well/superbly: human=0.12, logp=-8.31</title></circle>
+<circle cx="508.1" cy="434.2" r="3.4" fill="#54A24B" opacity="0.65"><title>willing/eager: human=0.07, logp=-3.63</title></circle>
+<circle cx="513.7" cy="333.8" r="3.4" fill="#B279A2" opacity="0.65"><title>adequate/good: human=0.32, logp=-3.47</title></circle>
+<circle cx="504.2" cy="333.8" r="3.4" fill="#B279A2" opacity="0.65"><title>adequate/good: human=0.32, logp=-3.74</title></circle>
+<circle cx="483.7" cy="333.8" r="3.4" fill="#B279A2" opacity="0.65"><title>adequate/good: human=0.32, logp=-4.32</title></circle>
+<circle cx="355.8" cy="128.8" r="3.4" fill="#B279A2" opacity="0.65"><title>allowed/obligatory: human=0.82, logp=-7.98</title></circle>
+<circle cx="408.3" cy="128.8" r="3.4" fill="#B279A2" opacity="0.65"><title>allowed/obligatory: human=0.82, logp=-6.48</title></circle>
+<circle cx="402.3" cy="128.8" r="3.4" fill="#B279A2" opacity="0.65"><title>allowed/obligatory: human=0.82, logp=-6.65</title></circle>
+<circle cx="376.2" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>attractive/stunning: human=0.21, logp=-7.39</title></circle>
+<circle cx="382.3" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>attractive/stunning: human=0.21, logp=-7.22</title></circle>
+<circle cx="390.9" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>attractive/stunning: human=0.21, logp=-6.98</title></circle>
+<circle cx="585.0" cy="214.9" r="3.4" fill="#B279A2" opacity="0.65"><title>believe/know: human=0.61, logp=-1.43</title></circle>
+<circle cx="559.7" cy="214.9" r="3.4" fill="#B279A2" opacity="0.65"><title>believe/know: human=0.61, logp=-2.15</title></circle>
+<circle cx="563.2" cy="214.9" r="3.4" fill="#B279A2" opacity="0.65"><title>believe/know: human=0.61, logp=-2.05</title></circle>
+<circle cx="308.7" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>big/enormous: human=0.21, logp=-9.32</title></circle>
+<circle cx="370.0" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>big/enormous: human=0.21, logp=-7.57</title></circle>
+<circle cx="259.1" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>big/enormous: human=0.21, logp=-10.74</title></circle>
+<circle cx="525.0" cy="83.7" r="3.4" fill="#B279A2" opacity="0.65"><title>cheap/free: human=0.93, logp=-3.14</title></circle>
+<circle cx="520.0" cy="83.7" r="3.4" fill="#B279A2" opacity="0.65"><title>cheap/free: human=0.93, logp=-3.28</title></circle>
+<circle cx="300.2" cy="83.7" r="3.4" fill="#B279A2" opacity="0.65"><title>cheap/free: human=0.93, logp=-9.57</title></circle>
+<circle cx="536.9" cy="448.6" r="3.4" fill="#B279A2" opacity="0.65"><title>content/happy: human=0.04, logp=-2.80</title></circle>
+<circle cx="540.2" cy="448.6" r="3.4" fill="#B279A2" opacity="0.65"><title>content/happy: human=0.04, logp=-2.71</title></circle>
+<circle cx="519.2" cy="448.6" r="3.4" fill="#B279A2" opacity="0.65"><title>content/happy: human=0.04, logp=-3.31</title></circle>
+<circle cx="600.1" cy="276.4" r="3.4" fill="#B279A2" opacity="0.65"><title>cool/cold: human=0.46, logp=-1.00</title></circle>
+<circle cx="608.3" cy="276.4" r="3.4" fill="#B279A2" opacity="0.65"><title>cool/cold: human=0.46, logp=-0.76</title></circle>
+<circle cx="593.0" cy="276.4" r="3.4" fill="#B279A2" opacity="0.65"><title>cool/cold: human=0.46, logp=-1.20</title></circle>
+<circle cx="580.8" cy="346.1" r="3.4" fill="#B279A2" opacity="0.65"><title>dark/black: human=0.29, logp=-1.55</title></circle>
+<circle cx="551.9" cy="346.1" r="3.4" fill="#B279A2" opacity="0.65"><title>dark/black: human=0.29, logp=-2.37</title></circle>
+<circle cx="567.7" cy="346.1" r="3.4" fill="#B279A2" opacity="0.65"><title>dark/black: human=0.29, logp=-1.92</title></circle>
+<circle cx="607.3" cy="71.4" r="3.4" fill="#B279A2" opacity="0.65"><title>difficult/impossible: human=0.96, logp=-0.79</title></circle>
+<circle cx="620.6" cy="71.4" r="3.4" fill="#B279A2" opacity="0.65"><title>difficult/impossible: human=0.96, logp=-0.41</title></circle>
+<circle cx="582.9" cy="71.4" r="3.4" fill="#B279A2" opacity="0.65"><title>difficult/impossible: human=0.96, logp=-1.49</title></circle>
+<circle cx="289.5" cy="391.2" r="3.4" fill="#B279A2" opacity="0.65"><title>dislike/loathe: human=0.18, logp=-9.87</title></circle>
+<circle cx="347.3" cy="391.2" r="3.4" fill="#B279A2" opacity="0.65"><title>dislike/loathe: human=0.18, logp=-8.22</title></circle>
+<circle cx="354.7" cy="391.2" r="3.4" fill="#B279A2" opacity="0.65"><title>dislike/loathe: human=0.18, logp=-8.01</title></circle>
+<circle cx="490.6" cy="243.6" r="3.4" fill="#B279A2" opacity="0.65"><title>few/none: human=0.54, logp=-4.13</title></circle>
+<circle cx="520.8" cy="243.6" r="3.4" fill="#B279A2" opacity="0.65"><title>few/none: human=0.54, logp=-3.26</title></circle>
+<circle cx="507.3" cy="243.6" r="3.4" fill="#B279A2" opacity="0.65"><title>few/none: human=0.54, logp=-3.65</title></circle>
+<circle cx="465.9" cy="346.1" r="3.4" fill="#B279A2" opacity="0.65"><title>funny/hilarious: human=0.29, logp=-4.83</title></circle>
+<circle cx="452.2" cy="346.1" r="3.4" fill="#B279A2" opacity="0.65"><title>funny/hilarious: human=0.29, logp=-5.22</title></circle>
+<circle cx="478.2" cy="346.1" r="3.4" fill="#B279A2" opacity="0.65"><title>funny/hilarious: human=0.29, logp=-4.48</title></circle>
+<circle cx="490.8" cy="333.8" r="3.4" fill="#B279A2" opacity="0.65"><title>good/excellent: human=0.32, logp=-4.12</title></circle>
+<circle cx="455.4" cy="333.8" r="3.4" fill="#B279A2" opacity="0.65"><title>good/excellent: human=0.32, logp=-5.13</title></circle>
+<circle cx="431.1" cy="333.8" r="3.4" fill="#B279A2" opacity="0.65"><title>good/excellent: human=0.32, logp=-5.83</title></circle>
+<circle cx="554.8" cy="305.1" r="3.4" fill="#B279A2" opacity="0.65"><title>good/perfect: human=0.39, logp=-2.29</title></circle>
+<circle cx="557.9" cy="305.1" r="3.4" fill="#B279A2" opacity="0.65"><title>good/perfect: human=0.39, logp=-2.20</title></circle>
+<circle cx="520.1" cy="305.1" r="3.4" fill="#B279A2" opacity="0.65"><title>good/perfect: human=0.39, logp=-3.28</title></circle>
+<circle cx="482.8" cy="173.9" r="3.4" fill="#B279A2" opacity="0.65"><title>hard/unsolvable: human=0.71, logp=-4.35</title></circle>
+<circle cx="482.0" cy="173.9" r="3.4" fill="#B279A2" opacity="0.65"><title>hard/unsolvable: human=0.71, logp=-4.37</title></circle>
+<circle cx="499.3" cy="173.9" r="3.4" fill="#B279A2" opacity="0.65"><title>hard/unsolvable: human=0.71, logp=-3.88</title></circle>
+<circle cx="438.0" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>hungry/starving: human=0.25, logp=-5.63</title></circle>
+<circle cx="479.4" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>hungry/starving: human=0.25, logp=-4.44</title></circle>
+<circle cx="488.0" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>hungry/starving: human=0.25, logp=-4.20</title></circle>
+<circle cx="440.4" cy="436.3" r="3.4" fill="#B279A2" opacity="0.65"><title>intelligent/brilliant: human=0.07, logp=-5.56</title></circle>
+<circle cx="430.7" cy="436.3" r="3.4" fill="#B279A2" opacity="0.65"><title>intelligent/brilliant: human=0.07, logp=-5.84</title></circle>
+<circle cx="459.7" cy="436.3" r="3.4" fill="#B279A2" opacity="0.65"><title>intelligent/brilliant: human=0.07, logp=-5.01</title></circle>
+<circle cx="425.9" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>like/love: human=0.25, logp=-5.97</title></circle>
+<circle cx="466.7" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>like/love: human=0.25, logp=-4.81</title></circle>
+<circle cx="420.3" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>like/love: human=0.25, logp=-6.13</title></circle>
+<circle cx="405.3" cy="141.1" r="3.4" fill="#B279A2" opacity="0.65"><title>low/depleted: human=0.79, logp=-6.56</title></circle>
+<circle cx="475.4" cy="141.1" r="3.4" fill="#B279A2" opacity="0.65"><title>low/depleted: human=0.79, logp=-4.56</title></circle>
+<circle cx="468.0" cy="141.1" r="3.4" fill="#B279A2" opacity="0.65"><title>low/depleted: human=0.79, logp=-4.77</title></circle>
+<circle cx="511.5" cy="173.9" r="3.4" fill="#B279A2" opacity="0.65"><title>may/have to: human=0.71, logp=-3.53</title></circle>
+<circle cx="544.0" cy="173.9" r="3.4" fill="#B279A2" opacity="0.65"><title>may/have to: human=0.71, logp=-2.60</title></circle>
+<circle cx="516.8" cy="173.9" r="3.4" fill="#B279A2" opacity="0.65"><title>may/have to: human=0.71, logp=-3.38</title></circle>
+<circle cx="551.4" cy="100.1" r="3.4" fill="#B279A2" opacity="0.65"><title>may/will: human=0.89, logp=-2.39</title></circle>
+<circle cx="355.8" cy="100.1" r="3.4" fill="#B279A2" opacity="0.65"><title>may/will: human=0.89, logp=-7.98</title></circle>
+<circle cx="512.5" cy="100.1" r="3.4" fill="#B279A2" opacity="0.65"><title>may/will: human=0.89, logp=-3.50</title></circle>
+<circle cx="356.9" cy="243.6" r="3.4" fill="#B279A2" opacity="0.65"><title>memorable/unforgettable: human=0.54, logp=-7.95</title></circle>
+<circle cx="413.5" cy="243.6" r="3.4" fill="#B279A2" opacity="0.65"><title>memorable/unforgettable: human=0.54, logp=-6.33</title></circle>
+<circle cx="348.0" cy="243.6" r="3.4" fill="#B279A2" opacity="0.65"><title>memorable/unforgettable: human=0.54, logp=-8.20</title></circle>
+<circle cx="455.4" cy="317.4" r="3.4" fill="#B279A2" opacity="0.65"><title>old/ancient: human=0.36, logp=-5.13</title></circle>
+<circle cx="492.9" cy="317.4" r="3.4" fill="#B279A2" opacity="0.65"><title>old/ancient: human=0.36, logp=-4.06</title></circle>
+<circle cx="483.5" cy="317.4" r="3.4" fill="#B279A2" opacity="0.65"><title>old/ancient: human=0.36, logp=-4.33</title></circle>
+<circle cx="487.8" cy="214.9" r="3.4" fill="#B279A2" opacity="0.65"><title>palatable/delicious: human=0.61, logp=-4.21</title></circle>
+<circle cx="500.4" cy="214.9" r="3.4" fill="#B279A2" opacity="0.65"><title>palatable/delicious: human=0.61, logp=-3.85</title></circle>
+<circle cx="468.8" cy="214.9" r="3.4" fill="#B279A2" opacity="0.65"><title>palatable/delicious: human=0.61, logp=-4.75</title></circle>
+<circle cx="479.4" cy="391.2" r="3.4" fill="#B279A2" opacity="0.65"><title>participate/win: human=0.18, logp=-4.44</title></circle>
+<circle cx="601.0" cy="391.2" r="3.4" fill="#B279A2" opacity="0.65"><title>participate/win: human=0.18, logp=-0.97</title></circle>
+<circle cx="594.4" cy="391.2" r="3.4" fill="#B279A2" opacity="0.65"><title>participate/win: human=0.18, logp=-1.16</title></circle>
+<circle cx="407.9" cy="83.7" r="3.4" fill="#B279A2" opacity="0.65"><title>possible/certain: human=0.93, logp=-6.49</title></circle>
+<circle cx="474.8" cy="83.7" r="3.4" fill="#B279A2" opacity="0.65"><title>possible/certain: human=0.93, logp=-4.58</title></circle>
+<circle cx="445.6" cy="83.7" r="3.4" fill="#B279A2" opacity="0.65"><title>possible/certain: human=0.93, logp=-5.41</title></circle>
+<circle cx="403.9" cy="419.9" r="3.4" fill="#B279A2" opacity="0.65"><title>pretty/beautiful: human=0.11, logp=-6.60</title></circle>
+<circle cx="549.3" cy="419.9" r="3.4" fill="#B279A2" opacity="0.65"><title>pretty/beautiful: human=0.11, logp=-2.45</title></circle>
+<circle cx="581.9" cy="419.9" r="3.4" fill="#B279A2" opacity="0.65"><title>pretty/beautiful: human=0.11, logp=-1.52</title></circle>
+<circle cx="528.7" cy="141.1" r="3.4" fill="#B279A2" opacity="0.65"><title>rare/extinct: human=0.79, logp=-3.04</title></circle>
+<circle cx="559.5" cy="141.1" r="3.4" fill="#B279A2" opacity="0.65"><title>rare/extinct: human=0.79, logp=-2.16</title></circle>
+<circle cx="547.9" cy="141.1" r="3.4" fill="#B279A2" opacity="0.65"><title>rare/extinct: human=0.79, logp=-2.49</title></circle>
+<circle cx="436.5" cy="231.3" r="3.4" fill="#B279A2" opacity="0.65"><title>scarce/unavailable: human=0.57, logp=-5.67</title></circle>
+<circle cx="424.8" cy="231.3" r="3.4" fill="#B279A2" opacity="0.65"><title>scarce/unavailable: human=0.57, logp=-6.01</title></circle>
+<circle cx="317.7" cy="231.3" r="3.4" fill="#B279A2" opacity="0.65"><title>scarce/unavailable: human=0.57, logp=-9.07</title></circle>
+<circle cx="435.0" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>silly/ridiculous: human=0.14, logp=-5.71</title></circle>
+<circle cx="441.8" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>silly/ridiculous: human=0.14, logp=-5.52</title></circle>
+<circle cx="437.5" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>silly/ridiculous: human=0.14, logp=-5.64</title></circle>
+<circle cx="506.1" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>small/tiny: human=0.25, logp=-3.68</title></circle>
+<circle cx="483.3" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>small/tiny: human=0.25, logp=-4.33</title></circle>
+<circle cx="524.2" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>small/tiny: human=0.25, logp=-3.17</title></circle>
+<circle cx="575.4" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>snug/tight: human=0.21, logp=-1.70</title></circle>
+<circle cx="568.0" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>snug/tight: human=0.21, logp=-1.91</title></circle>
+<circle cx="581.3" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>snug/tight: human=0.21, logp=-1.53</title></circle>
+<circle cx="619.6" cy="100.1" r="3.4" fill="#B279A2" opacity="0.65"><title>some/all: human=0.89, logp=-0.44</title></circle>
+<circle cx="620.1" cy="100.1" r="3.4" fill="#B279A2" opacity="0.65"><title>some/all: human=0.89, logp=-0.43</title></circle>
+<circle cx="612.7" cy="100.1" r="3.4" fill="#B279A2" opacity="0.65"><title>some/all: human=0.89, logp=-0.64</title></circle>
+<circle cx="579.6" cy="112.4" r="3.4" fill="#B279A2" opacity="0.65"><title>sometimes/always: human=0.86, logp=-1.58</title></circle>
+<circle cx="562.3" cy="112.4" r="3.4" fill="#B279A2" opacity="0.65"><title>sometimes/always: human=0.86, logp=-2.08</title></circle>
+<circle cx="547.6" cy="112.4" r="3.4" fill="#B279A2" opacity="0.65"><title>sometimes/always: human=0.86, logp=-2.50</title></circle>
+<circle cx="519.5" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>special/unique: human=0.14, logp=-3.30</title></circle>
+<circle cx="494.9" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>special/unique: human=0.14, logp=-4.00</title></circle>
+<circle cx="430.9" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>special/unique: human=0.14, logp=-5.83</title></circle>
+<circle cx="613.1" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>start/finish: human=0.21, logp=-0.63</title></circle>
+<circle cx="585.8" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>start/finish: human=0.21, logp=-1.41</title></circle>
+<circle cx="596.1" cy="378.9" r="3.4" fill="#B279A2" opacity="0.65"><title>start/finish: human=0.21, logp=-1.11</title></circle>
+<circle cx="532.0" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>tired/exhausted: human=0.14, logp=-2.94</title></circle>
+<circle cx="521.0" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>tired/exhausted: human=0.14, logp=-3.26</title></circle>
+<circle cx="501.7" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>tired/exhausted: human=0.14, logp=-3.81</title></circle>
+<circle cx="606.9" cy="305.1" r="3.4" fill="#B279A2" opacity="0.65"><title>try/succeed: human=0.39, logp=-0.80</title></circle>
+<circle cx="585.8" cy="305.1" r="3.4" fill="#B279A2" opacity="0.65"><title>try/succeed: human=0.39, logp=-1.41</title></circle>
+<circle cx="613.6" cy="305.1" r="3.4" fill="#B279A2" opacity="0.65"><title>try/succeed: human=0.39, logp=-0.61</title></circle>
+<circle cx="515.7" cy="391.2" r="3.4" fill="#B279A2" opacity="0.65"><title>ugly/hideous: human=0.18, logp=-3.41</title></circle>
+<circle cx="447.3" cy="391.2" r="3.4" fill="#B279A2" opacity="0.65"><title>ugly/hideous: human=0.18, logp=-5.36</title></circle>
+<circle cx="361.9" cy="391.2" r="3.4" fill="#B279A2" opacity="0.65"><title>ugly/hideous: human=0.18, logp=-7.80</title></circle>
+<circle cx="415.6" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>unsettling/horrific: human=0.25, logp=-6.27</title></circle>
+<circle cx="390.2" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>unsettling/horrific: human=0.25, logp=-6.99</title></circle>
+<circle cx="251.2" cy="362.5" r="3.4" fill="#B279A2" opacity="0.65"><title>unsettling/horrific: human=0.25, logp=-10.97</title></circle>
+<circle cx="574.5" cy="202.6" r="3.4" fill="#B279A2" opacity="0.65"><title>warm/hot: human=0.64, logp=-1.73</title></circle>
+<circle cx="588.7" cy="202.6" r="3.4" fill="#B279A2" opacity="0.65"><title>warm/hot: human=0.64, logp=-1.32</title></circle>
+<circle cx="601.4" cy="202.6" r="3.4" fill="#B279A2" opacity="0.65"><title>warm/hot: human=0.64, logp=-0.96</title></circle>
+<circle cx="498.1" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>wary/scared: human=0.14, logp=-3.91</title></circle>
+<circle cx="492.1" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>wary/scared: human=0.14, logp=-4.08</title></circle>
+<circle cx="510.3" cy="407.6" r="3.4" fill="#B279A2" opacity="0.65"><title>wary/scared: human=0.14, logp=-3.56</title></circle>
+<line x1="75.0" y1="387.4" x2="635.0" y2="269.8" stroke="#111" stroke-width="2.2"/>
+<text class="label" x="355.0" y="515" text-anchor="middle">Qwen log P(stronger alternative | context)</text>
+<text class="label" transform="translate(18 260.0) rotate(-90)" text-anchor="middle">Human scalar inference rate</text>
+<text x="87" y="75">Pearson r = 0.17; Spearman ρ = 0.19; n = 309</text>
+<text class="label" x="660" y="68">Source dataset</text>
+<circle cx="660" cy="90" r="5" fill="#4C78A8" opacity="0.75"/>
+<text x="672" y="94">Gotzner et al. (2018)</text>
+<circle cx="660" cy="112" r="5" fill="#F58518" opacity="0.75"/>
+<text x="672" y="116">Pankratz &amp; van Tiel (2021)</text>
+<circle cx="660" cy="134" r="5" fill="#54A24B" opacity="0.75"/>
+<text x="672" y="138">Ronai &amp; Xiang (2022)</text>
+<circle cx="660" cy="156" r="5" fill="#B279A2" opacity="0.75"/>
+<text x="672" y="160">van Tiel et al. (2016)</text>
+</svg>

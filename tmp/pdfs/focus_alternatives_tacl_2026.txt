@@ -1,0 +1,1091 @@
+
+
+===== PAGE 1 =====
+1
+000
+001
+002
+003
+004
+005
+006
+007
+008
+009
+010
+011
+012
+013
+014
+015
+016
+017
+018
+019
+020
+021
+022
+023
+024
+025
+026
+027
+028
+029
+030
+031
+032
+033
+034
+035
+036
+037
+038
+039
+040
+041
+042
+043
+044
+045
+046
+047
+048
+049
+050
+051
+052
+053
+054
+055
+056
+057
+058
+059
+060
+061
+062
+063
+064
+065
+066
+067
+068
+069
+070
+071
+072
+073
+074
+075
+076
+077
+078
+079
+080
+081
+082
+083
+084
+085
+086
+087
+088
+089
+090
+091
+092
+093
+094
+095
+096
+097
+098
+099
+Confidential TACL submission. DO NOT DISTRIBUTE.
+In-Context Next-Word Prediction as a Mechanism for Generating
+Alternatives
+Anonymous TACL submission
+Abstract
+1 Introduction: What are pragmatic
+alternatives and how can we model
+them?
+Human communication depends on reasoning not
+only about what a speaker said, but also about
+what they could have said instead. If you are
+thirsty and your friend says, “I only have juice,”
+you may infer that your friend does not have wa-
+ter, soda, or milk, while remaining uncertain about
+unrelated items like soup or batteries. These infer-
+ences require listeners to identify relevant alterna-
+tives: possible utterances that were available to the
+speaker but weren’t said.
+Alternatives are central to theories of pragmatic
+inference. In theories of focus, focus-sensitive op-
+erators such asonlyare standardly analyzed as op-
+erating over alternatives to the focused constituent
+(Rooth, 1992). Whereas, scalar implicatures are
+often analyzed as excluding stronger alternatives
+on a preexisting scale, such asallwhen a speaker
+sayssome(Grice, 1975; Horn, 1972). Across
+these cases, interpretation depends on alternatives.
+This raises a computational question, where do the
+relevant alternatives come from?
+One possibility is that alternatives are taken
+from conventional lexical scales or fixed seman-
+tic relations. This works well for scalar alterna-
+tives such assome/allorgood/excellent, but many
+alternatives are context-sensitive. The alternatives
+tojuiceafter someone says “I’m thirsty” may in-
+clude water or soda, but the alternatives tojuicein
+a recipe context, a grocery-store context, or a dis-
+cussion of brands will be different. This context-
+dependence makes it difficult to specify pragmatic
+alternatives using only fixed scales, semantic sim-
+ilarity, or lexical category membership.
+Recent work has argued that alternatives can be
+modeled as probabilistic expectations over what
+a speaker could have said. In other words, utter-
+ances that are more expected in context are more
+likely to be considered in pragmatic inference.
+Hu et al. (2023) show that scalar implicatures
+vary with expectations over unspoken alternatives.
+When a stronger alternative is more expected in
+context, listeners are more likely to draw the cor-
+responding inference (Hu et al., 2023). Related
+work further suggests that variability in pragmatic
+inference can arise both from uncertainty about
+which alternatives are relevant and from uncer-
+tainty about whether those alternatives should be
+excluded (Ronai and Xiang, 2024). These findings
+support the broad theoretical claim that pragmatic
+inference is shaped by expectations over unspoken
+alternatives. We build on this claim through the
+study of focus alternatives.
+In this paper, we propose the computational
+claim that in-context next-word prediction is a
+mechanism for generating focus alternatives. On
+this view, the relevant alternatives to an uttered
+item are words or phrases that would have been
+likely completions in the same discourse context.
+For example, the alternatives tojuicein “I only
+have juice” are estimated from a non-focus com-
+pletion frame such as “I have .” This estimates
+what the speaker could have said before the focus
+operator contributes exclusion. The claim is that
+context-sensitive expectations over possible con-
+tinuations provide a computational mechanism for
+generating the alternatives that pragmatic theories
+require.
+To test this proposal, we separate two compo-
+nents of focus alternative-based inference. The
+first is alternative generation: assigning candidate
+alternatives an expectation score based on how
+likely they are in context. The second is alter-
+native exclusion: mapping those expected alterna-
+
+
+===== PAGE 2 =====
+2
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+Confidential TACL submission. DO NOT DISTRIBUTE.
+tives onto judgments about what an utterance with
+onlyrules out. We instantiate several possible ex-
+clusion structures, including set-based, ordering-
+based, and hybrid structures. A set-based struc-
+ture excludes alternatives that are above a pre-
+dictability threshold; an ordering-based structure
+excludes alternatives that are more expected than
+the item actually said; hybrid structures combine
+these two criteria. These structures allow us to ask
+how graded expectations become pragmatic infer-
+ences.
+We evaluate this framework using human judg-
+ment datasets from both scalar and focus alterna-
+tives. First, we ask whether the model recovers
+known scalar-alternative effects from prior work.
+This establishes that the model captures patterns
+already associated with expectation-based prag-
+matic inference. We then apply the same frame-
+work to focus alternatives. Together, these exper-
+iments ask whether a single computational frame-
+work can model alternatives across both scalar and
+focus phenomena.
+The paper makes three contributions. First, we
+propose a computational framework for model-
+ing pragmatic alternatives as context-sensitive ex-
+pectations over what a speaker could have said.
+Second, we instantiate this framework using in-
+context next-word probabilities and explicit link-
+ing structures from expectations to exclusion judg-
+ments. Third, we show that the same model can
+explain both scalar and focus alternative genera-
+tion, supporting the broader claim that pragmatic
+inference is shaped by expectations over what
+speakers could have said but did not.
+2 Experimental Design: How to model
+expectations over unspoken
+alternatives?
+Our goal is to model pragmatic alternatives as ex-
+pectations over what a speaker could have said in
+context. We build two components: 1) an expecta-
+tion model, which assigns probabilities or scores
+to possible unspoken alternatives, and 2) a link-
+ing structure, which maps those expectations onto
+human judgments. In this section, we describe
+the expectation model, the linking structures used
+to derive pragmatic predictions, and the human
+datasets used for evaluation.
+2.1 Which language model do we use to
+model human next word predictions?
+We instantiate expectations over unspoken alterna-
+tives using next-word probabilities from Qwen2-
+7B. We use LLMs as a computational model of hu-
+man next-word prediction for two reasons. First,
+methodologically, human next word prediction
+judgments (cloze probabilities) are difficult to ob-
+tain for low probability words, and these words
+could be among the alternatives people consider.
+LLMs allow us to get a full next-word probability
+distribution across an entire vocabulary. Second,
+while the mechanisms driving human next-word
+prediction remain unknown (Ryskin and Nieuw-
+land, 2023), LLMs provide, at least, a mathemat-
+ically transparent model of how next-word dis-
+tributions are calculated from context. Note that
+our claim of in-context next-word prediction as a
+mechanism for generating alternatives is not com-
+mitted to a specific next word prediction model nor
+is this argument making any mechanistic claims
+about how the next word prediction mechanism in
+humans or models works.
+Because our hypothesis depends on the qual-
+ity of the expectation model (i.e. a good model
+for human next-word prediction will be a good
+model for human alternative generation), we first
+checked how well several LLMs approximate hu-
+man cloze distributions. For each context, we
+compared LLMs next-word probabilities (logits)
+to human cloze probabilities using Spearman rank
+correlations. We evaluated models on both our
+own cloze data, collected from the contexts used in
+the focus-alternative study, and an external cloze
+dataset from Peelle et al. (2020). Across both
+datasets, Qwen produced the highest correlation
+with human cloze expectations (Table 1), so we
+use Qwen as the primary expectation model in the
+experiments below. Full details of prompting, can-
+didate filtering, and correlation calculations are re-
+ported in AppendixTODO.
+2.2 How do next word predictions become
+pragmatic inferences?
+We formalize pragmatic inferences as a mapping
+from contextual expectations (next-word probabil-
+ities) to exclusion judgments. Each experimen-
+tal item consists of a discourse contextc, an ut-
+tered itemt, which we call the trigger item, and
+a queried alternativeq. For example, after a con-
+text in which a friend opens their refrigerator and
+
+
+===== PAGE 3 =====
+3
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+Confidential TACL submission. DO NOT DISTRIBUTE.
+Model Novel Data Peelle Data
+Qwen2-7B 0.549 0.490
+LLaMA3.2-3B 0.500 0.478
+DeepSeek-Coder-1.3B 0.435 0.316
+BERT 0.419 0.365
+GPT-2 0.389 0.217
+Table 1: Spearman correlations between LLM next-
+word log probabilities and human cloze probabilities.
+Qwen best approximated human cloze expectations
+across both datasets.
+says, “I only have juice”, the listener may infer
+that the friend does not have soda in the fridge. In
+this case, juice is the trigger item and soda is the
+queried alternative.
+The model has two components. The first com-
+ponent is alternative generation. Given the dis-
+course context with a non-focus completion frame,
+the model assigns each candidate alternative an ex-
+pectation score corresponding to how likely that
+candidate would have been as a continuation in
+the context. In the running example, the relevant
+expectation is not the probability of water in iso-
+lation, but the probability of water as a comple-
+tion of the thirsty context. This allows alterna-
+tives to vary with context. Water may be highly
+expected in a thirst/fridge context but not in a
+recipe or shopping-mall context. The expectation
+model assigns each candidateqa scoreE(q, c),
+corresponding to how likelyqwould have been as
+something the speaker could have said in context.
+A key feature of the model is that expectations
+are estimated from a non-focus completion frame,
+while human judgments are measured from an ut-
+terance that contains the relevant pragmatic trig-
+ger. For example, in the focus-alternative study,
+expectations are computed from a frame such as
+"I have ", but judgments are collected for ut-
+terances such as "I have only juice." This separa-
+tion allows us to estimate which alternatives were
+available before the focus operator contributes ex-
+clusion. Prompts such as "I have only juice but not
+" are not used to estimate alternatives, because
+they already encode the exclusion relation that the
+model is intended to predict.
+After estimating expectations, we need a link-
+ing structure that maps expected alternatives onto
+predicted inferences. We compare four such struc-
+tures. These structures instantiate different hy-
+potheses about how graded expectations over pos-
+sible utterances become judgments about which
+alternatives are excluded.
+Relation to prior work.The alternative exclu-
+sion structures we compare are computational ide-
+alizations of recurring ideas in theories of alterna-
+tives. First, alternatives are often treated as mem-
+bers of a contextually restricted set. This idea
+is seen in alternative semantics for focus (Rooth,
+1992, 2016) and in structure-sensitive approaches
+to alternatives for focus and scalar implicature
+(Katzir, 2007; Fox and Katzir, 2011). Second, al-
+ternatives are often ordered by strength, informa-
+tiveness, or pragmatic utility, as in work on scalar
+implicature, Horn scales (Grice, 1975; Horn,
+1972, 1989), and probabilistic rational speech act
+models (Frank and Goodman, 2012; Goodman and
+Stuhlmüller, 2013; Goodman and Frank, 2016).
+Our instantiations of alternative structures take in-
+spiration from these ideas.
+Set.The set structure assumes that sufficiently
+expected candidates are treated as relevant alter-
+natives. A queried alternativeqis predicted to
+be excluded ifE(q, c)exceeds a threshold in the
+next word probability distribution. Ifqexceeds a
+threshold in the probability distribution, thenonly
+texcludesq; otherwise, the utterance leavesqun-
+certain.
+Ordering.The ordering structure assumes that
+listeners compare the queried alternative to the
+item the speaker actually said. A queried alterna-
+tiveqis predicted to be excluded ifqwas more ex-
+pected than the uttered itemt, that is, ifE(q, c)>
+E(t, c). Ifqwas more expected thant, thenonlyt
+excludesq. Ifqwas less expected thant, thenqis
+not excluded byonlyt. Theoretically, why would
+the speaker say the less expected thing if the more
+expected thing were true?
+Conjunction.The conjunction structure is a hy-
+brid of the set and ordering structures. A queryq
+is excluded byonlytifboththe set and ordering
+criteria hold. A queried alternative must be both
+sufficiently expected and more expected than the
+trigger.
+Disjunction.The disjunction structure is a sec-
+ond hybrid of the set and ordering structures. A
+queryqis excluded byonlytifeitherthe set or
+ordering criterion holds. A queried alternative is
+excluded either because it is part of the relevant
+set or because it outranks the trigger.
+
+
+===== PAGE 4 =====
+4
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+Confidential TACL submission. DO NOT DISTRIBUTE.
+2.3 Which human datasets do we use?
+We evaluate the model on human judgment
+datasets involving scalar and focus alternatives
+(Table 2). For each dataset, we recast the task in
+a common format: a contextc, an uttered trigger
+itemt, a queried alternativeq, and a human re-
+sponse indicating whetherqis treated as excluded.
+This shared format lets us test whether the same
+model can account for alternatives across different
+pragmatic phenomena.
+The scalar datasets serve as a baseline
+test of whether the model recovers established
+expectation-based effects in scalar inference. The
+focus-alternative dataset provides a more general
+test of —-
+3 Scalar Alternative Replication: Can
+the model replicate know scalar
+alternative effects?
+Before testing the model on focus alternatives,
+we first ask whether it reproduces known scalar-
+alternative effects. This provides a benchmark be-
+cause prior work has already shown that scalar
+implicature can be captured through expectations
+over unspoken alternatives. If our model captures
+this mechanism, then alternatives that are more ex-
+pected in context should be more likely to be ex-
+cluded.
+3.1 Does the model reproduce scalar
+implicature results?
+We first evaluate the model on the scalar inference
+data from Hu et al. (2023). Hu et al. showed that
+scalar implicature rates vary with the expectedness
+of stronger alternatives. When a stronger alterna-
+tive is more likely as something the speaker could
+have said, listeners are more likely to infer that
+the stronger alternative is false. We test whether
+Qwen-derived expectations recover this pattern.
+For each item, we use Qwen to estimate the ex-
+pectedness of the relevant stronger alternative in
+context. The model prediction is that higher ex-
+pectation for the stronger alternative should corre-
+spond to higher human inference rates. This anal-
+ysis tests the generation component of the model:
+whether in-context prediction identifies the alter-
+natives that are likely to enter scalar inference.
+[TODOINSERT RESULTS: correla-
+tion/regression between Qwen expectation
+scores and human scalar inference rates.]
+3.2 Does the model capture scalar
+implicature effects due to QUD and only
+manipulations?
+Next we evaluate the model on the scalar-
+alternative data from Ronai and Xiang (2024).
+This dataset is useful because it separates two
+sources of uncertainty in scalar inference: un-
+certainty about which alternatives are relevant,
+and uncertainty about whether those alternatives
+should be excluded. Contextual manipulations of
+the question under discussion affect which alter-
+natives are available, while the presence ofonly
+affects whether relevant alternatives are obligato-
+rily excluded.
+For each item, we compute Qwen expectations
+for both the uttered scalar termtand the queried
+alternativeq. We evaluate two model variants. The
+expectation model predicts that the probability of
+excludingqincreases withE(q, c). The order-
+ing model predicts exclusion when the queried al-
+ternative is more expected than the uttered item,
+E(q, c)> E(t, c). This allows us to test whether
+scalar judgments depend not only on the expected-
+ness of the alternative itself, but also on the rela-
+tion between the alternative and what was actually
+said.
+[TODOINSERT RESULTS: scatter
+plot/regression showing Qwen expectation or
+ordering score predicts human judgments.]
+3.3 Summary
+The scalar analyses establish that the model re-
+covers previously documented expectation effects
+in pragmatic inference. This is important because
+scalar alternatives provide an external benchmark:
+the model is not first tuned to the focus-alternative
+dataset. In the next section, we apply the same
+framework to focus alternatives, whereonlypro-
+vides a more direct test of which expected alterna-
+tives are treated as excluded.
+4 Focus Alternative Extension: Can the
+model predict focus alternative
+judgments?
+Human experiment described as a dataset. The
+main question is whether the computational model
+predicts which alternatives humans take only to
+exclude.
+Given a context like “I’m thirsty. . . Sure, I have
+,” does a context-sensitive next-word distribu-
+tion predict what people think only juice excludes?
+
+
+===== PAGE 5 =====
+5
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+Confidential TACL submission. DO NOT DISTRIBUTE.
+Hu et al. (2023) Ronai & Xiang (2024) Focus alternative study
+Pragmatic phe-
+nomenon
+Scalar implicature /
+scalar diversity
+Scalar alternatives under
+QUD andonly
+Focus-sensitiveonlyin-
+ferences
+Context frame [context] [weaker alter-
+native], but not [stronger
+alternative]
+Sue: Is the movie excel-
+lent? Mary: It is only
+good.
+[context] I only have
+[trigger].
+Human response Inference rates Inference rates Whetheronlytexcludes
+q
+Model response Expectation of stronger
+alternative
+Exclusion of queried al-
+ternative
+Exclusion of queried al-
+ternative
+Role in paper Scalar replication Scalar replication Novel focus-alternative
+test
+Table 2: Human judgment datasets modeled in this paper. Each dataset is represented in terms of a context, an
+uttered item, a queried alternative, and a human judgment about whether that alternative is excluded or inferentially
+unavailable.
+Which unspoken alternatives do people actually
+treat as excluded byonlyt?
+5 Alternative Exclusion Structures:
+Which Exclusion Structure Best Links
+Expectations To Judgments?
+6 Discussion
+A Appendix
+References
+Danny Fox and Roni Katzir. 2011. On the char-
+acterization of alternatives.Natural Language
+Semantics, 19(1):87–107.
+Michael C. Frank and Noah D. Goodman. 2012.
+Predicting pragmatic reasoning in language
+games.Science, 336(6084):998–998.
+Noah D. Goodman and Michael C. Frank. 2016.
+Pragmatic language interpretation as probabilis-
+tic inference.Trends in Cognitive Sciences,
+20(11):818–829.
+Noah D. Goodman and Andreas Stuhlmüller.
+2013. Knowledge and implicature: Model-
+ing language understanding as social cognition.
+Topics in Cognitive Science, 5(1):173–184.
+H. Paul Grice. 1975. Logic and conversation. In
+Peter Cole and Jerry L. Morgan, editors,Syntax
+and Semantics, volume 3, pages 43–58. Aca-
+demic Press, New York.
+Laurence R. Horn. 1972.On the semantic proper-
+ties of logical operators in English. Ph.D. the-
+sis, University of California, Los Angeles.
+Laurence R. Horn. 1989.A natural history
+of negation. University of Chicago Press,
+Chicago.
+Jennifer Hu, Roger Levy, Judith Degen, and
+Sebastian Schuster. 2023. Expectations over
+unspoken alternatives predict pragmatic infer-
+ences.Transactions of the Association for Com-
+putational Linguistics, 11:885–901.
+Roni Katzir. 2007. Structurally-defined alterna-
+tives.Linguistics and Philosophy, 30(6):669–
+690.
+Jonathan E. Peelle, Ryland L. Miller, Chad S.
+Rogers, Brent Spehar, Mitchell S. Sommers,
+and Kristin J. Van Engen. 2020. Completion
+norms for 3085 english sentence contexts.Be-
+havior Research Methods, 52(4):1795–1799.
+Eszter Ronai and Ming Xiang. 2024. What could
+have been said? alternatives and variability in
+pragmatic inferences.Journal of Memory and
+Language, 136:104507.
+Mats Rooth. 1992. A theory of focus interpreta-
+tion.Natural Language Semantics, 1:75–116.
+Mats Rooth. 2016. Alternative semantics. In
+Caroline Féry and Shinichiro Ishihara, editors,
+
+
+===== PAGE 6 =====
+6
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+591
+592
+593
+594
+595
+596
+597
+598
+599
+Confidential TACL submission. DO NOT DISTRIBUTE.
+The Oxford Handbook of Information Structure,
+pages 19–40. Oxford University Press, Oxford.
+Rachel Ryskin and Mante S. Nieuwland. 2023.
+Prediction during language comprehension:
+what is next?Trends in Cognitive Sciences,
+27(11):1032–1052.
