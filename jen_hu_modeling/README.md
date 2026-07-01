@@ -79,6 +79,28 @@ This writes:
 model_scores/qwen2_7b_exact_strong_scores.csv
 ```
 
+Build and score the matched no-frame strong alternatives with Qwen:
+
+```bash
+python3 scripts/score_qwen_no_frame_strong.py \
+  --model-path /users/ljohnst7/data/ljohnst7/hf-cache/models--Qwen--Qwen2-7B
+```
+
+This writes:
+
+```text
+stimuli/qwen_no_frame_strong_prompts.csv
+model_scores/qwen2_7b_no_frame_strong_scores.csv
+```
+
+For this no-frame analysis, each stronger alternative is scored in the slot
+where the weaker alternative appeared in the first clause, e.g.:
+
+```text
+context: The elephant is
+continuation:  enormous
+```
+
 For a quick cluster smoke test, run:
 
 ```bash
